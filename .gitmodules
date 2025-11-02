@@ -1,0 +1,15 @@
+[submodule "packages/digitaldefiance-ecies-lib"]
+	path = packages/digitaldefiance-ecies-lib
+	url = https://github.com/digital-defiance/ecies-lib
+[submodule "packages/digitaldefiance-node-express-suite"]
+	path = packages/digitaldefiance-node-express-suite
+	url = https://github.com/digital-defiance/node-express-suite.git
+[submodule "packages/digitaldefiance-i18n-lib"]
+	path = packages/digitaldefiance-i18n-lib
+	url = https://github.com/digital-defiance/i18n-lib.git
+[submodule "packages/digitaldefiance-node-ecies-lib"]
+	path = packages/digitaldefiance-node-ecies-lib
+	url = https://github.com/digital-defiance/node-ecies-lib.git
+[submodule "packages/digitaldefiance-suite-core-lib"]
+	path = packages/digitaldefiance-suite-core-lib
+	url = https://github.com/digital-defiance/suite-core-lib.git

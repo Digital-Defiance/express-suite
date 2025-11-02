@@ -5,17 +5,45 @@
     "emitDeclarationOnly": true,
     "importHelpers": true,
     "isolatedModules": true,
-    "lib": ["es2022"],
+    "lib": [
+      "es2022",
+      "dom",
+      "dom.iterable"
+    ],
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@express-suite/source"]
+    "customConditions": [
+      "@express-suite/source"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@digitaldefiance/i18n-lib": [
+        "packages/digitaldefiance-i18n-lib/src/index.ts"
+      ],
+      "@digitaldefiance/ecies-lib": [
+        "packages/digitaldefiance-ecies-lib/src/index.ts"
+      ],
+      "@digitaldefiance/node-ecies-lib": [
+        "packages/digitaldefiance-node-ecies-lib/src/index.ts"
+      ],
+      "@digitaldefiance/suite-core-lib": [
+        "packages/digitaldefiance-suite-core-lib/src/index.ts"
+      ],
+      "@digitaldefiance/node-express-suite": [
+        "packages/digitaldefiance-node-express-suite/src/index.ts"
+      ]
+    }
   }
 }
