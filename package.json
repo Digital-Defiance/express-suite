@@ -18,7 +18,12 @@
     "graph": "nx graph",
     "format": "nx format:write",
     "format:check": "nx format:check",
-    "packages:prettier:fix": "yarn workspaces foreach -p run prettier:fix"
+    "packages:prettier:fix": "yarn workspaces foreach -p run prettier:fix",
+    "publish:ecies-lib": "yarn nx build digitaldefiance-ecies-lib && npm publish dist/packages/digitaldefiance-ecies-lib --access public",
+    "publish:i18n-lib": "yarn nx build digitaldefiance-i18n-lib && npm publish dist/packages/digitaldefiance-i18n-lib --access public",
+    "publish:node-ecies-lib": "yarn nx build digitaldefiance-node-ecies-lib && npm publish dist/packages/digitaldefiance-node-ecies-lib --access public",
+    "publish:suite-core-lib": "yarn nx build digitaldefiance-suite-core-lib && npm publish dist/packages/digitaldefiance-suite-core-lib --access public",
+    "publish:node-express-suite": "yarn nx build digitaldefiance-node-express-suite && npm publish dist/packages/digitaldefiance-node-express-suite --access public"
   },
   "dependencies": {
     "@ethereumjs/wallet": "^10.0.0",
