@@ -20,7 +20,12 @@
     "noUnusedParameters": false,
     "skipLibCheck": true,
     "types": [
-      "node"
+      "node",
+      "iterator-dispose-shim"
+    ],
+    "typeRoots": [
+      "../types",
+      "./node_modules/@types"
     ],
     "strict": true,
     "target": "es2022",

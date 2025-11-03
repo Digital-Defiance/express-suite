@@ -85,7 +85,7 @@
     "supertest": "^7.1.4",
     "ts-jest": "^29.0.0",
     "tslib": "^2.3.0",
-    "typescript": "~5.9.2",
+    "typescript": "~5.8.2",
     "validator": "^13.15.20"
   },
   "workspaces": [
