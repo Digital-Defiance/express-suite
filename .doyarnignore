@@ -3,3 +3,4 @@ packages/digitaldefiance-ecies-lib
 packages/digitaldefiance-node-ecies-lib
 packages/digitaldefiance-suite-core-lib
 packages/digitaldefiance-node-express-suite
+.
