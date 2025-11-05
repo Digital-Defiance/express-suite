@@ -1,111 +1,108 @@
-# ExpressSuite
+# Express Suite
 
-Note: Useful tools most and ansifilter
+A comprehensive TypeScript monorepo providing cryptographic services, internationalization, and Express.js framework components for building secure applications.
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+## Packages
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+### [@digitaldefiance/i18n-lib](packages/digitaldefiance-i18n-lib)
+Production-ready internationalization library with component-based architecture, type-safe translations, and 8 built-in languages.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+**Features**: Plugin architecture, template processing, context variables, error translation, 91.81% test coverage
 
-## Generate a library
+### [@digitaldefiance/ecies-lib](packages/digitaldefiance-ecies-lib)
+Browser-compatible ECIES encryption library with comprehensive key management and authentication services.
 
-```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+**Features**: ECIES encryption (Simple/Single/Multiple modes), BIP39 mnemonics, HD wallets, file encryption, password login, 393 tests
+
+### [@digitaldefiance/node-ecies-lib](packages/digitaldefiance-node-ecies-lib)
+Node.js ECIES implementation with binary compatibility to ecies-lib for cross-platform cryptographic operations.
+
+**Features**: Node.js crypto primitives, multi-recipient encryption, PBKDF2 profiles, service container, 220 tests
+
+### [@digitaldefiance/suite-core-lib](packages/digitaldefiance-suite-core-lib)
+Core primitives for cryptographically-secure user management systems with RBAC and multi-language support.
+
+**Features**: User interfaces, backup codes, account management, role system, 409 tests, 98.47% coverage
+
+### [@digitaldefiance/node-express-suite](packages/digitaldefiance-node-express-suite)
+Complete Express.js framework with authentication, RBAC, MongoDB integration, and dynamic model registry.
+
+**Features**: JWT auth, email tokens, ECIES integration, i18n middleware, 604 tests, service container
+
+## Development/Contribution Quick Start
+
+### Clone with Submodules
+
+```bash
+# Clone with all submodules
+git clone --recursive https://github.com/Digital-Defiance/express-suite.git
+
+# Or if already cloned, initialize submodules
+git submodule update --init --recursive
 ```
 
-## Run tasks
+### Working with Submodules
 
-To build the library use:
+```bash
+# Update all submodules to latest
+git submodule update --remote --merge
 
-```sh
-npx nx build pkg1
+# Pull changes including submodules
+git pull --recurse-submodules
+
+# Check submodule status
+git submodule status
 ```
 
-To run any task with Nx use:
+### Build and Test
 
-```sh
-npx nx <target> <project-name>
+```bash
+# Install dependencies
+yarn install
+
+# Build all packages
+yarn build
+
+# Run tests
+yarn test
 ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
-
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Versioning and releasing
-
-To version and release the library use
+## Architecture
 
 ```
-npx nx release
+express-suite/
+├── digitaldefiance-i18n-lib/          # Internationalization
+├── digitaldefiance-ecies-lib/         # Browser crypto
+├── digitaldefiance-node-ecies-lib/    # Node.js crypto
+├── digitaldefiance-suite-core-lib/    # User management primitives
+└── digitaldefiance-node-express-suite/ # Express.js framework
 ```
 
-Pass `--dry-run` to see what would happen without actually releasing the library.
+## Key Features
 
-[Learn more about Nx release &raquo;](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- **🔐 End-to-End Encryption**: ECIES with secp256k1, AES-256-GCM
+- **🌍 Internationalization**: 8 languages with plugin architecture
+- **🔑 Key Management**: BIP39 mnemonics, HD wallets, secure storage
+- **👥 User Management**: RBAC, JWT auth, email verification
+- **📊 Database**: MongoDB with Mongoose, dynamic model registry
+- **🧪 Testing**: 2000+ tests across all packages
+- **🏗️ Modern Architecture**: Service containers, builders, fluent APIs
 
-## Keep TypeScript project references up to date
+## Development
 
-Nx automatically updates TypeScript [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) in `tsconfig.json` files to ensure they remain accurate based on your project dependencies (`import` or `require` statements). This sync is automatically done when running tasks such as `build` or `typecheck`, which require updated references to function correctly.
+```bash
+# Build specific package
+yarn nx build digitaldefiance-i18n-lib
 
-To manually trigger the process to sync the project graph dependencies information to the TypeScript project references, run the following command:
+# Test specific package
+yarn nx test digitaldefiance-ecies-lib
 
-```sh
-npx nx sync
+# Lint all
+yarn nx run-many --target=lint --all
 ```
 
-You can enforce that the TypeScript project references are always in the correct state when running in CI by adding a step to your CI job configuration that runs the following command:
+As always, see [package.json](./package.json)
 
-```sh
-npx nx sync:check
-```
+## License
 
-[Learn more about nx sync](https://nx.dev/reference/nx-commands#sync)
-
-## Set up CI!
-
-### Step 1
-
-To connect to Nx Cloud, run the following command:
-
-```sh
-npx nx connect
-```
-
-Connecting to Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
-
-- [Remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task flakiness detection and rerunning](https://nx.dev/ci/features/flaky-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-### Step 2
-
-Use the following command to configure a CI workflow for your workspace:
-
-```sh
-npx nx g ci-workflow
-```
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+MIT © Digital Defiance, Jessica Mulein
