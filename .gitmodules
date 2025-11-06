@@ -13,3 +13,6 @@
 [submodule "packages/digitaldefiance-suite-core-lib"]
 	path = packages/digitaldefiance-suite-core-lib
 	url = https://github.com/digital-defiance/suite-core-lib.git
+[submodule "packages/digitaldefiance-express-suite-example"]
+	path = packages/digitaldefiance-express-suite-example
+	url = https://github.com/Digital-Defiance/express-suite-example.git
