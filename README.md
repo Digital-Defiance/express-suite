@@ -106,3 +106,74 @@ As always, see [package.json](./package.json)
 ## License
 
 MIT © Digital Defiance, Jessica Mulein
+
+## ChangeLog
+
+### v2.1.25
+
+**Comprehensive Quality & Stability Release** - Major improvements across all packages with enhanced testing, coverage, and type safety.
+
+#### All Packages
+- **UPGRADED**: All inter-package dependencies to v2.1.25 for consistency
+- **IMPROVED**: Test coverage and reliability across the suite
+- **FIXED**: i18n aliasing and component registration issues
+- **ENHANCED**: Type safety and error handling throughout
+
+#### @digitaldefiance/i18n-lib
+- **IMPROVED**: Test coverage to 91.81% (714 tests passing)
+- **ADDED**: `registerIfNotExists()` methods for safe component registration
+- **ADDED**: Constants management with `updateConstants()` and `mergeConstants()`
+- **FIXED**: Component alias resolution in `t()` function
+- **ENHANCED**: Context variable injection with CurrencyCode and Timezone support
+
+#### @digitaldefiance/ecies-lib
+- **IMPROVED**: Test suite with 393 tests (100% passing)
+- **ADDED**: Frontend member mock for testing
+- **UPGRADED**: i18n integration with automatic engine retrieval
+- **ENHANCED**: Error translation in 8 languages
+- **FIXED**: PBKDF2 profile lookup and validation
+
+#### @digitaldefiance/node-ecies-lib
+- **IMPROVED**: 220/220 tests passing (100% success rate)
+- **ADDED**: Backend member mock for testing
+- **MAINTAINED**: 100% binary compatibility with browser ecies-lib
+- **ENHANCED**: Service container and builder patterns
+- **FIXED**: Constructor signatures for simplified API
+
+#### @digitaldefiance/suite-core-lib
+- **MAINTAINED**: 409 tests with 98.47% statement coverage
+- **ADDED**: Additional string keys for internationalization
+- **UPGRADED**: Dependencies (i18n-lib, ecies-lib)
+- **ENHANCED**: Validation builders with custom constants support
+- **FIXED**: Translation key processing and template handling
+
+#### @digitaldefiance/node-express-suite
+- **IMPROVED**: 604 tests passing (100% success rate)
+- **IMPROVED**: Code coverage to 57.86% (+4.51%)
+- **ADDED**: Concrete ApplicationConcrete class for testing
+- **ADDED**: DummyEmailService for test environments
+- **ADDED**: Comprehensive mocks and fixtures
+- **FIXED**: i18n initialization in database setup
+- **FIXED**: Validation builder chain initialization
+- **ENHANCED**: Clean test output with proper console mocking
+- **STREAMLINED**: Application generics for better usability
+
+#### Testing Highlights
+- **2000+ tests** across all packages
+- **100% pass rate** in all test suites
+- **Enhanced coverage** in critical paths
+- **Improved reliability** with proper initialization
+- **Better mocking** for isolated unit tests
+
+#### Developer Experience
+- **Simplified APIs** with reduced generic complexity
+- **Better type inference** throughout
+- **Comprehensive mocks** for testing
+- **Improved documentation** with examples
+- **Consistent patterns** across packages
+
+#### Migration Notes
+- **Backward compatible** - No breaking changes
+- **Drop-in replacement** for v2.1.x versions
+- **Automatic upgrades** for inter-package dependencies
+- **Safe to upgrade** with existing codebases
