@@ -5,32 +5,42 @@ A comprehensive TypeScript monorepo providing cryptographic services, internatio
 ## Packages
 
 ### [@digitaldefiance/i18n-lib](packages/digitaldefiance-i18n-lib)
+
 Production-ready internationalization library with component-based architecture, type-safe translations, and 8 built-in languages.
 
 **Features**: Plugin architecture, template processing, context variables, error translation, 91.81% test coverage
 
 ### [@digitaldefiance/ecies-lib](packages/digitaldefiance-ecies-lib)
+
 Browser-compatible ECIES encryption library with comprehensive key management and authentication services.
 
 **Features**: ECIES encryption (Simple/Single/Multiple modes), BIP39 mnemonics, HD wallets, file encryption, password login, 393 tests
 
 ### [@digitaldefiance/node-ecies-lib](packages/digitaldefiance-node-ecies-lib)
+
 Node.js ECIES implementation with binary compatibility to ecies-lib for cross-platform cryptographic operations.
 
 **Features**: Node.js crypto primitives, multi-recipient encryption, PBKDF2 profiles, service container, 220 tests
 
 ### [@digitaldefiance/suite-core-lib](packages/digitaldefiance-suite-core-lib)
+
 Core primitives for cryptographically-secure user management systems with RBAC and multi-language support.
 
 **Features**: User interfaces, backup codes, account management, role system, 409 tests, 98.47% coverage
 
 ### [@digitaldefiance/node-express-suite](packages/digitaldefiance-node-express-suite)
+
 Complete Express.js framework with authentication, RBAC, MongoDB integration, and dynamic model registry.
 
 **Features**: JWT auth, email tokens, ECIES integration, i18n middleware, 604 tests, service container
 
 ### [@digitaldefiance/express-suite-test-utils](packages/digitaldefiance-express-suite-test-utils)
+
 Handy test utilities (toThrowType, withConsoleMocks) and more in the near future
+
+### [@digitaldefiance/express-suite-react-components](packages/digitaldefiance-express-suite-react-components)
+
+React components for authentication flows, internationalization, and user management
 
 ## Development/Contribution Quick Start
 
@@ -121,12 +131,14 @@ MIT © Digital Defiance, Jessica Mulein
 **Comprehensive Quality & Stability Release** - Major improvements across all packages with enhanced testing, coverage, and type safety.
 
 #### All Packages
+
 - **UPGRADED**: All inter-package dependencies to v2.1.25 for consistency
 - **IMPROVED**: Test coverage and reliability across the suite
 - **FIXED**: i18n aliasing and component registration issues
 - **ENHANCED**: Type safety and error handling throughout
 
 #### @digitaldefiance/i18n-lib
+
 - **IMPROVED**: Test coverage to 91.81% (714 tests passing)
 - **ADDED**: `registerIfNotExists()` methods for safe component registration
 - **ADDED**: Constants management with `updateConstants()` and `mergeConstants()`
@@ -134,6 +146,7 @@ MIT © Digital Defiance, Jessica Mulein
 - **ENHANCED**: Context variable injection with CurrencyCode and Timezone support
 
 #### @digitaldefiance/ecies-lib
+
 - **IMPROVED**: Test suite with 393 tests (100% passing)
 - **ADDED**: Frontend member mock for testing
 - **UPGRADED**: i18n integration with automatic engine retrieval
@@ -141,6 +154,7 @@ MIT © Digital Defiance, Jessica Mulein
 - **FIXED**: PBKDF2 profile lookup and validation
 
 #### @digitaldefiance/node-ecies-lib
+
 - **IMPROVED**: 220/220 tests passing (100% success rate)
 - **ADDED**: Backend member mock for testing
 - **MAINTAINED**: 100% binary compatibility with browser ecies-lib
@@ -148,6 +162,7 @@ MIT © Digital Defiance, Jessica Mulein
 - **FIXED**: Constructor signatures for simplified API
 
 #### @digitaldefiance/suite-core-lib
+
 - **MAINTAINED**: 409 tests with 98.47% statement coverage
 - **ADDED**: Additional string keys for internationalization
 - **UPGRADED**: Dependencies (i18n-lib, ecies-lib)
@@ -155,6 +170,7 @@ MIT © Digital Defiance, Jessica Mulein
 - **FIXED**: Translation key processing and template handling
 
 #### @digitaldefiance/node-express-suite
+
 - **IMPROVED**: 604 tests passing (100% success rate)
 - **IMPROVED**: Code coverage to 57.86% (+4.51%)
 - **ADDED**: Concrete ApplicationConcrete class for testing
@@ -166,6 +182,7 @@ MIT © Digital Defiance, Jessica Mulein
 - **STREAMLINED**: Application generics for better usability
 
 #### Testing Highlights
+
 - **2000+ tests** across all packages
 - **100% pass rate** in all test suites
 - **Enhanced coverage** in critical paths
@@ -173,6 +190,7 @@ MIT © Digital Defiance, Jessica Mulein
 - **Better mocking** for isolated unit tests
 
 #### Developer Experience
+
 - **Simplified APIs** with reduced generic complexity
 - **Better type inference** throughout
 - **Comprehensive mocks** for testing
@@ -180,6 +198,7 @@ MIT © Digital Defiance, Jessica Mulein
 - **Consistent patterns** across packages
 
 #### Migration Notes
+
 - **Backward compatible** - No breaking changes
 - **Drop-in replacement** for v2.1.x versions
 - **Automatic upgrades** for inter-package dependencies
