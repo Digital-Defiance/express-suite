@@ -29,6 +29,9 @@ Complete Express.js framework with authentication, RBAC, MongoDB integration, an
 
 **Features**: JWT auth, email tokens, ECIES integration, i18n middleware, 604 tests, service container
 
+### [@digitaldefiance/express-suite-test-utils](packages/digitaldefiance-express-suite-test-utils)
+Handy test utilities (toThrowType, withConsoleMocks) and more in the near future
+
 ## Development/Contribution Quick Start
 
 ### Clone with Submodules
@@ -108,6 +111,10 @@ As always, see [package.json](./package.json)
 MIT © Digital Defiance, Jessica Mulein
 
 ## ChangeLog
+
+### v2.1.27
+
+- Added new express-suite-test-utils dependency
 
 ### v2.1.25
 

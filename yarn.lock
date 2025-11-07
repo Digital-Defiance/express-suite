@@ -1363,11 +1363,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@digitaldefiance/ecies-lib@npm:1.3.27, @digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib":
+"@digitaldefiance/ecies-lib@npm:2.1.25, @digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib"
   dependencies:
-    "@digitaldefiance/i18n-lib": "npm:1.3.27"
+    "@digitaldefiance/i18n-lib": "npm:2.1.25"
     "@ethereumjs/wallet": "npm:^10.0.0"
     "@noble/curves": "npm:^2.0.1"
     "@noble/hashes": "npm:^2.0.1"
@@ -1377,7 +1377,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@digitaldefiance/i18n-lib@npm:1.3.27, @digitaldefiance/i18n-lib@workspace:packages/digitaldefiance-i18n-lib":
+"@digitaldefiance/express-suite-example@workspace:packages/digitaldefiance-express-suite-example":
+  version: 0.0.0-use.local
+  resolution: "@digitaldefiance/express-suite-example@workspace:packages/digitaldefiance-express-suite-example"
+  languageName: unknown
+  linkType: soft
+
+"@digitaldefiance/express-suite-test-utils@workspace:packages/digitaldefiance-express-suite-test-utils":
+  version: 0.0.0-use.local
+  resolution: "@digitaldefiance/express-suite-test-utils@workspace:packages/digitaldefiance-express-suite-test-utils"
+  dependencies:
+    "@jest/globals": "npm:^30.0.5"
+    "@types/jest": "npm:^30.0.0"
+    expect: "npm:^30.0.5"
+  languageName: unknown
+  linkType: soft
+
+"@digitaldefiance/i18n-lib@npm:2.1.25, @digitaldefiance/i18n-lib@workspace:packages/digitaldefiance-i18n-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/i18n-lib@workspace:packages/digitaldefiance-i18n-lib"
   dependencies:
@@ -1386,12 +1402,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@digitaldefiance/node-ecies-lib@npm:1.3.27, @digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib":
+"@digitaldefiance/node-ecies-lib@npm:2.1.25, @digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib"
   dependencies:
-    "@digitaldefiance/ecies-lib": "npm:1.3.27"
-    "@digitaldefiance/i18n-lib": "npm:1.3.27"
+    "@digitaldefiance/ecies-lib": "npm:2.1.25"
+    "@digitaldefiance/i18n-lib": "npm:2.1.25"
     "@ethereumjs/wallet": "npm:^10.0.0"
     "@noble/curves": "npm:^2.0.1"
     "@noble/hashes": "npm:^2.0.1"
@@ -1406,10 +1422,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/node-express-suite@workspace:packages/digitaldefiance-node-express-suite"
   dependencies:
-    "@digitaldefiance/ecies-lib": "npm:1.3.27"
-    "@digitaldefiance/i18n-lib": "npm:1.3.27"
-    "@digitaldefiance/node-ecies-lib": "npm:1.3.27"
-    "@digitaldefiance/suite-core-lib": "npm:1.3.27"
+    "@digitaldefiance/ecies-lib": "npm:2.1.25"
+    "@digitaldefiance/i18n-lib": "npm:2.1.25"
+    "@digitaldefiance/node-ecies-lib": "npm:2.1.25"
+    "@digitaldefiance/suite-core-lib": "npm:2.1.25"
     "@subspace/reed-solomon-erasure.wasm": "npm:^0.2.5"
     argon2: "npm:^0.40.1"
     cors: "npm:^2.8.5"
@@ -1428,13 +1444,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@digitaldefiance/suite-core-lib@npm:1.3.27, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
+"@digitaldefiance/suite-core-lib@npm:2.1.25, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib"
   dependencies:
-    "@digitaldefiance/ecies-lib": "npm:1.3.27"
-    "@digitaldefiance/i18n-lib": "npm:1.3.27"
-    "@digitaldefiance/node-ecies-lib": "npm:1.3.27"
+    "@digitaldefiance/ecies-lib": "npm:2.1.25"
+    "@digitaldefiance/i18n-lib": "npm:2.1.25"
   languageName: unknown
   linkType: soft
 
@@ -1913,7 +1928,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/globals@npm:30.2.0":
+"@jest/globals@npm:30.2.0, @jest/globals@npm:^30.0.5":
   version: 30.2.0
   resolution: "@jest/globals@npm:30.2.0"
   dependencies:
@@ -3089,6 +3104,16 @@ __metadata:
     expect: "npm:^29.0.0"
     pretty-format: "npm:^29.0.0"
   checksum: 10c0/18e0712d818890db8a8dab3d91e9ea9f7f19e3f83c2e50b312f557017dc81466207a71f3ed79cf4428e813ba939954fa26ffa0a9a7f153181ba174581b1c2aed
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:^30.0.0":
+  version: 30.0.0
+  resolution: "@types/jest@npm:30.0.0"
+  dependencies:
+    expect: "npm:^30.0.0"
+    pretty-format: "npm:^30.0.0"
+  checksum: 10c0/20c6ce574154bc16f8dd6a97afacca4b8c4921a819496a3970382031c509ebe87a1b37b152a1b8475089b82d8ca951a9e95beb4b9bf78fbf579b1536f0b65969
   languageName: node
   linkType: hard
 
@@ -5437,7 +5462,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect@npm:30.2.0":
+"expect@npm:30.2.0, expect@npm:^30.0.0, expect@npm:^30.0.5":
   version: 30.2.0
   resolution: "expect@npm:30.2.0"
   dependencies:
@@ -8884,7 +8909,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:30.2.0":
+"pretty-format@npm:30.2.0, pretty-format@npm:^30.0.0":
   version: 30.2.0
   resolution: "pretty-format@npm:30.2.0"
   dependencies:

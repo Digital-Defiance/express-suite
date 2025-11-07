@@ -26,7 +26,8 @@
     "publish:i18n-lib": "npx nx build digitaldefiance-i18n-lib --skip-nx-cache && npm publish dist/packages/digitaldefiance-i18n-lib --access public",
     "publish:node-ecies-lib": "npx nx build digitaldefiance-node-ecies-lib --skip-nx-cache && npm publish dist/packages/digitaldefiance-node-ecies-lib --access public",
     "publish:suite-core-lib": "npx nx build digitaldefiance-suite-core-lib --skip-nx-cache && npm publish dist/packages/digitaldefiance-suite-core-lib --access public",
-    "publish:node-express-suite": "npx nx build digitaldefiance-node-express-suite --skip-nx-cache && npm publish dist/packages/digitaldefiance-node-express-suite --access public"
+    "publish:node-express-suite": "npx nx build digitaldefiance-node-express-suite --skip-nx-cache && npm publish dist/packages/digitaldefiance-node-express-suite --access public",
+    "publish:express-suite-test-utils": "npx nx build digitaldefiance-express-suite-test-utils --skip-nx-cache && npm publish dist/packages/digitaldefiance-express-suite-test-utils --access public"
   },
   "dependencies": {
     "@ethereumjs/wallet": "^10.0.0",

@@ -16,3 +16,6 @@
 [submodule "packages/digitaldefiance-express-suite-example"]
 	path = packages/digitaldefiance-express-suite-example
 	url = https://github.com/Digital-Defiance/express-suite-example.git
+[submodule "packages/digitaldefiance-express-suite-test-utils"]
+	path = packages/digitaldefiance-express-suite-test-utils
+	url = https://github.com/Digital-Defiance/test-utils.git
