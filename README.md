@@ -59,7 +59,7 @@ Handy test utilities (toThrowType, withConsoleMocks) and more in the near future
 
 All `/testing` exports require `@faker-js/faker` as a dev dependency.
 
-### [@digitaldefiance/express-suite-react-components](https://github.com/Digital-Defiance/express-suite-react-components) [npm](https://www.npmjs.com/package/@digitaldefiance/express-suite-react-components)
+### [@digitaldefiance/express-suite-react-components](https://github.com/Digital-Defiance/react-components) [npm](https://www.npmjs.com/package/@digitaldefiance/express-suite-react-components)
 
 Production-ready React components for authentication, user management, and internationalization.
 
