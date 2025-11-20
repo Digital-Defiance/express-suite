@@ -6,13 +6,13 @@ Formerly known as Project Albatross. Great Albatrosses are of the largest flying
 
 ## Packages
 
-### [@digitaldefiance/i18n-lib](https://github.com/Digital-Defiance/i18n-lib) [npm](https://www.npmjs.com/package/@digitaldefiance/i18n-lib)
+### [@digitaldefiance/i18n-lib (GitHub)](https://github.com/Digital-Defiance/i18n-lib) [[npm]](https://www.npmjs.com/package/@digitaldefiance/i18n-lib)
 
 Production-ready internationalization library with component-based architecture, type-safe translations, and 8 built-in languages.
 
 **Features**: Plugin architecture, template processing, context variables, error translation, 91.81% test coverage
 
-### [@digitaldefiance/ecies-lib](https://github.com/Digital-Defiance/ecies-lib) [npm](https://www.npmjs.com/package/@digitaldefiance/ecies-lib)
+### [@digitaldefiance/ecies-lib (GitHub)](https://github.com/Digital-Defiance/ecies-lib) [[npm]](https://www.npmjs.com/package/@digitaldefiance/ecies-lib)
 
 Browser-compatible ECIES encryption library with comprehensive key management and authentication services.
 
@@ -20,7 +20,7 @@ Browser-compatible ECIES encryption library with comprehensive key management an
 
 **Testing**: Test mocks available via `/testing` entry point (requires `@faker-js/faker` dev dependency)
 
-### [@digitaldefiance/node-ecies-lib](https://github.com/Digital-Defiance/node-ecies-lib) [npm](https://www.npmjs.com/package/@digitaldefiance/node-ecies-lib)
+### [@digitaldefiance/node-ecies-lib (GitHub)](https://github.com/Digital-Defiance/node-ecies-lib) [[npm]](https://www.npmjs.com/package/@digitaldefiance/node-ecies-lib)
 
 Node.js ECIES implementation with binary compatibility to ecies-lib for cross-platform cryptographic operations.
 
@@ -28,13 +28,13 @@ Node.js ECIES implementation with binary compatibility to ecies-lib for cross-pl
 
 **Testing**: Test mocks available via `/testing` entry point (requires `@faker-js/faker` dev dependency)
 
-### [@digitaldefiance/suite-core-lib](https://github.com/Digital-Defiance/suite-core-lib) [npm](https://www.npmjs.com/package/@digitaldefiance/suite-core-lib)
+### [@digitaldefiance/suite-core-lib (GitHub)](https://github.com/Digital-Defiance/suite-core-lib) [[npm]](https://www.npmjs.com/package/@digitaldefiance/suite-core-lib)
 
 Core primitives for cryptographically-secure user management systems with RBAC and multi-language support.
 
 **Features**: User interfaces, backup codes, account management, role system, 409 tests, 98.47% coverage
 
-### [@digitaldefiance/node-express-suite](https://github.com/Digital-Defiance/node-express-suite) [npm](https://www.npmjs.com/package/@digitaldefiance/node-express-suite)
+### [@digitaldefiance/node-express-suite (GitHub)](https://github.com/Digital-Defiance/node-express-suite) [[npm]](https://www.npmjs.com/package/@digitaldefiance/node-express-suite)
 
 Complete Express.js framework with authentication, RBAC, MongoDB integration, and dynamic model registry.
 
@@ -42,7 +42,7 @@ Complete Express.js framework with authentication, RBAC, MongoDB integration, an
 
 **Testing**: Test utilities available via `/testing` entry point (requires `@faker-js/faker` dev dependency)
 
-### [@digitaldefiance/express-suite-starter](https://github.com/Digital-Defiance/express-suite-starter) [npm](https://www.npmjs.com/package/@digitaldefiance/express-suite-starter)
+### [@digitaldefiance/express-suite-starter (GitHub)](https://github.com/Digital-Defiance/express-suite-starter) [[npm]](https://www.npmjs.com/package/@digitaldefiance/express-suite-starter)
 
 Automated generator for MERN stack monorepos with Nx, React 19, Express 5, and MongoDB.
 
@@ -50,7 +50,7 @@ Automated generator for MERN stack monorepos with Nx, React 19, Express 5, and M
 
 **Quick Start**: `npx @digitaldefiance/express-suite-starter`
 
-### [@digitaldefiance/express-suite-test-utils](https://github.com/Digital-Defiance/express-suite-test-utils) [npm](https://www.npmjs.com/package/@digitaldefiance/express-suite-test-utils)
+### [@digitaldefiance/express-suite-test-utils (GitHub)](https://github.com/Digital-Defiance/express-suite-test-utils) [npm](https://www.npmjs.com/package/@digitaldefiance/express-suite-test-utils)
 
 Handy test utilities (toThrowType, withConsoleMocks) and more in the near future
 
@@ -62,7 +62,7 @@ Handy test utilities (toThrowType, withConsoleMocks) and more in the near future
 
 All `/testing` exports require `@faker-js/faker` as a dev dependency.
 
-### [@digitaldefiance/express-suite-react-components](https://github.com/Digital-Defiance/react-components) [npm](https://www.npmjs.com/package/@digitaldefiance/express-suite-react-components)
+### [@digitaldefiance/express-suite-react-components (GitHub)](https://github.com/Digital-Defiance/react-components) [[npm]](https://www.npmjs.com/package/@digitaldefiance/express-suite-react-components)
 
 Production-ready React components for authentication, user management, and internationalization.
 
@@ -72,7 +72,7 @@ Production-ready React components for authentication, user management, and inter
 
 **Wrappers**: Pre-configured wrapper components connecting forms to hooks for drop-in usage
 
-### [@digitaldefiance/express-suite-example](https://github.com/Digital-Defiance/express-suite-example)
+### [@digitaldefiance/express-suite-example (GitHub)](https://github.com/Digital-Defiance/express-suite-example)
 
 Complete reference implementation demonstrating Express Suite integration in a production MERN stack.
 
