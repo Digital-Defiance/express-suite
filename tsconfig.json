@@ -23,6 +23,9 @@
     },
     {
       "path": "./packages/digitaldefiance-express-suite-react-components"
+    },
+    {
+      "path": "./packages/digitaldefiance-mongoose-types"
     }
   ]
 }

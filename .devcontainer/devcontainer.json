@@ -14,7 +14,8 @@
   },
   // You can also add hostRequirements to check if the host has enough memory
   "hostRequirements": {
-    "memory": "8gb"
+    "memory": "16gb",
+    "cpus": 4
   },
   // Configure tool-specific properties.
   "customizations": {

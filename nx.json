@@ -11,7 +11,10 @@
   "targetDefaults": {
     "build": {
       "cache": true,
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "options": {
+        "maxWorkers": 1
+      }
     },
     "test": {
       "cache": true
@@ -20,5 +23,18 @@
       "cache": true
     }
   },
-  "projects": ["packages/*"]
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint"]
+      }
+    }
+  },
+  "projects": ["packages/*"],
+  "release": {
+    "version": {
+      "preVersionCommand": "yarn dlx nx run-many -t build"
+    }
+  }
 }

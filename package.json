@@ -4,10 +4,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "npx nx run-many --target=build --all",
-    "build:stream": "npx nx run-many --outputStyle=stream --target=build --all",
-    "build:dev:stream": "NODE_ENV=development npx nx run-many --configuration=development --outputStyle=stream --target=build --all",
-    "build:logged": "yarn build:dev:stream 2>&1 | ansifilter -o build.log",
+    "build": "NODE_OPTIONS='--max-old-space-size=16384' npx nx run-many --target=build --all",
+    "build:stream": "NODE_OPTIONS='--max-old-space-size=16384' npx nx run-many --outputStyle=stream --target=build --all",
+    "build:dev:stream": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=16384' npx nx run-many --configuration=development --outputStyle=stream --target=build --all",
+    "build:logged": "NODE_OPTIONS='--max-old-space-size=16384' yarn build:dev:stream 2>&1 | ansifilter -o build.log",
     "type-check": "tsc --noEmit",
     "test": "npx nx run-many --target=test --all",
     "test:stream": "npx nx run-many --outputStyle=stream --target=test --all",
@@ -25,14 +25,15 @@
     "prettier:fix": "prettier --write '**/*.{ts,tsx}'",
     "packages:prettier:fix": "yarn workspaces foreach -p run prettier:fix",
     "format:full": "yarn lint --fix && yarn prettier:fix",
-    "publish:ecies-lib": "npx nx build digitaldefiance-ecies-lib --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-ecies-lib --access public",
-    "publish:i18n-lib": "npx nx build digitaldefiance-i18n-lib --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-i18n-lib --access public",
-    "publish:node-ecies-lib": "npx nx build digitaldefiance-node-ecies-lib --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-node-ecies-lib --access public",
-    "publish:suite-core-lib": "npx nx build digitaldefiance-suite-core-lib --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-suite-core-lib --access public",
-    "publish:node-express-suite": "npx nx build digitaldefiance-node-express-suite --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-node-express-suite --access public",
-    "publish:express-suite-test-utils": "npx nx build digitaldefiance-express-suite-test-utils --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-express-suite-test-utils --access public",
-    "publish:express-suite-react-components": "npx nx build digitaldefiance-express-suite-react-components --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-express-suite-react-components --access public",
-    "publish:express-suite-starter": "cd packages/digitaldefiance-express-suite-starter && yarn build && npm publish --access public --registry https://registry.npmjs.org/",
+    "publish:ecies-lib": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-ecies-lib --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-ecies-lib --access public",
+    "publish:i18n-lib": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-i18n-lib --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-i18n-lib --access public",
+    "publish:node-ecies-lib": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-node-ecies-lib --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-node-ecies-lib --access public",
+    "publish:suite-core-lib": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-suite-core-lib --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-suite-core-lib --access public",
+    "publish:node-express-suite": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-node-express-suite --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-node-express-suite --access public",
+    "publish:express-suite-test-utils": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-express-suite-test-utils --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-express-suite-test-utils --access public",
+    "publish:express-suite-react-components": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-express-suite-react-components --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-express-suite-react-components --access public",
+    "publish:express-suite-starter": "cd packages/digitaldefiance-express-suite-starter && NODE_OPTIONS='--max-old-space-size=16384' yarn build && npm publish --access public --registry https://registry.npmjs.org/",
+    "publish:mongoose-types": "cd packages/digitaldefiance-mongoose-types && yarn test && npm publish --access public --registry https://registry.npmjs.org/",
     "prepare": "husky"
   },
   "dependencies": {
@@ -61,7 +62,8 @@
     "@babel/preset-env": "^7.28.3",
     "@babel/preset-typescript": "^7.27.1",
     "@faker-js/faker": "^10.1.0",
-    "@nx/eslint": "22.0.2",
+    "@nx/eslint": "^22.1.1",
+    "@nx/eslint-plugin": "^22.1.1",
     "@nx/jest": "22.0.2",
     "@nx/js": "22.0.2",
     "@swc-node/register": "~1.9.1",
@@ -80,8 +82,8 @@
     "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "20.19.9",
     "@types/validator": "^13.15.4",
-    "@typescript-eslint/eslint-plugin": "^8.31.1",
-    "@typescript-eslint/parser": "^8.31.1",
+    "@typescript-eslint/eslint-plugin": "^8.48.0",
+    "@typescript-eslint/parser": "^8.48.0",
     "babel-jest": "^30.1.2",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^10.1.2",
@@ -101,14 +103,29 @@
     "ts-jest": "^29.0.0",
     "tslib": "^2.3.0",
     "typescript": "~5.8.2",
-    "validator": "^13.15.20"
+    "validator": "^13.15.20",
+    "verdaccio": "^6.0.5"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "tools/*"
   ],
   "resolutions": {
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
-  "packageManager": "yarn@4.10.3"
+  "packageManager": "yarn@4.10.3",
+  "nx": {
+    "includedScripts": [],
+    "targets": {
+      "local-registry": {
+        "executor": "@nx/js:verdaccio",
+        "options": {
+          "port": 4873,
+          "config": ".verdaccio/config.yml",
+          "storage": "tmp/local-registry/storage"
+        }
+      }
+    }
+  }
 }

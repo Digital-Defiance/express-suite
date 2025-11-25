@@ -25,3 +25,9 @@
 [submodule "packages/digitaldefiance-express-suite-react-components"]
 	path = packages/digitaldefiance-express-suite-react-components
 	url = https://github.com/Digital-Defiance/react-components.git
+[submodule "packages/digitaldefiance-mongoose-types"]
+	path = packages/digitaldefiance-mongoose-types
+	url = https://github.com/Digital-Defiance/mongoose-types.git
+[submodule "tools"]
+	path = tools
+	url = https://github.com/Digital-Defiance/express-suite-tools.git
