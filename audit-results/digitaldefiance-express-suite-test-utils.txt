@@ -1,0 +1,45 @@
+
+🔍 Auditing package: digitaldefiance-express-suite-test-utils
+
+
+============================================================
+Package: @digitaldefiance/express-suite-test-utils
+============================================================
+
+Documentation:
+  Completeness: 29.0%
+  Undocumented Exports: 22
+  Missing Examples: 13
+
+Test Coverage:
+  Statements: 0.0%
+  Branches: 0.0%
+  Functions: 0.0%
+  Lines: 0.0%
+
+Issues (37):
+  ❌ Export 'ErrorClass' (type) is not documented in README
+     Location: src/lib/to-throw-type.ts
+  ❌ Export 'ConsoleSpies' (type) is not documented in README
+     Location: src/lib/console.ts
+  ❌ Export 'WithConsoleOptions' (interface) is not documented in README
+     Location: src/lib/console.ts
+  ❌ Export 'DirectLogSpies' (interface) is not documented in README
+     Location: src/lib/direct-log.ts
+  ❌ Export 'WithDirectLogOptions' (interface) is not documented in README
+     Location: src/lib/direct-log.ts
+  ❌ Export 'LocalStorageMock' (class) is not documented in README
+     Location: src/lib/localStorage-mock.ts
+  ❌ Export 'ObjectId' (class) is not documented in README
+     Location: src/lib/bson-mock.ts
+  ❌ Export 'Binary' (class) is not documented in README
+     Location: src/lib/bson-mock.ts
+  ❌ Export 'Code' (class) is not documented in README
+     Location: src/lib/bson-mock.ts
+  ❌ Export 'DBRef' (class) is not documented in README
+     Location: src/lib/bson-mock.ts
+  ... and 27 more issues
+
+
+
+❌ Audit failed with 22 critical issue(s)

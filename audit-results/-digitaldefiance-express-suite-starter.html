@@ -1,0 +1,1692 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Report - @digitaldefiance/express-suite-starter</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .header {
+      background: #2c3e50;
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      margin: 0 0 10px 0;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .metric-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .metric-card h3 {
+      margin: 0 0 15px 0;
+      color: #2c3e50;
+    }
+    .metric-value {
+      font-size: 2em;
+      font-weight: bold;
+      color: #3498db;
+    }
+    .issues-section {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .issue {
+      border-left: 4px solid #e74c3c;
+      padding: 15px;
+      margin-bottom: 15px;
+      background: #fff5f5;
+    }
+    .issue.warning {
+      border-left-color: #f39c12;
+      background: #fffbf0;
+    }
+    .issue.info {
+      border-left-color: #3498db;
+      background: #f0f8ff;
+    }
+    .issue-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .issue-type {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .issue-severity {
+      text-transform: uppercase;
+      font-size: 0.8em;
+      padding: 2px 8px;
+      border-radius: 3px;
+      background: #e74c3c;
+      color: white;
+    }
+    .issue.warning .issue-severity {
+      background: #f39c12;
+    }
+    .issue.info .issue-severity {
+      background: #3498db;
+    }
+    .issue-message {
+      margin-bottom: 10px;
+    }
+    .issue-location {
+      font-size: 0.9em;
+      color: #7f8c8d;
+      font-family: monospace;
+    }
+    .issue-recommendation {
+      margin-top: 10px;
+      padding: 10px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .no-issues {
+      text-align: center;
+      color: #27ae60;
+      font-size: 1.2em;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📊 Audit Report</h1>
+    <h2>@digitaldefiance/express-suite-starter</h2>
+  </div>
+
+  <div class="metrics">
+    
+    <div class="metric-card">
+      <h3>Documentation</h3>
+      <div class="metric-value">1.0%</div>
+      <p>Undocumented: 71</p>
+      <p>Missing Examples: 23</p>
+    </div>
+    
+    
+    <div class="metric-card">
+      <h3>Test Coverage</h3>
+      <div class="metric-value">92.2%</div>
+      <p>Statements: 92.2%</p>
+      <p>Branches: 72.3%</p>
+      <p>Functions: 86.7%</p>
+    </div>
+    
+    <div class="metric-card">
+      <h3>Issues</h3>
+      <div class="metric-value">154</div>
+      <p>Critical: 71</p>
+      <p>Warnings: 83</p>
+    </div>
+  </div>
+
+  <div class="issues-section">
+    <h2>Issues</h2>
+    
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;Logger&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/cli/logger.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;Logger&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;enUsTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/strings/en-us.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;enUsTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;enGbTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/strings/en-gb.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;enGbTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;esTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/strings/es.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;esTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;frTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/strings/fr.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;frTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;deTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/strings/de.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;deTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;zhCnTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/strings/zh-cn.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;zhCnTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;jaTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/strings/ja.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;jaTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;ukTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/strings/uk.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;ukTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;allTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;allTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;enUsTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;enUsTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;enGbTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;enGbTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;esTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;esTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;frTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;frTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;deTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;deTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;zhCnTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;zhCnTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;jaTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;jaTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;ukTranslations&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;ukTranslations&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;StarterI18nEngineKey&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;StarterI18nEngineKey&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;StarterComponentId&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;StarterComponentId&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;createStarterComponentConfig&#039; (function) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;createStarterComponentConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;getStarterI18nEngine&#039; (function) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;getStarterI18nEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;starterI18nEngine&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;starterI18nEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;resetStarterI18nEngine&#039; (function) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;resetStarterI18nEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;getStarterTranslation&#039; (function) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;getStarterTranslation&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;safeStarterTranslation&#039; (function) is not documented in README</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;safeStarterTranslation&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;WorkspaceConfig&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/workspace-config.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;WorkspaceConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;ProjectConfig&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/project-config.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;ProjectConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;PackageConfig&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/package-config.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;PackageConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;TemplateConfig&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/template-config.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;TemplateConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;NxConfig&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/nx-config.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;NxConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;NodeConfig&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/node-config.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;NodeConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;DevContainerConfig&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/devcontainer-config.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;DevContainerConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;GeneratorConfig&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/generator-config.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;GeneratorConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;ValidationResult&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/validation-result.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;ValidationResult&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;ValidationIssue&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/validation-issue.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;ValidationIssue&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;ValidationReport&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/validation-issue.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;ValidationReport&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;GeneratorContext&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/generator-context.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;GeneratorContext&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;Step&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/step.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;Step&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;Checkpoint&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/checkpoint.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;Checkpoint&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;CommandOptions&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/command-options.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;CommandOptions&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;PluginHooks&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/plugin.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;PluginHooks&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;TemplateProvider&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/plugin.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;TemplateProvider&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;ConfigValidator&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/core/validators/config-validator.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;ConfigValidator&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;SystemCheckResult&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/utils/system-check.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;SystemCheckResult&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;SystemCheck&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/utils/system-check.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;SystemCheck&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;PluginManager&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/core/plugin-manager.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;PluginManager&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;StepExecutor&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/core/step-executor.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;StepExecutor&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;ProjectConfigBuilder&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/core/project-config-builder.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;ProjectConfigBuilder&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;runCommand&#039; (function) is not documented in README</div>
+          <div class="issue-location">Location: src/utils/shell-utils.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;runCommand&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;setPerms&#039; (function) is not documented in README</div>
+          <div class="issue-location">Location: src/utils/shell-utils.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;setPerms&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;ProjectGenerator&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/core/project-generator.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;ProjectGenerator&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;TemplateEngine&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/templates/interfaces/template-engine.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;TemplateEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;MustacheEngine&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/templates/engines/mustache-engine.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;MustacheEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;HandlebarsEngine&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/templates/engines/handlebars-engine.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;HandlebarsEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;createEngine&#039; (function) is not documented in README</div>
+          <div class="issue-location">Location: src/templates/template-engine-factory.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;createEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;renderTemplates&#039; (function) is not documented in README</div>
+          <div class="issue-location">Location: src/utils/template-renderer.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;renderTemplates&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;copyDir&#039; (function) is not documented in README</div>
+          <div class="issue-location">Location: src/utils/template-renderer.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;copyDir&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;DryRunAction&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/dry-run.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;DryRunAction&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;DryRunReport&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/dry-run.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;DryRunReport&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;DryRunExecutor&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/core/dry-run-executor.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;DryRunExecutor&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;DocGenerator&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/utils/doc-generator.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;DocGenerator&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;PostGenerationValidator&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/core/validators/post-generation-validator.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;PostGenerationValidator&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;main&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/generate-monorepo.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;main&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;PackageResolution&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/package-resolution.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;PackageResolution&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;PackageGroup&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/package-resolution.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;PackageGroup&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;RegistryConfig&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/core/interfaces/package-resolution.interface.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;RegistryConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;PackageResolver&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/core/package-resolver.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;PackageResolver&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;examplePlugin&#039; (const) is not documented in README</div>
+          <div class="issue-location">Location: src/core/plugins/example-plugin.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;examplePlugin&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;FileDiff&#039; (interface) is not documented in README</div>
+          <div class="issue-location">Location: src/utils/diff-viewer.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;FileDiff&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue critical">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedExportError</span>
+            <span class="issue-severity">critical</span>
+          </div>
+          <div class="issue-message">Export &#039;DiffViewer&#039; (class) is not documented in README</div>
+          <div class="issue-location">Location: src/utils/diff-viewer.ts</div>
+          <div class="issue-recommendation">Add documentation for &#039;DiffViewer&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;createStarterComponentConfig&#039; (function) lacks usage example</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;createStarterComponentConfig&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;getStarterI18nEngine&#039; (function) lacks usage example</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;getStarterI18nEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;resetStarterI18nEngine&#039; (function) lacks usage example</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;resetStarterI18nEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;getStarterTranslation&#039; (function) lacks usage example</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;getStarterTranslation&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;safeStarterTranslation&#039; (function) lacks usage example</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;safeStarterTranslation&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;ConfigValidator&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/core/validators/config-validator.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;ConfigValidator&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;SystemCheck&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/utils/system-check.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;SystemCheck&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;PluginManager&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/core/plugin-manager.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;PluginManager&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;StepExecutor&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/core/step-executor.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;StepExecutor&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;ProjectConfigBuilder&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/core/project-config-builder.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;ProjectConfigBuilder&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;runCommand&#039; (function) lacks usage example</div>
+          <div class="issue-location">Location: src/utils/shell-utils.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;runCommand&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;setPerms&#039; (function) lacks usage example</div>
+          <div class="issue-location">Location: src/utils/shell-utils.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;setPerms&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;ProjectGenerator&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/core/project-generator.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;ProjectGenerator&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;MustacheEngine&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/templates/engines/mustache-engine.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;MustacheEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;HandlebarsEngine&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/templates/engines/handlebars-engine.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;HandlebarsEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;createEngine&#039; (function) lacks usage example</div>
+          <div class="issue-location">Location: src/templates/template-engine-factory.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;createEngine&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;renderTemplates&#039; (function) lacks usage example</div>
+          <div class="issue-location">Location: src/utils/template-renderer.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;renderTemplates&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;copyDir&#039; (function) lacks usage example</div>
+          <div class="issue-location">Location: src/utils/template-renderer.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;copyDir&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;DryRunExecutor&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/core/dry-run-executor.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;DryRunExecutor&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;DocGenerator&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/utils/doc-generator.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;DocGenerator&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;PostGenerationValidator&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/core/validators/post-generation-validator.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;PostGenerationValidator&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;PackageResolver&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/core/package-resolver.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;PackageResolver&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">MissingExampleError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Major feature &#039;DiffViewer&#039; (class) lacks usage example</div>
+          <div class="issue-location">Location: src/utils/diff-viewer.ts</div>
+          <div class="issue-recommendation">Add a usage example for &#039;DiffViewer&#039; to the package README file.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedConfigError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Configuration option &#039;WorkspaceConfig&#039; is not documented</div>
+          
+          <div class="issue-recommendation">Document the &#039;WorkspaceConfig&#039; configuration option in the README.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedConfigError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Configuration option &#039;ProjectConfig&#039; is not documented</div>
+          
+          <div class="issue-recommendation">Document the &#039;ProjectConfig&#039; configuration option in the README.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedConfigError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Configuration option &#039;PackageConfig&#039; is not documented</div>
+          
+          <div class="issue-recommendation">Document the &#039;PackageConfig&#039; configuration option in the README.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedConfigError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Configuration option &#039;TemplateConfig&#039; is not documented</div>
+          
+          <div class="issue-recommendation">Document the &#039;TemplateConfig&#039; configuration option in the README.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedConfigError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Configuration option &#039;NxConfig&#039; is not documented</div>
+          
+          <div class="issue-recommendation">Document the &#039;NxConfig&#039; configuration option in the README.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedConfigError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Configuration option &#039;NodeConfig&#039; is not documented</div>
+          
+          <div class="issue-recommendation">Document the &#039;NodeConfig&#039; configuration option in the README.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedConfigError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Configuration option &#039;DevContainerConfig&#039; is not documented</div>
+          
+          <div class="issue-recommendation">Document the &#039;DevContainerConfig&#039; configuration option in the README.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedConfigError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Configuration option &#039;GeneratorConfig&#039; is not documented</div>
+          
+          <div class="issue-recommendation">Document the &#039;GeneratorConfig&#039; configuration option in the README.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedConfigError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Configuration option &#039;CommandOptions&#039; is not documented</div>
+          
+          <div class="issue-recommendation">Document the &#039;CommandOptions&#039; configuration option in the README.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UndocumentedConfigError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Configuration option &#039;RegistryConfig&#039; is not documented</div>
+          
+          <div class="issue-recommendation">Document the &#039;RegistryConfig&#039; configuration option in the README.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExample</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Code example references symbols (setup) that are not tested</div>
+          <div class="issue-location">Location: /home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md:310</div>
+          <div class="issue-recommendation">Add tests that validate this example works correctly, or ensure the referenced symbols are tested</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">InsufficientCoverageError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Branch coverage (72.3%) is below threshold (85%)</div>
+          
+          <div class="issue-recommendation">Add tests for untested branches and edge cases.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;enUsTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/strings/en-us.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;enUsTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;enGbTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/strings/en-gb.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;enGbTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;esTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/strings/es.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;esTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;frTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/strings/fr.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;frTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;deTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/strings/de.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;deTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;zhCnTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/strings/zh-cn.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;zhCnTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;jaTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/strings/ja.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;jaTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;ukTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/strings/uk.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;ukTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;allTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;allTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;enUsTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;enUsTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;enGbTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;enGbTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;esTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;esTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;frTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;frTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;deTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;deTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;zhCnTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;zhCnTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;jaTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;jaTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;ukTranslations&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/translations-all.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;ukTranslations&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;StarterI18nEngineKey&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;StarterI18nEngineKey&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;StarterComponentId&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;StarterComponentId&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;createStarterComponentConfig&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;createStarterComponentConfig&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;starterI18nEngine&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;starterI18nEngine&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;resetStarterI18nEngine&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;resetStarterI18nEngine&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;safeStarterTranslation&#039; has no tests</div>
+          <div class="issue-location">Location: src/i18n/i18n-setup.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;safeStarterTranslation&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;WorkspaceConfig&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/workspace-config.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;WorkspaceConfig&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;ProjectConfig&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/project-config.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;ProjectConfig&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;PackageConfig&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/package-config.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;PackageConfig&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;TemplateConfig&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/template-config.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;TemplateConfig&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;NxConfig&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/nx-config.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;NxConfig&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;NodeConfig&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/node-config.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;NodeConfig&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;GeneratorConfig&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/generator-config.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;GeneratorConfig&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;ValidationResult&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/validation-result.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;ValidationResult&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;ValidationIssue&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/validation-issue.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;ValidationIssue&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;ValidationReport&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/validation-issue.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;ValidationReport&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;Checkpoint&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/checkpoint.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;Checkpoint&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;CommandOptions&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/command-options.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;CommandOptions&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;PluginHooks&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/plugin.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;PluginHooks&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;TemplateProvider&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/plugin.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;TemplateProvider&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;SystemCheckResult&#039; has no tests</div>
+          <div class="issue-location">Location: src/utils/system-check.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;SystemCheckResult&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;TemplateEngine&#039; has no tests</div>
+          <div class="issue-location">Location: src/templates/interfaces/template-engine.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;TemplateEngine&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;DryRunAction&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/dry-run.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;DryRunAction&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;DryRunReport&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/dry-run.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;DryRunReport&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;main&#039; has no tests</div>
+          <div class="issue-location">Location: src/generate-monorepo.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;main&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;PackageResolution&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/package-resolution.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;PackageResolution&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;PackageGroup&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/package-resolution.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;PackageGroup&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;RegistryConfig&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/interfaces/package-resolution.interface.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;RegistryConfig&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;examplePlugin&#039; has no tests</div>
+          <div class="issue-location">Location: src/core/plugins/example-plugin.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;examplePlugin&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;FileDiff&#039; has no tests</div>
+          <div class="issue-location">Location: src/utils/diff-viewer.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;FileDiff&#039;.</div>
+        </div>
+      
+        <div class="issue warning">
+          <div class="issue-header">
+            <span class="issue-type">UntestedExportError</span>
+            <span class="issue-severity">warning</span>
+          </div>
+          <div class="issue-message">Export &#039;DiffViewer&#039; has no tests</div>
+          <div class="issue-location">Location: src/utils/diff-viewer.ts</div>
+          <div class="issue-recommendation">Add tests for &#039;DiffViewer&#039;.</div>
+        </div>
+      
+  </div>
+</body>
+</html>
+  

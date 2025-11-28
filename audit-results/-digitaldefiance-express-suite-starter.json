@@ -1,0 +1,4309 @@
+{
+  "packageName": "@digitaldefiance/express-suite-starter",
+  "documentation": {
+    "packageName": "@digitaldefiance/express-suite-starter",
+    "exports": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "signature": "class Logger",
+        "sourceFile": "src/cli/logger.ts",
+        "isDocumented": false,
+        "hasExample": true
+      },
+      {
+        "name": "enUsTranslations",
+        "type": "const",
+        "signature": "const enUsTranslations: Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/strings/en-us.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "enGbTranslations",
+        "type": "const",
+        "signature": "const enGbTranslations: unknown",
+        "sourceFile": "src/i18n/strings/en-gb.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "esTranslations",
+        "type": "const",
+        "signature": "const esTranslations: Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/strings/es.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "frTranslations",
+        "type": "const",
+        "signature": "const frTranslations: Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/strings/fr.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "deTranslations",
+        "type": "const",
+        "signature": "const deTranslations: Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/strings/de.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "zhCnTranslations",
+        "type": "const",
+        "signature": "const zhCnTranslations: Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/strings/zh-cn.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "jaTranslations",
+        "type": "const",
+        "signature": "const jaTranslations: Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/strings/ja.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "ukTranslations",
+        "type": "const",
+        "signature": "const ukTranslations: Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/strings/uk.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "allTranslations",
+        "type": "const",
+        "signature": "const allTranslations: unknown",
+        "sourceFile": "src/i18n/translations-all.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "enUsTranslations",
+        "type": "const",
+        "signature": "Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/translations-all.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "enGbTranslations",
+        "type": "const",
+        "signature": "{ starter_title: string; starter_subtitle: string; starter_description: string; cli_banner: string; cli_fatalError: string; cli_cancelled: string; cli_installRequiredTools: string; systemCheck_header: string; ... 156 more ...; devcontainer_mongodbReplicaset: string; }",
+        "sourceFile": "src/i18n/translations-all.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "esTranslations",
+        "type": "const",
+        "signature": "Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/translations-all.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "frTranslations",
+        "type": "const",
+        "signature": "Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/translations-all.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "deTranslations",
+        "type": "const",
+        "signature": "Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/translations-all.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "zhCnTranslations",
+        "type": "const",
+        "signature": "Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/translations-all.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "jaTranslations",
+        "type": "const",
+        "signature": "Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/translations-all.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "ukTranslations",
+        "type": "const",
+        "signature": "Record<StarterStringKey, string>",
+        "sourceFile": "src/i18n/translations-all.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "StarterI18nEngineKey",
+        "type": "const",
+        "signature": "const StarterI18nEngineKey: unknown",
+        "sourceFile": "src/i18n/i18n-setup.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "StarterComponentId",
+        "type": "const",
+        "signature": "const StarterComponentId: unknown",
+        "sourceFile": "src/i18n/i18n-setup.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "createStarterComponentConfig",
+        "type": "function",
+        "signature": "function createStarterComponentConfig(): ComponentConfig",
+        "sourceFile": "src/i18n/i18n-setup.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "getStarterI18nEngine",
+        "type": "function",
+        "signature": "function getStarterI18nEngine(config: EngineConfig): I18nEngine",
+        "sourceFile": "src/i18n/i18n-setup.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "starterI18nEngine",
+        "type": "const",
+        "signature": "const starterI18nEngine: unknown",
+        "sourceFile": "src/i18n/i18n-setup.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "resetStarterI18nEngine",
+        "type": "function",
+        "signature": "function resetStarterI18nEngine(): void",
+        "sourceFile": "src/i18n/i18n-setup.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "getStarterTranslation",
+        "type": "function",
+        "signature": "function getStarterTranslation(stringKey: StarterStringKey, variables: Record<string, string | number>, language: string): string",
+        "sourceFile": "src/i18n/i18n-setup.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "safeStarterTranslation",
+        "type": "function",
+        "signature": "function safeStarterTranslation(stringKey: StarterStringKey, variables: Record<string, string | number>, language: string): string",
+        "sourceFile": "src/i18n/i18n-setup.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "WorkspaceConfig",
+        "type": "interface",
+        "signature": "interface WorkspaceConfig",
+        "sourceFile": "src/core/interfaces/workspace-config.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "ProjectConfig",
+        "type": "interface",
+        "signature": "interface ProjectConfig",
+        "sourceFile": "src/core/interfaces/project-config.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "PackageConfig",
+        "type": "interface",
+        "signature": "interface PackageConfig",
+        "sourceFile": "src/core/interfaces/package-config.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "TemplateConfig",
+        "type": "interface",
+        "signature": "interface TemplateConfig",
+        "sourceFile": "src/core/interfaces/template-config.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "NxConfig",
+        "type": "interface",
+        "signature": "interface NxConfig",
+        "sourceFile": "src/core/interfaces/nx-config.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "NodeConfig",
+        "type": "interface",
+        "signature": "interface NodeConfig",
+        "sourceFile": "src/core/interfaces/node-config.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "DevContainerConfig",
+        "type": "interface",
+        "signature": "interface DevContainerConfig",
+        "sourceFile": "src/core/interfaces/devcontainer-config.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "GeneratorConfig",
+        "type": "interface",
+        "signature": "interface GeneratorConfig",
+        "sourceFile": "src/core/interfaces/generator-config.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "ValidationResult",
+        "type": "interface",
+        "signature": "interface ValidationResult",
+        "sourceFile": "src/core/interfaces/validation-result.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "ValidationIssue",
+        "type": "interface",
+        "signature": "interface ValidationIssue",
+        "sourceFile": "src/core/interfaces/validation-issue.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "ValidationReport",
+        "type": "interface",
+        "signature": "interface ValidationReport",
+        "sourceFile": "src/core/interfaces/validation-issue.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "GeneratorContext",
+        "type": "interface",
+        "signature": "interface GeneratorContext",
+        "sourceFile": "src/core/interfaces/generator-context.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "Step",
+        "type": "interface",
+        "signature": "interface Step",
+        "sourceFile": "src/core/interfaces/step.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "Checkpoint",
+        "type": "interface",
+        "signature": "interface Checkpoint",
+        "sourceFile": "src/core/interfaces/checkpoint.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "CommandOptions",
+        "type": "interface",
+        "signature": "interface CommandOptions",
+        "sourceFile": "src/core/interfaces/command-options.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "Plugin",
+        "type": "interface",
+        "signature": "interface Plugin",
+        "sourceFile": "src/core/interfaces/plugin.interface.ts",
+        "isDocumented": true,
+        "hasExample": true
+      },
+      {
+        "name": "PluginHooks",
+        "type": "interface",
+        "signature": "interface PluginHooks",
+        "sourceFile": "src/core/interfaces/plugin.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "TemplateProvider",
+        "type": "interface",
+        "signature": "interface TemplateProvider",
+        "sourceFile": "src/core/interfaces/plugin.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "ConfigValidator",
+        "type": "class",
+        "signature": "class ConfigValidator",
+        "sourceFile": "src/core/validators/config-validator.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "SystemCheckResult",
+        "type": "interface",
+        "signature": "interface SystemCheckResult",
+        "sourceFile": "src/utils/system-check.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "SystemCheck",
+        "type": "class",
+        "signature": "class SystemCheck",
+        "sourceFile": "src/utils/system-check.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "PluginManager",
+        "type": "class",
+        "signature": "class PluginManager",
+        "sourceFile": "src/core/plugin-manager.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "StepExecutor",
+        "type": "class",
+        "signature": "class StepExecutor",
+        "sourceFile": "src/core/step-executor.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "ProjectConfigBuilder",
+        "type": "class",
+        "signature": "class ProjectConfigBuilder",
+        "sourceFile": "src/core/project-config-builder.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "runCommand",
+        "type": "function",
+        "signature": "function runCommand(command: string, options: CommandOptions): void",
+        "sourceFile": "src/utils/shell-utils.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "setPerms",
+        "type": "function",
+        "signature": "function setPerms(filePath: string): void",
+        "sourceFile": "src/utils/shell-utils.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "ProjectGenerator",
+        "type": "class",
+        "signature": "class ProjectGenerator",
+        "sourceFile": "src/core/project-generator.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "TemplateEngine",
+        "type": "interface",
+        "signature": "interface TemplateEngine",
+        "sourceFile": "src/templates/interfaces/template-engine.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "MustacheEngine",
+        "type": "class",
+        "signature": "class MustacheEngine implements TemplateEngine",
+        "sourceFile": "src/templates/engines/mustache-engine.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "HandlebarsEngine",
+        "type": "class",
+        "signature": "class HandlebarsEngine implements TemplateEngine",
+        "sourceFile": "src/templates/engines/handlebars-engine.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "createEngine",
+        "type": "function",
+        "signature": "function createEngine(type: 'mustache' | 'handlebars'): TemplateEngine",
+        "sourceFile": "src/templates/template-engine-factory.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "renderTemplates",
+        "type": "function",
+        "signature": "function renderTemplates(templatesDir: string, destDir: string, variables: Record<string, any>, engineType: 'mustache' | 'handlebars', dryRun: any): void",
+        "sourceFile": "src/utils/template-renderer.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "copyDir",
+        "type": "function",
+        "signature": "function copyDir(srcDir: string, destDir: string, variables: Record<string, any>, engineType: 'mustache' | 'handlebars', dryRun: any): void",
+        "sourceFile": "src/utils/template-renderer.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "DryRunAction",
+        "type": "interface",
+        "signature": "interface DryRunAction",
+        "sourceFile": "src/core/interfaces/dry-run.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "DryRunReport",
+        "type": "interface",
+        "signature": "interface DryRunReport",
+        "sourceFile": "src/core/interfaces/dry-run.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "DryRunExecutor",
+        "type": "class",
+        "signature": "class DryRunExecutor extends StepExecutor",
+        "sourceFile": "src/core/dry-run-executor.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "DocGenerator",
+        "type": "class",
+        "signature": "class DocGenerator",
+        "sourceFile": "src/utils/doc-generator.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "PostGenerationValidator",
+        "type": "class",
+        "signature": "class PostGenerationValidator",
+        "sourceFile": "src/core/validators/post-generation-validator.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "main",
+        "type": "const",
+        "signature": "() => Promise<void>",
+        "sourceFile": "src/generate-monorepo.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "PackageResolution",
+        "type": "interface",
+        "signature": "interface PackageResolution",
+        "sourceFile": "src/core/interfaces/package-resolution.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "PackageGroup",
+        "type": "interface",
+        "signature": "interface PackageGroup",
+        "sourceFile": "src/core/interfaces/package-resolution.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "RegistryConfig",
+        "type": "interface",
+        "signature": "interface RegistryConfig",
+        "sourceFile": "src/core/interfaces/package-resolution.interface.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "PackageResolver",
+        "type": "class",
+        "signature": "class PackageResolver",
+        "sourceFile": "src/core/package-resolver.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "examplePlugin",
+        "type": "const",
+        "signature": "const examplePlugin: Plugin",
+        "sourceFile": "src/core/plugins/example-plugin.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "FileDiff",
+        "type": "interface",
+        "signature": "interface FileDiff",
+        "sourceFile": "src/utils/diff-viewer.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "DiffViewer",
+        "type": "class",
+        "signature": "class DiffViewer",
+        "sourceFile": "src/utils/diff-viewer.ts",
+        "isDocumented": false,
+        "hasExample": false
+      }
+    ],
+    "documentedSymbols": [
+      {
+        "name": "Node",
+        "description": "<a alt=\"Nx logo\" href=\"https://nx.dev\" target=\"_blank\" rel=\"noreferrer\"><img src=\"https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png\" width=\"45\"></a> Automated generator for MERN stack monorepos using [@digitaldefiance/node-express-suite](https://www.npmjs.com/package/@digitaldefiance/node-express-suite). Part of [Express Suite](https://github.com/Digital-Defiance/express-suite)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 9,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Express",
+        "description": "<a alt=\"Nx logo\" href=\"https://nx.dev\" target=\"_blank\" rel=\"noreferrer\"><img src=\"https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png\" width=\"45\"></a> Automated generator for MERN stack monorepos using [@digitaldefiance/node-express-suite](https://www.npmjs.com/package/@digitaldefiance/node-express-suite). Part of [Express Suite](https://github.com/Digital-Defiance/express-suite)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 9,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Suite",
+        "description": "<a alt=\"Nx logo\" href=\"https://nx.dev\" target=\"_blank\" rel=\"noreferrer\"><img src=\"https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png\" width=\"45\"></a> Automated generator for MERN stack monorepos using [@digitaldefiance/node-express-suite](https://www.npmjs.com/package/@digitaldefiance/node-express-suite). Part of [Express Suite](https://github.com/Digital-Defiance/express-suite)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 9,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Starter",
+        "description": "<a alt=\"Nx logo\" href=\"https://nx.dev\" target=\"_blank\" rel=\"noreferrer\"><img src=\"https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png\" width=\"45\"></a> Automated generator for MERN stack monorepos using [@digitaldefiance/node-express-suite](https://www.npmjs.com/package/@digitaldefiance/node-express-suite). Part of [Express Suite](https://github.com/Digital-Defiance/express-suite)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 9,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Features",
+        "description": "- 🚀 **Nx Monorepo** - Modern build system with caching - ⚛️ **React 19** - Latest React with TypeScript - 🔧 **Express 5** - Node.js API with @digitaldefiance/node-express-suite - 🗄️ **MongoDB** - Database with Mongoose ODM - 🎨 **Material-UI** - Component library - 🔐 **ECIES Encryption** - Built-in cryptography - 🌍 **i18n** - Multi-language support with @digitaldefiance/i18n-lib - 🧪 **Testing** - Jest + Playwright E2E - 🎯 **Enhanced CLI** - Chalk-powered interface with progress tracking - 📦 **Package Groups** - Optional feature sets (auth, validation, docs) - 🔄 **Rollback Support** - Checkpoint/restore for failed generations - 🎨 **Template Engines** - Mustache with variable substitution - 🐳 **DevContainer** - 4 options (none, simple, MongoDB, MongoDB replica set) - 🔌 **Plugin System** - Extensible with lifecycle hooks - ✅ **Validation** - Post-generation checks with fix suggestions - 🖥️ **Cross-Platform** - Windows, macOS, and Linux support",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 28,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "NPX",
+        "description": "The generator will guide you through an interactive setup process with the following prompts: 1. **Language Selection** - Choose your preferred language from 8 options 2. **Workspace Configuration** - Name, prefix, namespace, parent directory, git repository 3. **Site Configuration** - Hostname, site title, description, and tagline 4. **Optional Projects** - Choose which projects to include (E2E tests, etc.) 5. **Package Groups** - Select optional package groups (authentication, validation, documentation) 6. **DevContainer** - Configure development container (None, Simple, MongoDB, Replica Set) 7. **Database** - Choose between in-memory database or MongoDB 8. **Security** - Auto-generate secrets (JWT, encryption keys, HMAC) 9. **Final Options** - Documentation generation, git commit, Playwright installation",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 48,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Recommended",
+        "description": "The generator will guide you through an interactive setup process with the following prompts: 1. **Language Selection** - Choose your preferred language from 8 options 2. **Workspace Configuration** - Name, prefix, namespace, parent directory, git repository 3. **Site Configuration** - Hostname, site title, description, and tagline 4. **Optional Projects** - Choose which projects to include (E2E tests, etc.) 5. **Package Groups** - Select optional package groups (authentication, validation, documentation) 6. **DevContainer** - Configure development container (None, Simple, MongoDB, Replica Set) 7. **Database** - Choose between in-memory database or MongoDB 8. **Security** - Auto-generate secrets (JWT, encryption keys, HMAC) 9. **Final Options** - Documentation generation, git commit, Playwright installation",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 48,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Interactive",
+        "description": "When you run `npx @digitaldefiance/express-suite-starter`, you'll see a branded ASCII art logo and be guided through a comprehensive setup wizard: <details> <summary>View example generation session</summary> </details> The generator performs 19 automated steps including: - System validation (build tools, Node.js version) - Nx workspace creation with Yarn Berry - Project scaffolding (lib, api, react, etc.) - Dependency installation and configuration - Secret generation and environment setup - Documentation generation - Git initialization and commit - Post-generation validation",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 204,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Generation",
+        "description": "When you run `npx @digitaldefiance/express-suite-starter`, you'll see a branded ASCII art logo and be guided through a comprehensive setup wizard: <details> <summary>View example generation session</summary> </details> The generator performs 19 automated steps including: - System validation (build tools, Node.js version) - Nx workspace creation with Yarn Berry - Project scaffolding (lib, api, react, etc.) - Dependency installation and configuration - Secret generation and environment setup - Documentation generation - Git initialization and commit - Post-generation validation",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 204,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Process",
+        "description": "When you run `npx @digitaldefiance/express-suite-starter`, you'll see a branded ASCII art logo and be guided through a comprehensive setup wizard: <details> <summary>View example generation session</summary> </details> The generator performs 19 automated steps including: - System validation (build tools, Node.js version) - Nx workspace creation with Yarn Berry - Project scaffolding (lib, api, react, etc.) - Dependency installation and configuration - Secret generation and environment setup - Documentation generation - Git initialization and commit - Post-generation validation",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 204,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Projects",
+        "description": "Note: Test utilities are provided by `@digitaldefiance/express-suite-test-utils` package.",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 222,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Scaffolding",
+        "description": "- **lib**: i18n setup, string enumerations, constants, interfaces - **api-lib**: Application class, Environment, Constants, interfaces - **api**: main.ts entry point, EJS views, .env.example - **react**: App structure, components, pages, assets - **react-lib**: Theme configuration - **root**: CI workflows, scripts, .gitignore, devcontainer",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 231,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Files",
+        "description": "- **lib**: i18n setup, string enumerations, constants, interfaces - **api-lib**: Application class, Environment, Constants, interfaces - **api**: main.ts entry point, EJS views, .env.example - **react**: App structure, components, pages, assets - **react-lib**: Theme configuration - **root**: CI workflows, scripts, .gitignore, devcontainer",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 231,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Generated",
+        "description": "The generated monorepo includes:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 251,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Scripts",
+        "description": "The generated monorepo includes:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 251,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Interactive",
+        "description": "- **Workspace Configuration**: Name, prefix, namespace, parent directory - **Optional Projects**: react-lib, api-lib, E2E tests, inituserdb, test-utils - **Package Groups**: Authentication, validation, documentation, UI components - **Express Suite Packages**: react-components, test-utils - **DevContainer**: None, simple (Node.js), MongoDB, MongoDB replica set - **Documentation**: Auto-generate README, ARCHITECTURE, API docs - **Git**: Optional commit and push - **Playwright**: Optional browser installation",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 291,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Prompts",
+        "description": "- **Workspace Configuration**: Name, prefix, namespace, parent directory - **Optional Projects**: react-lib, api-lib, E2E tests, inituserdb, test-utils - **Package Groups**: Authentication, validation, documentation, UI components - **Express Suite Packages**: react-components, test-utils - **DevContainer**: None, simple (Node.js), MongoDB, MongoDB replica set - **Documentation**: Auto-generate README, ARCHITECTURE, API docs - **Git**: Optional commit and push - **Playwright**: Optional browser installation",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 291,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "DevContainer",
+        "description": "1. **None** - No devcontainer 2. **Simple** - Node.js 20 only 3. **MongoDB** - Node.js + MongoDB single instance 4. **MongoDB Replica Set** - Node.js + MongoDB with transactions support All devcontainers include VS Code extensions and run on Linux regardless of host OS.",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 300,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "ComponentId",
+        "description": "Documented in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 310,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "ComponentId",
+        "description": "Documented in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 310,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "Template",
+        "description": "**Scaffolding files** with `.mustache` extension are automatically processed: - Variables replaced: `{{workspaceName}}`, `{{WorkspaceName}}`, `{{prefix}}`, `{{namespace}}`, `{{hostname}}` - Extension stripped: `app.tsx.mustache` → `app.tsx` - Non-mustache files copied directly without modification **Example:**",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 318,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Processing",
+        "description": "**Scaffolding files** with `.mustache` extension are automatically processed: - Variables replaced: `{{workspaceName}}`, `{{WorkspaceName}}`, `{{prefix}}`, `{{namespace}}`, `{{hostname}}` - Extension stripped: `app.tsx.mustache` → `app.tsx` - Non-mustache files copied directly without modification **Example:**",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 318,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "System",
+        "description": "Automatically checked before generation: - **C++ compiler** (g++, clang++, or Visual Studio Build Tools) - **Python 3** (for node-gyp) - **make** (Unix) or **MSBuild** (Windows) - **git** (optional, warning only)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 343,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Requirements",
+        "description": "Automatically checked before generation: - **C++ compiler** (g++, clang++, or Visual Studio Build Tools) - **Python 3** (for node-gyp) - **make** (Unix) or **MSBuild** (Windows) - **git** (optional, warning only)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 343,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "where",
+        "description": "✅ **Windows**: Uses `where` for command checks, Visual Studio Build Tools",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 345,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Cross",
+        "description": "✅ **Windows**: Uses `where` for command checks, Visual Studio Build Tools ✅ **macOS**: Uses `command -v`, Xcode Command Line Tools ✅ **Linux**: Uses `command -v`, build-essential package",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 349,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Platform",
+        "description": "✅ **Windows**: Uses `where` for command checks, Visual Studio Build Tools ✅ **macOS**: Uses `command -v`, Xcode Command Line Tools ✅ **Linux**: Uses `command -v`, build-essential package",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 349,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Support",
+        "description": "✅ **Windows**: Uses `where` for command checks, Visual Studio Build Tools ✅ **macOS**: Uses `command -v`, Xcode Command Line Tools ✅ **Linux**: Uses `command -v`, build-essential package",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 349,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Express",
+        "description": "- `@digitaldefiance/node-express-suite` - Backend framework with BaseApplication, BaseRouter - `@digitaldefiance/suite-core-lib` - Core utilities and constants - `@digitaldefiance/ecies-lib` - Browser ECIES encryption - `@digitaldefiance/node-ecies-lib` - Node.js ECIES encryption - `@digitaldefiance/i18n-lib` - Multi-language support with I18nEngine",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 359,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Suite",
+        "description": "- `@digitaldefiance/node-express-suite` - Backend framework with BaseApplication, BaseRouter - `@digitaldefiance/suite-core-lib` - Core utilities and constants - `@digitaldefiance/ecies-lib` - Browser ECIES encryption - `@digitaldefiance/node-ecies-lib` - Node.js ECIES encryption - `@digitaldefiance/i18n-lib` - Multi-language support with I18nEngine",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 359,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Core",
+        "description": "- `@digitaldefiance/node-express-suite` - Backend framework with BaseApplication, BaseRouter - `@digitaldefiance/suite-core-lib` - Core utilities and constants - `@digitaldefiance/ecies-lib` - Browser ECIES encryption - `@digitaldefiance/node-ecies-lib` - Node.js ECIES encryption - `@digitaldefiance/i18n-lib` - Multi-language support with I18nEngine",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 359,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Express",
+        "description": "- `@digitaldefiance/express-suite-react-components` - Pre-built React components (useAuth, etc.) - `@digitaldefiance/express-suite-test-utils` - Testing utilities (always included)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 364,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Suite",
+        "description": "- `@digitaldefiance/express-suite-react-components` - Pre-built React components (useAuth, etc.) - `@digitaldefiance/express-suite-test-utils` - Testing utilities (always included)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 364,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Optional",
+        "description": "- `@digitaldefiance/express-suite-react-components` - Pre-built React components (useAuth, etc.) - `@digitaldefiance/express-suite-test-utils` - Testing utilities (always included)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 364,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Core",
+        "description": "- **Backend**: Express 5, MongoDB, Mongoose - **Frontend**: React 19, Vite, Material-UI - **Testing**: Jest, Playwright - **Build**: Nx, TypeScript, ESLint, Prettier",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 371,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Stack",
+        "description": "- **Backend**: Express 5, MongoDB, Mongoose - **Frontend**: React 19, Vite, Material-UI - **Testing**: Jest, Playwright - **Build**: Nx, TypeScript, ESLint, Prettier",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 371,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "myPlugin",
+        "description": "Documented in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 377,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "Plugin",
+        "description": "Create custom plugins with 5 lifecycle hooks:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 392,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "System",
+        "description": "Create custom plugins with 5 lifecycle hooks:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 392,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Dry",
+        "description": "Preview changes without creating files:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 400,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Run",
+        "description": "Preview changes without creating files:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 400,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Mode",
+        "description": "Preview changes without creating files:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 400,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Post",
+        "description": "Automatic checks after generation: - ✅ package.json validation - ✅ Dependency conflict detection - ✅ Best practices checking - ✅ Fix suggestions",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 409,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Generation",
+        "description": "Automatic checks after generation: - ✅ package.json validation - ✅ Dependency conflict detection - ✅ Best practices checking - ✅ Fix suggestions",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 409,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Validation",
+        "description": "Automatic checks after generation: - ✅ package.json validation - ✅ Dependency conflict detection - ✅ Best practices checking - ✅ Fix suggestions",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 409,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Package",
+        "description": "Optional feature sets in `config/package-groups.json`: - **testing**: Additional test utilities - **linting**: Enhanced linting rules - **ui-components**: Extra UI libraries - **database**: Database tools - **authentication**: Auth utilities - **validation**: Validation libraries - **documentation**: Doc generation tools",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 421,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Groups",
+        "description": "Optional feature sets in `config/package-groups.json`: - **testing**: Additional test utilities - **linting**: Enhanced linting rules - **ui-components**: Extra UI libraries - **database**: Database tools - **authentication**: Auth utilities - **validation**: Validation libraries - **documentation**: Doc generation tools",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 421,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Color",
+        "description": "- ✓ Green: Success - ✗ Red: Errors - ⚠ Yellow: Warnings - ℹ Blue: Information - $ Gray: Commands",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 441,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Coded",
+        "description": "- ✓ Green: Success - ✗ Red: Errors - ⚠ Yellow: Warnings - ℹ Blue: Information - $ Gray: Commands",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 441,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Output",
+        "description": "- ✓ Green: Success - ✗ Red: Errors - ⚠ Yellow: Warnings - ℹ Blue: Information - $ Gray: Commands",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 441,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "success",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 443,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "error",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 443,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "warning",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 443,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "info",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 443,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "step",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 443,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "command",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 443,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "Documentation",
+        "description": "- **ARCHITECTURE.md** - Comprehensive architecture documentation - **CONTEXT.md** - Development context and decisions - **PLUGIN_GUIDE.md** - Plugin development guide - **QUICKSTART.md** - 10-minute quick start - **EXAMPLES.md** - Usage examples",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 460,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Testing",
+        "description": "- **21 test suites** (18 unit + 3 integration) - **137 tests** passing - **95%+ coverage** on core components - **100% coverage** on critical paths",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 467,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Development",
+        "description": "1. **API .env**: Update `{prefix}-api/.env` with your configuration 2. **DevContainer .env** (if using MongoDB devcontainer): Update `.devcontainer/.env` - Replica set: `MONGO_URI=mongodb://localhost:27017/dbname?replicaSet=rs0&directConnection=true` - Single instance: `MONGO_URI=mongodb://localhost:27017/dbname?directConnection=true`",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 476,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Production",
+        "description": "The `.env` file is automatically copied to `dist/` during build via `post-build` target in `project.json`.",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 491,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Deployment",
+        "description": "The `.env` file is automatically copied to `dist/` during build via `post-build` target in `project.json`.",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 491,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "**Current**: 2.1.45 **Status**: Beta",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 497,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Links",
+        "description": "- [Express Suite Packages](https://www.npmjs.com/search?q=%40digitaldefiance) - [GitHub Repository](https://github.com/Digital-Defiance/express-suite) - [Nx Documentation](https://nx.dev)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 503,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "License",
+        "description": "MIT © Digital Defiance",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 507,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Minor version updates",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 513,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Add Formerly project albatross subtitle - Reorganize strings into subdir",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 518,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Dependencies",
+        "description": "- Updated `@digitaldefiance/express-suite-react-components` ^2.2.0 → ^2.5.12 - Updated `@digitaldefiance/i18n-lib` 3.6.0 → 3.6.4 - Updated `@digitaldefiance/express-suite-test-utils` 1.0.8 → 1.0.10",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 526,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "siteUrl",
+        "description": "- Added `siteUrl` field to environment interface",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 529,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Features",
+        "description": "- Added Yarn registry configuration to devcontainer post-create scripts - Added `siteUrl` field to environment interface - Added runtime configuration support via `window.APP_CONFIG`",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 532,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Breaking",
+        "description": "- Renamed `window.__RUNTIME_CONFIG__` to `window.APP_CONFIG` - Converted `environment.prod.ts` to template format (`environment.prod.ts.mustache`) - Removed automatic `/api` suffix stripping from API URL handling",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 538,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Changes",
+        "description": "- Renamed `window.__RUNTIME_CONFIG__` to `window.APP_CONFIG` - Converted `environment.prod.ts` to template format (`environment.prod.ts.mustache`) - Removed automatic `/api` suffix stripping from API URL handling",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 538,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Improvements",
+        "description": "- Refactored environment files to support dynamic runtime configuration - Updated TypeScript target from ES2020 to ES2022 - Improved API URL resolution logic with better null checking - Updated deployment documentation to reflect new config naming",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 545,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Bug",
+        "description": "- Fixed Yarn registry configuration in Verdaccio detection for all devcontainer variants",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 549,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Fixes",
+        "description": "- Fixed Yarn registry configuration in Verdaccio detection for all devcontainer variants",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 549,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Update libs",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 553,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Query for and template siteTitle/Desc/Tagline into constants/i18n",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 557,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Verdaccio configs",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 561,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Add .env to simple devcontainer",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 565,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Add multi-lingual support to strings",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 569,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Update react components",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 573,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Update react components",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 577,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Fix AuthProvider navigation",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 581,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Fix vite.config",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 585,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- CORS + mkcert tweaks",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 589,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Fix views assets project.json config",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 593,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- EmailServiceRegistry improvements",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 597,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Misc Improvements",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 601,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Add inituserdb to package.json",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 605,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Fix @@ in app.tsx",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 609,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Missing file bugfix",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 613,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Bugfix to workspacename",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 617,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Misc updates",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 621,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Added",
+        "description": "- Complete user guide and deployment documentation - Runtime configuration support for multi-domain deployments",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 629,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Changed",
+        "description": "- inituserdb now always included (breaking change) - React app uses environment-based API URLs",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 635,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Fixed",
+        "description": "- Template renderer no longer copies .mustache source files - VerifyEmailPage wrapper usage in scaffolding",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 641,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Translate UI",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 645,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Added",
+        "description": "- Interactive database configuration prompts (in-memory vs MongoDB) - Automated secret generation (JWT_SECRET, MNEMONIC_ENCRYPTION_KEY, MNEMONIC_HMAC_SECRET) - MongoDB password configuration for DevContainers - Automatic .env population with generated secrets",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 654,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Changed",
+        "description": "- `.env.example` includes detailed comments - DEV_DATABASE now optional (empty = use MONGO_URI) - `.env` files populated with values instead of copied from example - MONGO_URI dynamically built with workspace name and optional auth",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 661,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Fixed",
+        "description": "- DevContainer MongoDB URI uses workspace name instead of \"example-project\"",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 665,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Documentation",
+        "description": "- JWT_SECRET validation string keys and translations (8 languages)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 669,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Version",
+        "description": "- Update MONGO_URI and docs",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 672,
+          "column": 1
+        },
+        "hasUsageExample": false
+      }
+    ],
+    "examples": [
+      {
+        "code": "npx @digitaldefiance/express-suite-starter",
+        "language": "bash",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 32,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "npx"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "yarn install\nyarn build\nyarn start",
+        "language": "bash",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 50,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "➜  express-suite npx @digitaldefiance/express-suite-starter        \n\n...\n\nv22.21.1 is already installed.\nNow using node v22.21.1 (npm v10.9.4)\n\n✔ Select language: English (US)\n\n╔═════════════════════════════════════════════════════════════════════════════╗\n║ Node Express Suite Starter v2.2.1                                           ║\n║ Formerly Project Albatross                                                  ║\n╠═════════════════════════════════════════════════════════════════════════════╣\n║ Node Express Suite Starter generates an NX monorepo MERN stack with React   ║\n║ app, Express API, shared libraries, @digitaldefiance/node-express-suite,    ║\n║ and @digitaldefiance/express-suite-react-components integration.            ║\n╚═════════════════════════════════════════════════════════════════════════════╝\n\nSystem Check\n────────────\n✓ System check passed\n\nWorkspace Configuration\n───────────────────────\n✔ Enter the workspace name: my-awesome-app\n✔ Enter the project prefix: awesome\n✔ Enter the npm namespace: @awesome\n✔ Enter the parent directory: /home/user/projects\n✔ Enter the git repository URL (optional): \n✔ Enter the hostname: awesome.example.com\n✔ Enter the site title: My Awesome App\n✔ Enter the site description: A comprehensive web application...\n✔ Enter the site tagline: Built with Express Suite\n✔ Run in dry-run mode? No\n\nOptional Projects\n✔ Include E2E tests? Yes\n\nPackage Groups\n✔ Select optional package groups: authentication, validation, documentation\n\nDevContainer Configuration\n✔ Set up DevContainer configuration? Yes\n✔ DevContainer configuration: MongoDB\n\nDatabase Configuration\n✔ Use in-memory database for development? No\n✔ Enter MongoDB database name: awesome_db\n\nSecurity Configuration\n✔ Generate JWT_SECRET? Yes\nℹ Generated JWT_SECRET\n✔ Generate MNEMONIC_ENCRYPTION_KEY? Yes\nℹ Generated MNEMONIC_ENCRYPTION_KEY\n✔ Generate MNEMONIC_HMAC_SECRET? Yes\nℹ Generated MNEMONIC_HMAC_SECRET\n\nStarting generation (19 steps)\n──────────────────────────────\n[1/19] Checking target directory\n✓ Completed: Checking target directory\n\n[2/19] Creating Nx workspace\n$ npx create-nx-workspace@latest \"my-awesome-app\" --package-manager=yarn...\n✓ Completed: Creating Nx workspace\n\n[3/19] Updating TypeScript base configuration\n✓ Completed: Updating TypeScript base configuration\n\n[5/19] Setting up Yarn Berry\n✓ Completed: Setting up Yarn Berry\n\n[6/19] Adding Nx plugins\n✓ Completed: Adding Nx plugins\n\n[7/19] Installing dependencies\n✓ Completed: Installing dependencies\n\n[8/19] Generating project structure\nℹ Generating lib: awesome-lib\nℹ Generating react: awesome-react\nℹ Generating api: awesome-api\n✓ Completed: Generating project structure\n\n[9/19] Installing React components package\n✓ Completed: Installing React components package\n\n[10/19] Rendering configuration templates\n✓ Completed: Rendering configuration templates\n\n[11/19] Copying scaffolding files\n✓ Completed: Copying scaffolding files\n\n[12/19] Generating LICENSE file\n✓ Completed: Generating LICENSE file\n\n[13/19] Adding package.json scripts\n✓ Completed: Adding package.json scripts\n\n[14/19] Generating documentation\n✓ Completed: Generating documentation\n\n[15/19] Setting up environment files\n✓ Completed: Setting up environment files\n\n[16/19] Building native modules\n✓ Completed: Building native modules\n\n[17/19] Validating generated project\n✓ Completed: Validating generated project\n\n[18/19] Creating initial commit\n✓ Completed: Creating initial commit\n\n[19/19] Installing Playwright browsers\n✓ Completed: Installing Playwright browsers\n\nGeneration Complete!\n────────────────────\n✓ Monorepo created at: /home/user/projects/my-awesome-app\n\nNext steps:\n  cd my-awesome-app\n  yarn build:dev\n  yarn serve:dev",
+        "language": "text",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 63,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "my-app/\n├── my-app-lib/              # Shared library (i18n, constants, enumerations)\n├── my-app-api-lib/          # API business logic (App, Environment, Constants)\n├── my-app-api/              # Express server (main.ts, views, .env)\n├── my-app-api-e2e/          # API E2E tests (Jest)\n├── my-app-react/            # React frontend (Vite + Material-UI)\n├── my-app-react-lib/        # React component library (optional)\n├── my-app-react-e2e/        # React E2E tests (Playwright, optional)\n└── my-app-inituserdb/       # DB initialization (optional)",
+        "language": "text",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 208,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "# Development\nyarn build:dev          # Development build\nyarn serve:dev          # Start API server (dev mode)\nyarn serve:dev:stream   # Start API with streaming output\n\n# Production\nyarn build              # Production build (copies .env to dist/)\nyarn serve              # Start API server (production mode)\nnode dist/example-project-api/main.js  # Direct production run\n\n# Testing & Database\nyarn test:all           # Run all tests\nyarn inituserdb:full:drop  # Initialize database",
+        "language": "bash",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 235,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "Database"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "src/\n├── core/\n│   ├── interfaces/           # 15+ TypeScript interfaces\n│   ├── validators/           # Config + post-generation validation\n│   ├── config-schema.ts      # Configuration validation\n│   ├── step-executor.ts      # Step execution with rollback\n│   ├── dry-run-executor.ts   # Preview mode\n│   ├── plugin-manager.ts     # Plugin system with 5 hooks\n│   ├── project-generator.ts  # Nx project generation\n│   ├── project-config-builder.ts  # Dynamic project configs\n│   └── package-resolver.ts   # Version resolution\n├── cli/\n│   └── logger.ts             # Chalk-based semantic logging\n├── templates/\n│   ├── engines/              # Mustache + Handlebars\n│   └── template-engine-factory.ts\n└── utils/\n    ├── shell-utils.ts        # Cross-platform commands\n    ├── system-check.ts       # Build tool validation\n    ├── template-renderer.ts  # File operations\n    ├── doc-generator.ts      # README/ARCHITECTURE/API docs\n    └── diff-viewer.ts        # Dry-run preview",
+        "language": "text",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 255,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "// scaffolding/lib/src/lib/i18n-setup.ts.mustache\nexport const ComponentId = '{{WorkspaceName}}';\n\n// Generated as: example-project-lib/src/lib/i18n-setup.ts\nexport const ComponentId = 'ExampleProject';",
+        "language": "typescript",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 310,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "setup"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "yarn build             # TypeScript compilation",
+        "language": "bash",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 322,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "yarn test              # Run all tests (21 suites, 137 tests)\nyarn test:watch        # Watch mode\nyarn test:coverage     # Coverage report",
+        "language": "bash",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 328,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "import { Plugin } from '@digitaldefiance/express-suite-starter';\n\nexport const myPlugin: Plugin = {\n  name: 'my-plugin',\n  hooks: {\n    beforeGeneration: async (context) => { /* ... */ },\n    afterGeneration: async (context) => { /* ... */ },\n    beforeStep: async (step, context) => { /* ... */ },\n    afterStep: async (step, context) => { /* ... */ },\n    onError: async (error, step, context) => { /* ... */ },\n  },\n};",
+        "language": "typescript",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 377,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "Plugin"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "npx @digitaldefiance/express-suite-starter --dry-run",
+        "language": "bash",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 396,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "npx"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "[1/15] Checking target directory ✓\n[2/15] Creating Nx monorepo ✓\n[3/15] Setting up git remote ✓\n...\n[15/15] Installing Playwright browsers ✓",
+        "language": "text",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 425,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "Logger.success('message')    // ✓ Green\nLogger.error('message')      // ✗ Red\nLogger.warning('message')    // ⚠ Yellow\nLogger.info('message')       // ℹ Blue\nLogger.step(1, 5, 'msg')    // [1/5] Cyan\nLogger.command('cmd')        // $ Gray",
+        "language": "typescript",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 443,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "success",
+          "warning",
+          "step",
+          "command",
+          "Logger"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "# Build (copies .env to dist/)\nyarn build\n\n# Run from dist/\nnode dist/example-project-api/main.js\n\n# Or use process manager\npm2 start dist/example-project-api/main.js",
+        "language": "bash",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+          "line": 478,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "pm2"
+        ],
+        "hasTest": false
+      }
+    ],
+    "crossReferences": [],
+    "configOptions": [
+      {
+        "name": "WorkspaceConfig",
+        "type": "interface",
+        "description": "Configuration interface: WorkspaceConfig",
+        "isDocumented": false
+      },
+      {
+        "name": "ProjectConfig",
+        "type": "interface",
+        "description": "Configuration interface: ProjectConfig",
+        "isDocumented": false
+      },
+      {
+        "name": "PackageConfig",
+        "type": "interface",
+        "description": "Configuration interface: PackageConfig",
+        "isDocumented": false
+      },
+      {
+        "name": "TemplateConfig",
+        "type": "interface",
+        "description": "Configuration interface: TemplateConfig",
+        "isDocumented": false
+      },
+      {
+        "name": "NxConfig",
+        "type": "interface",
+        "description": "Configuration interface: NxConfig",
+        "isDocumented": false
+      },
+      {
+        "name": "NodeConfig",
+        "type": "interface",
+        "description": "Configuration interface: NodeConfig",
+        "isDocumented": false
+      },
+      {
+        "name": "DevContainerConfig",
+        "type": "interface",
+        "description": "Configuration interface: DevContainerConfig",
+        "isDocumented": false
+      },
+      {
+        "name": "GeneratorConfig",
+        "type": "interface",
+        "description": "Configuration interface: GeneratorConfig",
+        "isDocumented": false
+      },
+      {
+        "name": "CommandOptions",
+        "type": "interface",
+        "description": "Configuration interface: CommandOptions",
+        "isDocumented": false
+      },
+      {
+        "name": "RegistryConfig",
+        "type": "interface",
+        "description": "Configuration interface: RegistryConfig",
+        "isDocumented": false
+      }
+    ]
+  },
+  "coverage": {
+    "packageName": "@digitaldefiance/express-suite-starter",
+    "statements": {
+      "total": 722,
+      "covered": 666,
+      "percentage": 92.24,
+      "meetsThreshold": true
+    },
+    "branches": {
+      "total": 184,
+      "covered": 133,
+      "percentage": 72.28,
+      "meetsThreshold": false
+    },
+    "functions": {
+      "total": 113,
+      "covered": 98,
+      "percentage": 86.72,
+      "meetsThreshold": false
+    },
+    "lines": {
+      "total": 698,
+      "covered": 643,
+      "percentage": 92.12,
+      "meetsThreshold": true
+    },
+    "files": [
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/cli/logger.ts",
+        "statements": {
+          "total": 15,
+          "covered": 14,
+          "percentage": 93.33,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 12,
+          "covered": 11,
+          "percentage": 91.66,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 15,
+          "covered": 14,
+          "percentage": 93.33,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/core/config-schema.ts",
+        "statements": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/core/dry-run-executor.ts",
+        "statements": {
+          "total": 44,
+          "covered": 44,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 1,
+          "covered": 1,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 16,
+          "covered": 16,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 44,
+          "covered": 44,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/core/package-resolver.ts",
+        "statements": {
+          "total": 33,
+          "covered": 31,
+          "percentage": 93.93,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 7,
+          "covered": 7,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 7,
+          "covered": 7,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 32,
+          "covered": 30,
+          "percentage": 93.75,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/core/plugin-manager.ts",
+        "statements": {
+          "total": 24,
+          "covered": 24,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 4,
+          "covered": 4,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 9,
+          "covered": 9,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 23,
+          "covered": 23,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/core/project-config-builder.ts",
+        "statements": {
+          "total": 17,
+          "covered": 17,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 6,
+          "covered": 5,
+          "percentage": 83.33,
+          "meetsThreshold": false
+        },
+        "functions": {
+          "total": 1,
+          "covered": 1,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 17,
+          "covered": 17,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/core/project-generator.ts",
+        "statements": {
+          "total": 9,
+          "covered": 9,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 7,
+          "covered": 7,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 7,
+          "covered": 7,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 9,
+          "covered": 9,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/core/step-executor.ts",
+        "statements": {
+          "total": 59,
+          "covered": 59,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 10,
+          "covered": 9,
+          "percentage": 90,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 10,
+          "covered": 10,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 54,
+          "covered": 54,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/core/interfaces/index.ts",
+        "statements": {
+          "total": 15,
+          "covered": 15,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 15,
+          "covered": 15,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/core/validators/config-validator.ts",
+        "statements": {
+          "total": 19,
+          "covered": 19,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 10,
+          "covered": 10,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 5,
+          "covered": 5,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 18,
+          "covered": 18,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/core/validators/post-generation-validator.ts",
+        "statements": {
+          "total": 77,
+          "covered": 51,
+          "percentage": 66.23,
+          "meetsThreshold": false
+        },
+        "branches": {
+          "total": 33,
+          "covered": 18,
+          "percentage": 54.54,
+          "meetsThreshold": false
+        },
+        "functions": {
+          "total": 9,
+          "covered": 7,
+          "percentage": 77.77,
+          "meetsThreshold": false
+        },
+        "lines": {
+          "total": 76,
+          "covered": 50,
+          "percentage": 65.78,
+          "meetsThreshold": false
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/i18n-setup.ts",
+        "statements": {
+          "total": 28,
+          "covered": 22,
+          "percentage": 78.57,
+          "meetsThreshold": false
+        },
+        "branches": {
+          "total": 6,
+          "covered": 4,
+          "percentage": 66.66,
+          "meetsThreshold": false
+        },
+        "functions": {
+          "total": 6,
+          "covered": 3,
+          "percentage": 50,
+          "meetsThreshold": false
+        },
+        "lines": {
+          "total": 28,
+          "covered": 22,
+          "percentage": 78.57,
+          "meetsThreshold": false
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/index.ts",
+        "statements": {
+          "total": 3,
+          "covered": 3,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 3,
+          "covered": 3,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/starter-string-key.ts",
+        "statements": {
+          "total": 166,
+          "covered": 166,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 1,
+          "covered": 1,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 166,
+          "covered": 166,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/translations-all.ts",
+        "statements": {
+          "total": 17,
+          "covered": 17,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 8,
+          "covered": 0,
+          "percentage": 0,
+          "meetsThreshold": false
+        },
+        "lines": {
+          "total": 10,
+          "covered": 10,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/strings/de.ts",
+        "statements": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/strings/en-gb.ts",
+        "statements": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/strings/en-us.ts",
+        "statements": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/strings/es.ts",
+        "statements": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/strings/fr.ts",
+        "statements": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/strings/ja.ts",
+        "statements": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/strings/uk.ts",
+        "statements": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/i18n/strings/zh-cn.ts",
+        "statements": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/templates/index.ts",
+        "statements": {
+          "total": 4,
+          "covered": 4,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 4,
+          "covered": 4,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/templates/template-engine-factory.ts",
+        "statements": {
+          "total": 4,
+          "covered": 4,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 1,
+          "covered": 1,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 4,
+          "covered": 4,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/templates/engines/handlebars-engine.ts",
+        "statements": {
+          "total": 6,
+          "covered": 5,
+          "percentage": 83.33,
+          "meetsThreshold": false
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 6,
+          "covered": 5,
+          "percentage": 83.33,
+          "meetsThreshold": false
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/templates/engines/mustache-engine.ts",
+        "statements": {
+          "total": 3,
+          "covered": 3,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 0,
+          "covered": 0,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 1,
+          "covered": 1,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 3,
+          "covered": 3,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/utils/doc-generator.ts",
+        "statements": {
+          "total": 28,
+          "covered": 28,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 9,
+          "covered": 5,
+          "percentage": 55.55,
+          "meetsThreshold": false
+        },
+        "functions": {
+          "total": 7,
+          "covered": 7,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 26,
+          "covered": 26,
+          "percentage": 100,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/utils/shell-utils.ts",
+        "statements": {
+          "total": 18,
+          "covered": 15,
+          "percentage": 83.33,
+          "meetsThreshold": false
+        },
+        "branches": {
+          "total": 7,
+          "covered": 5,
+          "percentage": 71.42,
+          "meetsThreshold": false
+        },
+        "functions": {
+          "total": 2,
+          "covered": 2,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 18,
+          "covered": 15,
+          "percentage": 83.33,
+          "meetsThreshold": false
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/utils/system-check.ts",
+        "statements": {
+          "total": 39,
+          "covered": 38,
+          "percentage": 97.43,
+          "meetsThreshold": true
+        },
+        "branches": {
+          "total": 17,
+          "covered": 15,
+          "percentage": 88.23,
+          "meetsThreshold": true
+        },
+        "functions": {
+          "total": 5,
+          "covered": 5,
+          "percentage": 100,
+          "meetsThreshold": true
+        },
+        "lines": {
+          "total": 37,
+          "covered": 36,
+          "percentage": 97.29,
+          "meetsThreshold": true
+        }
+      },
+      {
+        "path": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/src/utils/template-renderer.ts",
+        "statements": {
+          "total": 76,
+          "covered": 60,
+          "percentage": 78.94,
+          "meetsThreshold": false
+        },
+        "branches": {
+          "total": 63,
+          "covered": 39,
+          "percentage": 61.9,
+          "meetsThreshold": false
+        },
+        "functions": {
+          "total": 4,
+          "covered": 3,
+          "percentage": 75,
+          "meetsThreshold": false
+        },
+        "lines": {
+          "total": 72,
+          "covered": 57,
+          "percentage": 79.16,
+          "meetsThreshold": false
+        }
+      }
+    ],
+    "untestedExports": [
+      {
+        "symbol": {
+          "name": "enUsTranslations",
+          "type": "const",
+          "signature": "const enUsTranslations: Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/strings/en-us.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "enGbTranslations",
+          "type": "const",
+          "signature": "const enGbTranslations: unknown",
+          "sourceFile": "src/i18n/strings/en-gb.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "esTranslations",
+          "type": "const",
+          "signature": "const esTranslations: Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/strings/es.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "frTranslations",
+          "type": "const",
+          "signature": "const frTranslations: Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/strings/fr.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "deTranslations",
+          "type": "const",
+          "signature": "const deTranslations: Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/strings/de.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "zhCnTranslations",
+          "type": "const",
+          "signature": "const zhCnTranslations: Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/strings/zh-cn.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "jaTranslations",
+          "type": "const",
+          "signature": "const jaTranslations: Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/strings/ja.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "ukTranslations",
+          "type": "const",
+          "signature": "const ukTranslations: Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/strings/uk.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "allTranslations",
+          "type": "const",
+          "signature": "const allTranslations: unknown",
+          "sourceFile": "src/i18n/translations-all.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "enUsTranslations",
+          "type": "const",
+          "signature": "Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/translations-all.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "enGbTranslations",
+          "type": "const",
+          "signature": "{ starter_title: string; starter_subtitle: string; starter_description: string; cli_banner: string; cli_fatalError: string; cli_cancelled: string; cli_installRequiredTools: string; systemCheck_header: string; ... 156 more ...; devcontainer_mongodbReplicaset: string; }",
+          "sourceFile": "src/i18n/translations-all.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "esTranslations",
+          "type": "const",
+          "signature": "Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/translations-all.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "frTranslations",
+          "type": "const",
+          "signature": "Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/translations-all.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "deTranslations",
+          "type": "const",
+          "signature": "Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/translations-all.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "zhCnTranslations",
+          "type": "const",
+          "signature": "Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/translations-all.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "jaTranslations",
+          "type": "const",
+          "signature": "Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/translations-all.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "ukTranslations",
+          "type": "const",
+          "signature": "Record<StarterStringKey, string>",
+          "sourceFile": "src/i18n/translations-all.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "StarterI18nEngineKey",
+          "type": "const",
+          "signature": "const StarterI18nEngineKey: unknown",
+          "sourceFile": "src/i18n/i18n-setup.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "StarterComponentId",
+          "type": "const",
+          "signature": "const StarterComponentId: unknown",
+          "sourceFile": "src/i18n/i18n-setup.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "createStarterComponentConfig",
+          "type": "function",
+          "signature": "function createStarterComponentConfig(): ComponentConfig",
+          "sourceFile": "src/i18n/i18n-setup.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "starterI18nEngine",
+          "type": "const",
+          "signature": "const starterI18nEngine: unknown",
+          "sourceFile": "src/i18n/i18n-setup.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "resetStarterI18nEngine",
+          "type": "function",
+          "signature": "function resetStarterI18nEngine(): void",
+          "sourceFile": "src/i18n/i18n-setup.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "safeStarterTranslation",
+          "type": "function",
+          "signature": "function safeStarterTranslation(stringKey: StarterStringKey, variables: Record<string, string | number>, language: string): string",
+          "sourceFile": "src/i18n/i18n-setup.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "WorkspaceConfig",
+          "type": "interface",
+          "signature": "interface WorkspaceConfig",
+          "sourceFile": "src/core/interfaces/workspace-config.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "ProjectConfig",
+          "type": "interface",
+          "signature": "interface ProjectConfig",
+          "sourceFile": "src/core/interfaces/project-config.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "PackageConfig",
+          "type": "interface",
+          "signature": "interface PackageConfig",
+          "sourceFile": "src/core/interfaces/package-config.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "TemplateConfig",
+          "type": "interface",
+          "signature": "interface TemplateConfig",
+          "sourceFile": "src/core/interfaces/template-config.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "NxConfig",
+          "type": "interface",
+          "signature": "interface NxConfig",
+          "sourceFile": "src/core/interfaces/nx-config.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "NodeConfig",
+          "type": "interface",
+          "signature": "interface NodeConfig",
+          "sourceFile": "src/core/interfaces/node-config.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "GeneratorConfig",
+          "type": "interface",
+          "signature": "interface GeneratorConfig",
+          "sourceFile": "src/core/interfaces/generator-config.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "ValidationResult",
+          "type": "interface",
+          "signature": "interface ValidationResult",
+          "sourceFile": "src/core/interfaces/validation-result.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "ValidationIssue",
+          "type": "interface",
+          "signature": "interface ValidationIssue",
+          "sourceFile": "src/core/interfaces/validation-issue.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "ValidationReport",
+          "type": "interface",
+          "signature": "interface ValidationReport",
+          "sourceFile": "src/core/interfaces/validation-issue.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "Checkpoint",
+          "type": "interface",
+          "signature": "interface Checkpoint",
+          "sourceFile": "src/core/interfaces/checkpoint.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "CommandOptions",
+          "type": "interface",
+          "signature": "interface CommandOptions",
+          "sourceFile": "src/core/interfaces/command-options.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "PluginHooks",
+          "type": "interface",
+          "signature": "interface PluginHooks",
+          "sourceFile": "src/core/interfaces/plugin.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "TemplateProvider",
+          "type": "interface",
+          "signature": "interface TemplateProvider",
+          "sourceFile": "src/core/interfaces/plugin.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "SystemCheckResult",
+          "type": "interface",
+          "signature": "interface SystemCheckResult",
+          "sourceFile": "src/utils/system-check.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "TemplateEngine",
+          "type": "interface",
+          "signature": "interface TemplateEngine",
+          "sourceFile": "src/templates/interfaces/template-engine.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "DryRunAction",
+          "type": "interface",
+          "signature": "interface DryRunAction",
+          "sourceFile": "src/core/interfaces/dry-run.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "DryRunReport",
+          "type": "interface",
+          "signature": "interface DryRunReport",
+          "sourceFile": "src/core/interfaces/dry-run.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "main",
+          "type": "const",
+          "signature": "() => Promise<void>",
+          "sourceFile": "src/generate-monorepo.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "PackageResolution",
+          "type": "interface",
+          "signature": "interface PackageResolution",
+          "sourceFile": "src/core/interfaces/package-resolution.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "PackageGroup",
+          "type": "interface",
+          "signature": "interface PackageGroup",
+          "sourceFile": "src/core/interfaces/package-resolution.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "RegistryConfig",
+          "type": "interface",
+          "signature": "interface RegistryConfig",
+          "sourceFile": "src/core/interfaces/package-resolution.interface.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "examplePlugin",
+          "type": "const",
+          "signature": "const examplePlugin: Plugin",
+          "sourceFile": "src/core/plugins/example-plugin.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "FileDiff",
+          "type": "interface",
+          "signature": "interface FileDiff",
+          "sourceFile": "src/utils/diff-viewer.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "DiffViewer",
+          "type": "class",
+          "signature": "class DiffViewer",
+          "sourceFile": "src/utils/diff-viewer.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      }
+    ]
+  },
+  "quality": {
+    "totalTests": 173,
+    "testsWithErrorHandling": 20,
+    "testsWithEdgeCases": 4,
+    "integrationTests": 3,
+    "exampleTests": 3
+  },
+  "issues": [
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'Logger' (class) is not documented in README",
+      "location": "src/cli/logger.ts",
+      "recommendation": "Add documentation for 'Logger' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'enUsTranslations' (const) is not documented in README",
+      "location": "src/i18n/strings/en-us.ts",
+      "recommendation": "Add documentation for 'enUsTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'enGbTranslations' (const) is not documented in README",
+      "location": "src/i18n/strings/en-gb.ts",
+      "recommendation": "Add documentation for 'enGbTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'esTranslations' (const) is not documented in README",
+      "location": "src/i18n/strings/es.ts",
+      "recommendation": "Add documentation for 'esTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'frTranslations' (const) is not documented in README",
+      "location": "src/i18n/strings/fr.ts",
+      "recommendation": "Add documentation for 'frTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'deTranslations' (const) is not documented in README",
+      "location": "src/i18n/strings/de.ts",
+      "recommendation": "Add documentation for 'deTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'zhCnTranslations' (const) is not documented in README",
+      "location": "src/i18n/strings/zh-cn.ts",
+      "recommendation": "Add documentation for 'zhCnTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'jaTranslations' (const) is not documented in README",
+      "location": "src/i18n/strings/ja.ts",
+      "recommendation": "Add documentation for 'jaTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ukTranslations' (const) is not documented in README",
+      "location": "src/i18n/strings/uk.ts",
+      "recommendation": "Add documentation for 'ukTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'allTranslations' (const) is not documented in README",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add documentation for 'allTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'enUsTranslations' (const) is not documented in README",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add documentation for 'enUsTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'enGbTranslations' (const) is not documented in README",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add documentation for 'enGbTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'esTranslations' (const) is not documented in README",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add documentation for 'esTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'frTranslations' (const) is not documented in README",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add documentation for 'frTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'deTranslations' (const) is not documented in README",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add documentation for 'deTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'zhCnTranslations' (const) is not documented in README",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add documentation for 'zhCnTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'jaTranslations' (const) is not documented in README",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add documentation for 'jaTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ukTranslations' (const) is not documented in README",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add documentation for 'ukTranslations' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'StarterI18nEngineKey' (const) is not documented in README",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add documentation for 'StarterI18nEngineKey' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'StarterComponentId' (const) is not documented in README",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add documentation for 'StarterComponentId' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'createStarterComponentConfig' (function) is not documented in README",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add documentation for 'createStarterComponentConfig' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'getStarterI18nEngine' (function) is not documented in README",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add documentation for 'getStarterI18nEngine' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'starterI18nEngine' (const) is not documented in README",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add documentation for 'starterI18nEngine' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'resetStarterI18nEngine' (function) is not documented in README",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add documentation for 'resetStarterI18nEngine' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'getStarterTranslation' (function) is not documented in README",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add documentation for 'getStarterTranslation' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'safeStarterTranslation' (function) is not documented in README",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add documentation for 'safeStarterTranslation' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'WorkspaceConfig' (interface) is not documented in README",
+      "location": "src/core/interfaces/workspace-config.interface.ts",
+      "recommendation": "Add documentation for 'WorkspaceConfig' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ProjectConfig' (interface) is not documented in README",
+      "location": "src/core/interfaces/project-config.interface.ts",
+      "recommendation": "Add documentation for 'ProjectConfig' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'PackageConfig' (interface) is not documented in README",
+      "location": "src/core/interfaces/package-config.interface.ts",
+      "recommendation": "Add documentation for 'PackageConfig' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'TemplateConfig' (interface) is not documented in README",
+      "location": "src/core/interfaces/template-config.interface.ts",
+      "recommendation": "Add documentation for 'TemplateConfig' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'NxConfig' (interface) is not documented in README",
+      "location": "src/core/interfaces/nx-config.interface.ts",
+      "recommendation": "Add documentation for 'NxConfig' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'NodeConfig' (interface) is not documented in README",
+      "location": "src/core/interfaces/node-config.interface.ts",
+      "recommendation": "Add documentation for 'NodeConfig' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'DevContainerConfig' (interface) is not documented in README",
+      "location": "src/core/interfaces/devcontainer-config.interface.ts",
+      "recommendation": "Add documentation for 'DevContainerConfig' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'GeneratorConfig' (interface) is not documented in README",
+      "location": "src/core/interfaces/generator-config.interface.ts",
+      "recommendation": "Add documentation for 'GeneratorConfig' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ValidationResult' (interface) is not documented in README",
+      "location": "src/core/interfaces/validation-result.interface.ts",
+      "recommendation": "Add documentation for 'ValidationResult' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ValidationIssue' (interface) is not documented in README",
+      "location": "src/core/interfaces/validation-issue.interface.ts",
+      "recommendation": "Add documentation for 'ValidationIssue' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ValidationReport' (interface) is not documented in README",
+      "location": "src/core/interfaces/validation-issue.interface.ts",
+      "recommendation": "Add documentation for 'ValidationReport' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'GeneratorContext' (interface) is not documented in README",
+      "location": "src/core/interfaces/generator-context.interface.ts",
+      "recommendation": "Add documentation for 'GeneratorContext' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'Step' (interface) is not documented in README",
+      "location": "src/core/interfaces/step.interface.ts",
+      "recommendation": "Add documentation for 'Step' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'Checkpoint' (interface) is not documented in README",
+      "location": "src/core/interfaces/checkpoint.interface.ts",
+      "recommendation": "Add documentation for 'Checkpoint' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'CommandOptions' (interface) is not documented in README",
+      "location": "src/core/interfaces/command-options.interface.ts",
+      "recommendation": "Add documentation for 'CommandOptions' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'PluginHooks' (interface) is not documented in README",
+      "location": "src/core/interfaces/plugin.interface.ts",
+      "recommendation": "Add documentation for 'PluginHooks' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'TemplateProvider' (interface) is not documented in README",
+      "location": "src/core/interfaces/plugin.interface.ts",
+      "recommendation": "Add documentation for 'TemplateProvider' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ConfigValidator' (class) is not documented in README",
+      "location": "src/core/validators/config-validator.ts",
+      "recommendation": "Add documentation for 'ConfigValidator' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'SystemCheckResult' (interface) is not documented in README",
+      "location": "src/utils/system-check.ts",
+      "recommendation": "Add documentation for 'SystemCheckResult' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'SystemCheck' (class) is not documented in README",
+      "location": "src/utils/system-check.ts",
+      "recommendation": "Add documentation for 'SystemCheck' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'PluginManager' (class) is not documented in README",
+      "location": "src/core/plugin-manager.ts",
+      "recommendation": "Add documentation for 'PluginManager' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'StepExecutor' (class) is not documented in README",
+      "location": "src/core/step-executor.ts",
+      "recommendation": "Add documentation for 'StepExecutor' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ProjectConfigBuilder' (class) is not documented in README",
+      "location": "src/core/project-config-builder.ts",
+      "recommendation": "Add documentation for 'ProjectConfigBuilder' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'runCommand' (function) is not documented in README",
+      "location": "src/utils/shell-utils.ts",
+      "recommendation": "Add documentation for 'runCommand' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'setPerms' (function) is not documented in README",
+      "location": "src/utils/shell-utils.ts",
+      "recommendation": "Add documentation for 'setPerms' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ProjectGenerator' (class) is not documented in README",
+      "location": "src/core/project-generator.ts",
+      "recommendation": "Add documentation for 'ProjectGenerator' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'TemplateEngine' (interface) is not documented in README",
+      "location": "src/templates/interfaces/template-engine.interface.ts",
+      "recommendation": "Add documentation for 'TemplateEngine' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'MustacheEngine' (class) is not documented in README",
+      "location": "src/templates/engines/mustache-engine.ts",
+      "recommendation": "Add documentation for 'MustacheEngine' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'HandlebarsEngine' (class) is not documented in README",
+      "location": "src/templates/engines/handlebars-engine.ts",
+      "recommendation": "Add documentation for 'HandlebarsEngine' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'createEngine' (function) is not documented in README",
+      "location": "src/templates/template-engine-factory.ts",
+      "recommendation": "Add documentation for 'createEngine' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'renderTemplates' (function) is not documented in README",
+      "location": "src/utils/template-renderer.ts",
+      "recommendation": "Add documentation for 'renderTemplates' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'copyDir' (function) is not documented in README",
+      "location": "src/utils/template-renderer.ts",
+      "recommendation": "Add documentation for 'copyDir' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'DryRunAction' (interface) is not documented in README",
+      "location": "src/core/interfaces/dry-run.interface.ts",
+      "recommendation": "Add documentation for 'DryRunAction' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'DryRunReport' (interface) is not documented in README",
+      "location": "src/core/interfaces/dry-run.interface.ts",
+      "recommendation": "Add documentation for 'DryRunReport' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'DryRunExecutor' (class) is not documented in README",
+      "location": "src/core/dry-run-executor.ts",
+      "recommendation": "Add documentation for 'DryRunExecutor' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'DocGenerator' (class) is not documented in README",
+      "location": "src/utils/doc-generator.ts",
+      "recommendation": "Add documentation for 'DocGenerator' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'PostGenerationValidator' (class) is not documented in README",
+      "location": "src/core/validators/post-generation-validator.ts",
+      "recommendation": "Add documentation for 'PostGenerationValidator' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'main' (const) is not documented in README",
+      "location": "src/generate-monorepo.ts",
+      "recommendation": "Add documentation for 'main' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'PackageResolution' (interface) is not documented in README",
+      "location": "src/core/interfaces/package-resolution.interface.ts",
+      "recommendation": "Add documentation for 'PackageResolution' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'PackageGroup' (interface) is not documented in README",
+      "location": "src/core/interfaces/package-resolution.interface.ts",
+      "recommendation": "Add documentation for 'PackageGroup' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'RegistryConfig' (interface) is not documented in README",
+      "location": "src/core/interfaces/package-resolution.interface.ts",
+      "recommendation": "Add documentation for 'RegistryConfig' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'PackageResolver' (class) is not documented in README",
+      "location": "src/core/package-resolver.ts",
+      "recommendation": "Add documentation for 'PackageResolver' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'examplePlugin' (const) is not documented in README",
+      "location": "src/core/plugins/example-plugin.ts",
+      "recommendation": "Add documentation for 'examplePlugin' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'FileDiff' (interface) is not documented in README",
+      "location": "src/utils/diff-viewer.ts",
+      "recommendation": "Add documentation for 'FileDiff' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'DiffViewer' (class) is not documented in README",
+      "location": "src/utils/diff-viewer.ts",
+      "recommendation": "Add documentation for 'DiffViewer' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'createStarterComponentConfig' (function) lacks usage example",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add a usage example for 'createStarterComponentConfig' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'getStarterI18nEngine' (function) lacks usage example",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add a usage example for 'getStarterI18nEngine' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'resetStarterI18nEngine' (function) lacks usage example",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add a usage example for 'resetStarterI18nEngine' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'getStarterTranslation' (function) lacks usage example",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add a usage example for 'getStarterTranslation' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'safeStarterTranslation' (function) lacks usage example",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add a usage example for 'safeStarterTranslation' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'ConfigValidator' (class) lacks usage example",
+      "location": "src/core/validators/config-validator.ts",
+      "recommendation": "Add a usage example for 'ConfigValidator' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'SystemCheck' (class) lacks usage example",
+      "location": "src/utils/system-check.ts",
+      "recommendation": "Add a usage example for 'SystemCheck' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'PluginManager' (class) lacks usage example",
+      "location": "src/core/plugin-manager.ts",
+      "recommendation": "Add a usage example for 'PluginManager' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'StepExecutor' (class) lacks usage example",
+      "location": "src/core/step-executor.ts",
+      "recommendation": "Add a usage example for 'StepExecutor' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'ProjectConfigBuilder' (class) lacks usage example",
+      "location": "src/core/project-config-builder.ts",
+      "recommendation": "Add a usage example for 'ProjectConfigBuilder' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'runCommand' (function) lacks usage example",
+      "location": "src/utils/shell-utils.ts",
+      "recommendation": "Add a usage example for 'runCommand' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'setPerms' (function) lacks usage example",
+      "location": "src/utils/shell-utils.ts",
+      "recommendation": "Add a usage example for 'setPerms' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'ProjectGenerator' (class) lacks usage example",
+      "location": "src/core/project-generator.ts",
+      "recommendation": "Add a usage example for 'ProjectGenerator' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'MustacheEngine' (class) lacks usage example",
+      "location": "src/templates/engines/mustache-engine.ts",
+      "recommendation": "Add a usage example for 'MustacheEngine' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'HandlebarsEngine' (class) lacks usage example",
+      "location": "src/templates/engines/handlebars-engine.ts",
+      "recommendation": "Add a usage example for 'HandlebarsEngine' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'createEngine' (function) lacks usage example",
+      "location": "src/templates/template-engine-factory.ts",
+      "recommendation": "Add a usage example for 'createEngine' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'renderTemplates' (function) lacks usage example",
+      "location": "src/utils/template-renderer.ts",
+      "recommendation": "Add a usage example for 'renderTemplates' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'copyDir' (function) lacks usage example",
+      "location": "src/utils/template-renderer.ts",
+      "recommendation": "Add a usage example for 'copyDir' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'DryRunExecutor' (class) lacks usage example",
+      "location": "src/core/dry-run-executor.ts",
+      "recommendation": "Add a usage example for 'DryRunExecutor' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'DocGenerator' (class) lacks usage example",
+      "location": "src/utils/doc-generator.ts",
+      "recommendation": "Add a usage example for 'DocGenerator' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'PostGenerationValidator' (class) lacks usage example",
+      "location": "src/core/validators/post-generation-validator.ts",
+      "recommendation": "Add a usage example for 'PostGenerationValidator' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'PackageResolver' (class) lacks usage example",
+      "location": "src/core/package-resolver.ts",
+      "recommendation": "Add a usage example for 'PackageResolver' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'DiffViewer' (class) lacks usage example",
+      "location": "src/utils/diff-viewer.ts",
+      "recommendation": "Add a usage example for 'DiffViewer' to the package README file."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'WorkspaceConfig' is not documented",
+      "recommendation": "Document the 'WorkspaceConfig' configuration option in the README."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'ProjectConfig' is not documented",
+      "recommendation": "Document the 'ProjectConfig' configuration option in the README."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'PackageConfig' is not documented",
+      "recommendation": "Document the 'PackageConfig' configuration option in the README."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'TemplateConfig' is not documented",
+      "recommendation": "Document the 'TemplateConfig' configuration option in the README."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'NxConfig' is not documented",
+      "recommendation": "Document the 'NxConfig' configuration option in the README."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'NodeConfig' is not documented",
+      "recommendation": "Document the 'NodeConfig' configuration option in the README."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'DevContainerConfig' is not documented",
+      "recommendation": "Document the 'DevContainerConfig' configuration option in the README."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'GeneratorConfig' is not documented",
+      "recommendation": "Document the 'GeneratorConfig' configuration option in the README."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'CommandOptions' is not documented",
+      "recommendation": "Document the 'CommandOptions' configuration option in the README."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'RegistryConfig' is not documented",
+      "recommendation": "Document the 'RegistryConfig' configuration option in the README."
+    },
+    {
+      "type": "UntestedExample",
+      "severity": "warning",
+      "message": "Code example references symbols (setup) that are not tested",
+      "location": {
+        "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-starter/README.md",
+        "line": 310,
+        "column": 1
+      },
+      "recommendation": "Add tests that validate this example works correctly, or ensure the referenced symbols are tested"
+    },
+    {
+      "type": "InsufficientCoverageError",
+      "severity": "warning",
+      "message": "Branch coverage (72.3%) is below threshold (85%)",
+      "recommendation": "Add tests for untested branches and edge cases."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'enUsTranslations' has no tests",
+      "location": "src/i18n/strings/en-us.ts",
+      "recommendation": "Add tests for 'enUsTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'enGbTranslations' has no tests",
+      "location": "src/i18n/strings/en-gb.ts",
+      "recommendation": "Add tests for 'enGbTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'esTranslations' has no tests",
+      "location": "src/i18n/strings/es.ts",
+      "recommendation": "Add tests for 'esTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'frTranslations' has no tests",
+      "location": "src/i18n/strings/fr.ts",
+      "recommendation": "Add tests for 'frTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'deTranslations' has no tests",
+      "location": "src/i18n/strings/de.ts",
+      "recommendation": "Add tests for 'deTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'zhCnTranslations' has no tests",
+      "location": "src/i18n/strings/zh-cn.ts",
+      "recommendation": "Add tests for 'zhCnTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'jaTranslations' has no tests",
+      "location": "src/i18n/strings/ja.ts",
+      "recommendation": "Add tests for 'jaTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'ukTranslations' has no tests",
+      "location": "src/i18n/strings/uk.ts",
+      "recommendation": "Add tests for 'ukTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'allTranslations' has no tests",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add tests for 'allTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'enUsTranslations' has no tests",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add tests for 'enUsTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'enGbTranslations' has no tests",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add tests for 'enGbTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'esTranslations' has no tests",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add tests for 'esTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'frTranslations' has no tests",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add tests for 'frTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'deTranslations' has no tests",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add tests for 'deTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'zhCnTranslations' has no tests",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add tests for 'zhCnTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'jaTranslations' has no tests",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add tests for 'jaTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'ukTranslations' has no tests",
+      "location": "src/i18n/translations-all.ts",
+      "recommendation": "Add tests for 'ukTranslations'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'StarterI18nEngineKey' has no tests",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add tests for 'StarterI18nEngineKey'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'StarterComponentId' has no tests",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add tests for 'StarterComponentId'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'createStarterComponentConfig' has no tests",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add tests for 'createStarterComponentConfig'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'starterI18nEngine' has no tests",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add tests for 'starterI18nEngine'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'resetStarterI18nEngine' has no tests",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add tests for 'resetStarterI18nEngine'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'safeStarterTranslation' has no tests",
+      "location": "src/i18n/i18n-setup.ts",
+      "recommendation": "Add tests for 'safeStarterTranslation'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'WorkspaceConfig' has no tests",
+      "location": "src/core/interfaces/workspace-config.interface.ts",
+      "recommendation": "Add tests for 'WorkspaceConfig'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'ProjectConfig' has no tests",
+      "location": "src/core/interfaces/project-config.interface.ts",
+      "recommendation": "Add tests for 'ProjectConfig'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'PackageConfig' has no tests",
+      "location": "src/core/interfaces/package-config.interface.ts",
+      "recommendation": "Add tests for 'PackageConfig'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'TemplateConfig' has no tests",
+      "location": "src/core/interfaces/template-config.interface.ts",
+      "recommendation": "Add tests for 'TemplateConfig'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'NxConfig' has no tests",
+      "location": "src/core/interfaces/nx-config.interface.ts",
+      "recommendation": "Add tests for 'NxConfig'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'NodeConfig' has no tests",
+      "location": "src/core/interfaces/node-config.interface.ts",
+      "recommendation": "Add tests for 'NodeConfig'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'GeneratorConfig' has no tests",
+      "location": "src/core/interfaces/generator-config.interface.ts",
+      "recommendation": "Add tests for 'GeneratorConfig'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'ValidationResult' has no tests",
+      "location": "src/core/interfaces/validation-result.interface.ts",
+      "recommendation": "Add tests for 'ValidationResult'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'ValidationIssue' has no tests",
+      "location": "src/core/interfaces/validation-issue.interface.ts",
+      "recommendation": "Add tests for 'ValidationIssue'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'ValidationReport' has no tests",
+      "location": "src/core/interfaces/validation-issue.interface.ts",
+      "recommendation": "Add tests for 'ValidationReport'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'Checkpoint' has no tests",
+      "location": "src/core/interfaces/checkpoint.interface.ts",
+      "recommendation": "Add tests for 'Checkpoint'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'CommandOptions' has no tests",
+      "location": "src/core/interfaces/command-options.interface.ts",
+      "recommendation": "Add tests for 'CommandOptions'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'PluginHooks' has no tests",
+      "location": "src/core/interfaces/plugin.interface.ts",
+      "recommendation": "Add tests for 'PluginHooks'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'TemplateProvider' has no tests",
+      "location": "src/core/interfaces/plugin.interface.ts",
+      "recommendation": "Add tests for 'TemplateProvider'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'SystemCheckResult' has no tests",
+      "location": "src/utils/system-check.ts",
+      "recommendation": "Add tests for 'SystemCheckResult'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'TemplateEngine' has no tests",
+      "location": "src/templates/interfaces/template-engine.interface.ts",
+      "recommendation": "Add tests for 'TemplateEngine'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'DryRunAction' has no tests",
+      "location": "src/core/interfaces/dry-run.interface.ts",
+      "recommendation": "Add tests for 'DryRunAction'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'DryRunReport' has no tests",
+      "location": "src/core/interfaces/dry-run.interface.ts",
+      "recommendation": "Add tests for 'DryRunReport'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'main' has no tests",
+      "location": "src/generate-monorepo.ts",
+      "recommendation": "Add tests for 'main'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'PackageResolution' has no tests",
+      "location": "src/core/interfaces/package-resolution.interface.ts",
+      "recommendation": "Add tests for 'PackageResolution'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'PackageGroup' has no tests",
+      "location": "src/core/interfaces/package-resolution.interface.ts",
+      "recommendation": "Add tests for 'PackageGroup'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'RegistryConfig' has no tests",
+      "location": "src/core/interfaces/package-resolution.interface.ts",
+      "recommendation": "Add tests for 'RegistryConfig'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'examplePlugin' has no tests",
+      "location": "src/core/plugins/example-plugin.ts",
+      "recommendation": "Add tests for 'examplePlugin'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'FileDiff' has no tests",
+      "location": "src/utils/diff-viewer.ts",
+      "recommendation": "Add tests for 'FileDiff'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'DiffViewer' has no tests",
+      "location": "src/utils/diff-viewer.ts",
+      "recommendation": "Add tests for 'DiffViewer'."
+    }
+  ]
+}

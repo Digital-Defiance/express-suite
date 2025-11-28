@@ -1,0 +1,45 @@
+
+🔍 Auditing package: digitaldefiance-node-ecies-lib
+
+
+============================================================
+Package: @digitaldefiance/node-ecies-lib
+============================================================
+
+Documentation:
+  Completeness: 25.0%
+  Undocumented Exports: 97
+  Missing Examples: 37
+
+Test Coverage:
+  Statements: 0.0%
+  Branches: 0.0%
+  Functions: 0.0%
+  Lines: 0.0%
+
+Issues (138):
+  ❌ Export 'NodeEciesComponentId' (const) is not documented in README
+     Location: src/i18n/node-keys.ts
+  ❌ Export 'englishTranslations' (const) is not documented in README
+     Location: src/i18n/translations/en-US.ts
+  ❌ Export 'britishEnglishTranslations' (const) is not documented in README
+     Location: src/i18n/translations/en-GB.ts
+  ❌ Export 'frenchTranslations' (const) is not documented in README
+     Location: src/i18n/translations/fr.ts
+  ❌ Export 'spanishTranslations' (const) is not documented in README
+     Location: src/i18n/translations/es.ts
+  ❌ Export 'germanTranslations' (const) is not documented in README
+     Location: src/i18n/translations/de.ts
+  ❌ Export 'mandarinTranslations' (const) is not documented in README
+     Location: src/i18n/translations/zh-cn.ts
+  ❌ Export 'japaneseTranslations' (const) is not documented in README
+     Location: src/i18n/translations/ja.ts
+  ❌ Export 'ukrainianTranslations' (const) is not documented in README
+     Location: src/i18n/translations/uk.ts
+  ❌ Export 'frenchTranslations' (const) is not documented in README
+     Location: src/i18n/translations/index.ts
+  ... and 128 more issues
+
+
+
+❌ Audit failed with 97 critical issue(s)

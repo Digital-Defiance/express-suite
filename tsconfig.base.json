@@ -34,7 +34,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "mongoose": [
+      "@digitaldefiance/mongoose-types": [
         "packages/digitaldefiance-mongoose-types/src/index.d.ts"
       ],
       "@digitaldefiance/i18n-lib": [

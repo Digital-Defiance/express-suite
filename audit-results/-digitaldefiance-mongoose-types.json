@@ -1,0 +1,273 @@
+{
+  "packageName": "@digitaldefiance/mongoose-types",
+  "documentation": {
+    "packageName": "@digitaldefiance/mongoose-types",
+    "exports": [],
+    "documentedSymbols": [
+      {
+        "name": "Package",
+        "description": "Mongoose 8's official types enforce `_id: Types.ObjectId` in the Document type, which prevents using custom ID types like strings, UUIDs, or GUIDs. This package provides modified type definitions that allow `_id` to be any type, enabling full flexibility for ID management.",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 12,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Use",
+        "description": "- Using string-based IDs (UUIDs, GUIDs, custom formats) - Migrating from other databases with non-ObjectId primary keys - Building systems that require specific ID formats - Cross-platform applications with custom ID providers",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 19,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Cases",
+        "description": "- Using string-based IDs (UUIDs, GUIDs, custom formats) - Migrating from other databases with non-ObjectId primary keys - Building systems that require specific ID formats - Cross-platform applications with custom ID providers",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 19,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "TypeScript",
+        "description": "Add path mapping to your `tsconfig.json`:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 43,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "T",
+        "description": "- `Document<T>` generic parameter `T` default changed from `Types.ObjectId` to `any`",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 78,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "any",
+        "description": "- `Document<T>` generic parameter `T` default changed from `Types.ObjectId` to `any`",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 78,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Changes",
+        "description": "- `Document<T>` generic parameter `T` default changed from `Types.ObjectId` to `any` - Updated JSDoc to clarify that `_id` can be ObjectId, string, or any custom type - All other Mongoose functionality remains unchanged",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 82,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Official",
+        "description": "- `Document<T>` generic parameter `T` default changed from `Types.ObjectId` to `any` - Updated JSDoc to clarify that `_id` can be ObjectId, string, or any custom type - All other Mongoose functionality remains unchanged",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 82,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Mongoose",
+        "description": "- `Document<T>` generic parameter `T` default changed from `Types.ObjectId` to `any` - Updated JSDoc to clarify that `_id` can be ObjectId, string, or any custom type - All other Mongoose functionality remains unchanged",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 82,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Types",
+        "description": "- `Document<T>` generic parameter `T` default changed from `Types.ObjectId` to `any` - Updated JSDoc to clarify that `_id` can be ObjectId, string, or any custom type - All other Mongoose functionality remains unchanged",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 82,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Compatibility",
+        "description": "- **Mongoose**: ^8.20.0 - **TypeScript**: ^5.0.0 - **Node.js**: 18+",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 88,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Versioning",
+        "description": "This package follows Mongoose's version numbers. Version `8.20.1` corresponds to Mongoose `8.20.1` types with custom ID support.",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 92,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Contributing",
+        "description": "Contributions are welcome! Please open an issue or PR at [https://github.com/Digital-Defiance/mongoose-types](https://github.com/Digital-Defiance/mongoose-types)",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 96,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "License",
+        "description": "MIT © Digital Defiance, Jessica Mulein",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 100,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Related",
+        "description": "Part of the [Express Suite](https://github.com/Digital-Defiance/express-suite) ecosystem.",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 103,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Packages",
+        "description": "Part of the [Express Suite](https://github.com/Digital-Defiance/express-suite) ecosystem.",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 103,
+          "column": 1
+        },
+        "hasUsageExample": false
+      }
+    ],
+    "examples": [
+      {
+        "code": "npm install @digitaldefiance/mongoose-types mongoose@^8.20.0\n# or\nyarn add @digitaldefiance/mongoose-types mongoose@^8.20.0",
+        "language": "bash",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 21,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "{\n  \"compilerOptions\": {\n    \"paths\": {\n      \"mongoose\": [\"node_modules/@digitaldefiance/mongoose-types/src/index.d.ts\"]\n    }\n  }\n}",
+        "language": "json",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 33,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "import { Document, Schema, model, Types } from 'mongoose';\n\n// String-based IDs\ninterface IUser extends Document<string> {\n  _id: string;\n  username: string;\n  email: string;\n}\n\nconst userSchema = new Schema({\n  _id: { type: String, required: true },\n  username: String,\n  email: String\n});\n\nconst User = model<IUser>('User', userSchema);\n\n// ObjectId (default behavior still works)\ninterface IRole extends Document<Types.ObjectId> {\n  _id: Types.ObjectId;\n  name: string;\n}\n\n// Custom ID type\ninterface IProduct extends Document<{ uuid: string; version: number }> {\n  _id: { uuid: string; version: number };\n  name: string;\n}",
+        "language": "typescript",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+          "line": 45,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "Document",
+          "Schema",
+          "model",
+          "Types",
+          "IUser"
+        ],
+        "hasTest": false
+      }
+    ],
+    "crossReferences": [],
+    "configOptions": []
+  },
+  "coverage": {
+    "packageName": "@digitaldefiance/mongoose-types",
+    "statements": {
+      "total": 0,
+      "covered": 0,
+      "percentage": 0,
+      "meetsThreshold": false
+    },
+    "branches": {
+      "total": 0,
+      "covered": 0,
+      "percentage": 0,
+      "meetsThreshold": false
+    },
+    "functions": {
+      "total": 0,
+      "covered": 0,
+      "percentage": 0,
+      "meetsThreshold": false
+    },
+    "lines": {
+      "total": 0,
+      "covered": 0,
+      "percentage": 0,
+      "meetsThreshold": false
+    },
+    "files": [],
+    "untestedExports": []
+  },
+  "quality": {
+    "totalTests": 0,
+    "testsWithErrorHandling": 0,
+    "testsWithEdgeCases": 0,
+    "integrationTests": 0,
+    "exampleTests": 0
+  },
+  "issues": [
+    {
+      "type": "UntestedExample",
+      "severity": "warning",
+      "message": "Code example references symbols (Document, Schema, model, Types, IUser) that are not tested",
+      "location": {
+        "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-mongoose-types/README.md",
+        "line": 45,
+        "column": 1
+      },
+      "recommendation": "Add tests that validate this example works correctly, or ensure the referenced symbols are tested"
+    },
+    {
+      "type": "InsufficientCoverageError",
+      "severity": "warning",
+      "message": "Statement coverage (0.0%) is below threshold (90%)",
+      "recommendation": "Add more tests to increase statement coverage."
+    },
+    {
+      "type": "InsufficientCoverageError",
+      "severity": "warning",
+      "message": "Branch coverage (0.0%) is below threshold (85%)",
+      "recommendation": "Add tests for untested branches and edge cases."
+    }
+  ]
+}

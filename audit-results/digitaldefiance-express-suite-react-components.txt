@@ -1,0 +1,45 @@
+
+🔍 Auditing package: digitaldefiance-express-suite-react-components
+
+
+============================================================
+Package: @digitaldefiance/express-suite-react-components
+============================================================
+
+Documentation:
+  Completeness: 3.0%
+  Undocumented Exports: 167
+  Missing Examples: 7
+
+Test Coverage:
+  Statements: 0.0%
+  Branches: 0.0%
+  Functions: 0.0%
+  Lines: 0.0%
+
+Issues (187):
+  ❌ Export 'PrivateProps' (interface) is not documented in README
+     Location: src/auth/Private.tsx
+  ❌ Export 'Private' (const) is not documented in README
+     Location: src/auth/Private.tsx
+  ❌ Export 'PrivateRoute' (const) is not documented in README
+     Location: src/auth/PrivateRoute.tsx
+  ❌ Export 'PrivateRoute' (const) is not documented in README
+     Location: src/auth/PrivateRoute.tsx
+  ❌ Export 'UnAuthProps' (interface) is not documented in README
+     Location: src/auth/UnAuth.tsx
+  ❌ Export 'UnAuth' (const) is not documented in README
+     Location: src/auth/UnAuth.tsx
+  ❌ Export 'UnAuthRouteProps' (interface) is not documented in README
+     Location: src/auth/UnAuthRoute.tsx
+  ❌ Export 'UnAuthRoute' (const) is not documented in README
+     Location: src/auth/UnAuthRoute.tsx
+  ❌ Export 'UnAuthRoute' (const) is not documented in README
+     Location: src/auth/UnAuthRoute.tsx
+  ❌ Export 'PrivateRoute' (const) is not documented in README
+     Location: src/auth/index.ts
+  ... and 177 more issues
+
+
+
+❌ Audit failed with 167 critical issue(s)

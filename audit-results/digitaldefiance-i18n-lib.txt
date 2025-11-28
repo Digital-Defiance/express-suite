@@ -1,0 +1,45 @@
+
+🔍 Auditing package: digitaldefiance-i18n-lib
+
+
+============================================================
+Package: @digitaldefiance/i18n-lib
+============================================================
+
+Documentation:
+  Completeness: 14.0%
+  Undocumented Exports: 221
+  Missing Examples: 94
+
+Test Coverage:
+  Statements: 0.0%
+  Branches: 0.0%
+  Functions: 0.0%
+  Lines: 0.0%
+
+Issues (326):
+  ❌ Export 'ComponentDefinition' (interface) is not documented in README
+     Location: src/component-definition.ts
+  ❌ Export 'LanguageDefinition' (interface) is not documented in README
+     Location: src/language-definition.ts
+  ❌ Export 'LanguageContextSpace' (type) is not documented in README
+     Location: src/types.ts
+  ❌ Export 'DefaultCurrencyCode' (const) is not documented in README
+     Location: src/types.ts
+  ❌ Export 'DefaultTimezone' (const) is not documented in README
+     Location: src/types.ts
+  ❌ Export 'CurrencyPosition' (type) is not documented in README
+     Location: src/types.ts
+  ❌ Export 'StringsCollection' (type) is not documented in README
+     Location: src/types.ts
+  ❌ Export 'MasterStringsCollection' (type) is not documented in README
+     Location: src/types.ts
+  ❌ Export 'LanguageCodeCollection' (type) is not documented in README
+     Location: src/types.ts
+  ❌ Export 'EnumTranslationMap' (type) is not documented in README
+     Location: src/types.ts
+  ... and 316 more issues
+
+
+
+❌ Audit failed with 221 critical issue(s)

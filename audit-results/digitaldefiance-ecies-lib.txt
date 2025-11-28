@@ -1,0 +1,45 @@
+
+🔍 Auditing package: digitaldefiance-ecies-lib
+
+
+============================================================
+Package: @digitaldefiance/ecies-lib
+============================================================
+
+Documentation:
+  Completeness: 13.0%
+  Undocumented Exports: 247
+  Missing Examples: 86
+
+Test Coverage:
+  Statements: 0.0%
+  Branches: 0.0%
+  Functions: 0.0%
+  Lines: 0.0%
+
+Issues (342):
+  ❌ Export 'IECIESConstants' (interface) is not documented in README
+     Location: src/interfaces/ecies-consts.ts
+  ❌ Export 'IECIESConfig' (interface) is not documented in README
+     Location: src/interfaces/ecies-config.ts
+  ❌ Export 'EciesEncryptionTypeMap' (const) is not documented in README
+     Location: src/enumerations/ecies-encryption-type.ts
+  ❌ Export 'EciesEncryptionTypeStringMap' (const) is not documented in README
+     Location: src/enumerations/ecies-encryption-type.ts
+  ❌ Export 'EciesEncryptionTypeEnumTypeMap' (const) is not documented in README
+     Location: src/enumerations/ecies-encryption-type.ts
+  ❌ Export 'EciesEncryptionTypeEnumStringMap' (const) is not documented in README
+     Location: src/enumerations/ecies-encryption-type.ts
+  ❌ Export 'MemberErrorType' (const) is not documented in README
+     Location: src/enumerations/member-error-type.ts
+  ❌ Export 'MemberTypeValue' (type) is not documented in README
+     Location: src/enumerations/member-type.ts
+  ❌ Export 'MemberType' (const) is not documented in README
+     Location: src/enumerations/member-type.ts
+  ❌ Export 'englishTranslations' (const) is not documented in README
+     Location: src/translations/en-US.ts
+  ... and 332 more issues
+
+
+
+❌ Audit failed with 247 critical issue(s)

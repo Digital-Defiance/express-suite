@@ -1,0 +1,45 @@
+
+🔍 Auditing package: digitaldefiance-node-express-suite
+
+
+============================================================
+Package: @digitaldefiance/node-express-suite
+============================================================
+
+Documentation:
+  Completeness: 5.0%
+  Undocumented Exports: 264
+  Missing Examples: 110
+
+Test Coverage:
+  Statements: 0.0%
+  Branches: 0.0%
+  Functions: 0.0%
+  Lines: 0.0%
+
+Issues (394):
+  ❌ Export 'SupportedIdType' (type) is not documented in README
+     Location: src/documents/base.ts
+  ❌ Export 'IBaseDocument' (type) is not documented in README
+     Location: src/documents/base.ts
+  ❌ Export 'IApiMessageResponse' (interface) is not documented in README
+     Location: src/interfaces/api-message-response.ts
+  ❌ Export 'IApiErrorResponse' (interface) is not documented in README
+     Location: src/interfaces/api-error-response.ts
+  ❌ Export 'IApiExpressValidationErrorResponse' (interface) is not documented in README
+     Location: src/interfaces/api-express-validation-error-response.ts
+  ❌ Export 'IMongoErrors' (interface) is not documented in README
+     Location: src/interfaces/mongo-errors.ts
+  ❌ Export 'IApiMongoValidationErrorResponse' (interface) is not documented in README
+     Location: src/interfaces/api-mongo-validation-error-response.ts
+  ❌ Export 'IApiBackupCodesResponse' (interface) is not documented in README
+     Location: src/interfaces/api-responses/backup-codes-response.ts
+  ❌ Export 'IApiChallengeResponse' (interface) is not documented in README
+     Location: src/interfaces/api-responses/challenge-response.ts
+  ❌ Export 'IApiCodeCountResponse' (interface) is not documented in README
+     Location: src/interfaces/api-responses/code-count-response.ts
+  ... and 384 more issues
+
+
+
+❌ Audit failed with 264 critical issue(s)

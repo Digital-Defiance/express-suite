@@ -1,0 +1,351 @@
+{
+  "timestamp": "2025-11-25T07:51:51.687Z",
+  "documentation": [
+    {
+      "priority": "critical",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/node-express-suite",
+      "description": "264 undocumented exports",
+      "count": 264,
+      "recommendation": "Document all exported functions, classes, and interfaces in the README"
+    },
+    {
+      "priority": "critical",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/ecies-lib",
+      "description": "247 undocumented exports",
+      "count": 247,
+      "recommendation": "Document all exported functions, classes, and interfaces in the README"
+    },
+    {
+      "priority": "critical",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/i18n-lib",
+      "description": "221 undocumented exports",
+      "count": 221,
+      "recommendation": "Document all exported functions, classes, and interfaces in the README"
+    },
+    {
+      "priority": "critical",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/express-suite-react-components",
+      "description": "167 undocumented exports",
+      "count": 167,
+      "recommendation": "Document all exported functions, classes, and interfaces in the README"
+    },
+    {
+      "priority": "critical",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/suite-core-lib",
+      "description": "141 undocumented exports",
+      "count": 141,
+      "recommendation": "Document all exported functions, classes, and interfaces in the README"
+    },
+    {
+      "priority": "critical",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/node-ecies-lib",
+      "description": "97 undocumented exports",
+      "count": 97,
+      "recommendation": "Document all exported functions, classes, and interfaces in the README"
+    },
+    {
+      "priority": "critical",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/express-suite-starter",
+      "description": "71 undocumented exports",
+      "count": 71,
+      "recommendation": "Document all exported functions, classes, and interfaces in the README"
+    },
+    {
+      "priority": "critical",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/express-suite-test-utils",
+      "description": "22 undocumented exports",
+      "count": 22,
+      "recommendation": "Document all exported functions, classes, and interfaces in the README"
+    },
+    {
+      "priority": "high",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/node-express-suite",
+      "description": "110 major features without examples",
+      "count": 110,
+      "recommendation": "Add usage examples for major features in the README"
+    },
+    {
+      "priority": "high",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/i18n-lib",
+      "description": "94 major features without examples",
+      "count": 94,
+      "recommendation": "Add usage examples for major features in the README"
+    },
+    {
+      "priority": "high",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/ecies-lib",
+      "description": "86 major features without examples",
+      "count": 86,
+      "recommendation": "Add usage examples for major features in the README"
+    },
+    {
+      "priority": "high",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/suite-core-lib",
+      "description": "56 major features without examples",
+      "count": 56,
+      "recommendation": "Add usage examples for major features in the README"
+    },
+    {
+      "priority": "high",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/node-ecies-lib",
+      "description": "37 major features without examples",
+      "count": 37,
+      "recommendation": "Add usage examples for major features in the README"
+    },
+    {
+      "priority": "high",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/express-suite-starter",
+      "description": "23 major features without examples",
+      "count": 23,
+      "recommendation": "Add usage examples for major features in the README"
+    },
+    {
+      "priority": "high",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/express-suite-test-utils",
+      "description": "13 major features without examples",
+      "count": 13,
+      "recommendation": "Add usage examples for major features in the README"
+    },
+    {
+      "priority": "high",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/express-suite-react-components",
+      "description": "7 major features without examples",
+      "count": 7,
+      "recommendation": "Add usage examples for major features in the README"
+    },
+    {
+      "priority": "medium",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/node-express-suite",
+      "description": "20 undocumented configuration options",
+      "count": 20,
+      "recommendation": "Document all configuration options with their defaults"
+    },
+    {
+      "priority": "medium",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/express-suite-react-components",
+      "description": "13 undocumented configuration options",
+      "count": 13,
+      "recommendation": "Document all configuration options with their defaults"
+    },
+    {
+      "priority": "medium",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/i18n-lib",
+      "description": "11 undocumented configuration options",
+      "count": 11,
+      "recommendation": "Document all configuration options with their defaults"
+    },
+    {
+      "priority": "medium",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/express-suite-starter",
+      "description": "10 undocumented configuration options",
+      "count": 10,
+      "recommendation": "Document all configuration options with their defaults"
+    },
+    {
+      "priority": "medium",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/ecies-lib",
+      "description": "9 undocumented configuration options",
+      "count": 9,
+      "recommendation": "Document all configuration options with their defaults"
+    },
+    {
+      "priority": "medium",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/node-ecies-lib",
+      "description": "4 undocumented configuration options",
+      "count": 4,
+      "recommendation": "Document all configuration options with their defaults"
+    },
+    {
+      "priority": "medium",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/express-suite-test-utils",
+      "description": "2 undocumented configuration options",
+      "count": 2,
+      "recommendation": "Document all configuration options with their defaults"
+    },
+    {
+      "priority": "medium",
+      "category": "documentation",
+      "packageName": "@digitaldefiance/suite-core-lib",
+      "description": "2 undocumented configuration options",
+      "count": 2,
+      "recommendation": "Document all configuration options with their defaults"
+    }
+  ],
+  "coverage": [
+    {
+      "priority": "critical",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/express-suite-react-components",
+      "description": "Statement coverage at 0.0% (target: 90%)",
+      "count": 90,
+      "recommendation": "Add tests to increase statement coverage by 90.0%"
+    },
+    {
+      "priority": "critical",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/express-suite-test-utils",
+      "description": "Statement coverage at 0.0% (target: 90%)",
+      "count": 90,
+      "recommendation": "Add tests to increase statement coverage by 90.0%"
+    },
+    {
+      "priority": "critical",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/mongoose-types",
+      "description": "Statement coverage at 0.0% (target: 90%)",
+      "count": 90,
+      "recommendation": "Add tests to increase statement coverage by 90.0%"
+    },
+    {
+      "priority": "critical",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/node-ecies-lib",
+      "description": "Statement coverage at 0.0% (target: 90%)",
+      "count": 90,
+      "recommendation": "Add tests to increase statement coverage by 90.0%"
+    },
+    {
+      "priority": "critical",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/node-express-suite",
+      "description": "Statement coverage at 0.0% (target: 90%)",
+      "count": 90,
+      "recommendation": "Add tests to increase statement coverage by 90.0%"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/express-suite-react-components",
+      "description": "170 untested exports",
+      "count": 170,
+      "recommendation": "Add tests for all exported functions and classes"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/ecies-lib",
+      "description": "127 untested exports",
+      "count": 127,
+      "recommendation": "Add tests for all exported functions and classes"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/node-express-suite",
+      "description": "118 untested exports",
+      "count": 118,
+      "recommendation": "Add tests for all exported functions and classes"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/i18n-lib",
+      "description": "88 untested exports",
+      "count": 88,
+      "recommendation": "Add tests for all exported functions and classes"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/express-suite-react-components",
+      "description": "Branch coverage at 0.0% (target: 85%)",
+      "count": 85,
+      "recommendation": "Add tests for untested branches and edge cases"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/express-suite-test-utils",
+      "description": "Branch coverage at 0.0% (target: 85%)",
+      "count": 85,
+      "recommendation": "Add tests for untested branches and edge cases"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/mongoose-types",
+      "description": "Branch coverage at 0.0% (target: 85%)",
+      "count": 85,
+      "recommendation": "Add tests for untested branches and edge cases"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/node-ecies-lib",
+      "description": "Branch coverage at 0.0% (target: 85%)",
+      "count": 85,
+      "recommendation": "Add tests for untested branches and edge cases"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/node-express-suite",
+      "description": "Branch coverage at 0.0% (target: 85%)",
+      "count": 85,
+      "recommendation": "Add tests for untested branches and edge cases"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/node-ecies-lib",
+      "description": "79 untested exports",
+      "count": 79,
+      "recommendation": "Add tests for all exported functions and classes"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/suite-core-lib",
+      "description": "63 untested exports",
+      "count": 63,
+      "recommendation": "Add tests for all exported functions and classes"
+    },
+    {
+      "priority": "high",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/express-suite-starter",
+      "description": "48 untested exports",
+      "count": 48,
+      "recommendation": "Add tests for all exported functions and classes"
+    },
+    {
+      "priority": "medium",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/express-suite-starter",
+      "description": "Branch coverage at 72.3% (target: 85%)",
+      "count": 13,
+      "recommendation": "Add tests for untested branches and edge cases"
+    },
+    {
+      "priority": "medium",
+      "category": "coverage",
+      "packageName": "@digitaldefiance/ecies-lib",
+      "description": "Statement coverage at 82.9% (target: 90%)",
+      "count": 7,
+      "recommendation": "Add tests to increase statement coverage by 7.1%"
+    }
+  ]
+}

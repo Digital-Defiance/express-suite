@@ -1,0 +1,1344 @@
+{
+  "packageName": "@digitaldefiance/express-suite-test-utils",
+  "documentation": {
+    "packageName": "@digitaldefiance/express-suite-test-utils",
+    "exports": [
+      {
+        "name": "ErrorClass",
+        "type": "type",
+        "signature": "type ErrorClass = new (...args: any[]) => E",
+        "sourceFile": "src/lib/to-throw-type.ts",
+        "isDocumented": false,
+        "hasExample": true
+      },
+      {
+        "name": "toThrowType",
+        "type": "const",
+        "signature": "const toThrowType: unknown",
+        "sourceFile": "src/lib/to-throw-type.ts",
+        "isDocumented": true,
+        "hasExample": true
+      },
+      {
+        "name": "ConsoleSpies",
+        "type": "type",
+        "signature": "type ConsoleSpies = {\n  log: jest.SpyInstance;\n  info: jest.SpyInstance;\n  warn: jest.SpyInstance;\n  error: jest.SpyInstance;\n  debug: jest.SpyInstance;\n}",
+        "sourceFile": "src/lib/console.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "WithConsoleOptions",
+        "type": "interface",
+        "signature": "interface WithConsoleOptions",
+        "sourceFile": "src/lib/console.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "withConsoleMocks",
+        "type": "function",
+        "signature": "function withConsoleMocks(options: WithConsoleOptions, fn: (spies: ConsoleSpies) => Promise<T> | T): Promise<T>",
+        "sourceFile": "src/lib/console.ts",
+        "isDocumented": true,
+        "hasExample": true
+      },
+      {
+        "name": "spyContains",
+        "type": "function",
+        "signature": "function spyContains(spy: jest.SpyInstance, needles: string[]): boolean",
+        "sourceFile": "src/lib/console.ts",
+        "isDocumented": true,
+        "hasExample": true
+      },
+      {
+        "name": "DirectLogSpies",
+        "type": "interface",
+        "signature": "interface DirectLogSpies",
+        "sourceFile": "src/lib/direct-log.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "WithDirectLogOptions",
+        "type": "interface",
+        "signature": "interface WithDirectLogOptions",
+        "sourceFile": "src/lib/direct-log.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "withDirectLogMocks",
+        "type": "function",
+        "signature": "function withDirectLogMocks(options: WithDirectLogOptions, fn: (spies: DirectLogSpies) => Promise<T> | T): Promise<T>",
+        "sourceFile": "src/lib/direct-log.ts",
+        "isDocumented": true,
+        "hasExample": true
+      },
+      {
+        "name": "directLogContains",
+        "type": "function",
+        "signature": "function directLogContains(spy: jest.Mock, fd: number, needles: string[]): boolean",
+        "sourceFile": "src/lib/direct-log.ts",
+        "isDocumented": true,
+        "hasExample": true
+      },
+      {
+        "name": "getDirectLogMessages",
+        "type": "function",
+        "signature": "function getDirectLogMessages(spy: jest.Mock, fd: number): string[]",
+        "sourceFile": "src/lib/direct-log.ts",
+        "isDocumented": true,
+        "hasExample": true
+      },
+      {
+        "name": "LocalStorageMock",
+        "type": "class",
+        "signature": "class LocalStorageMock implements Storage",
+        "sourceFile": "src/lib/localStorage-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "ObjectId",
+        "type": "class",
+        "signature": "class ObjectId",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "Binary",
+        "type": "class",
+        "signature": "class Binary",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "Code",
+        "type": "class",
+        "signature": "class Code",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "DBRef",
+        "type": "class",
+        "signature": "class DBRef",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "Decimal128",
+        "type": "class",
+        "signature": "class Decimal128",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "Double",
+        "type": "class",
+        "signature": "class Double",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "Int32",
+        "type": "class",
+        "signature": "class Int32",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "Long",
+        "type": "class",
+        "signature": "class Long",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "MaxKey",
+        "type": "class",
+        "signature": "class MaxKey",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "MinKey",
+        "type": "class",
+        "signature": "class MinKey",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "class",
+        "signature": "class Timestamp",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "UUID",
+        "type": "class",
+        "signature": "class UUID",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "secp256k1",
+        "type": "const",
+        "signature": "const secp256k1: unknown",
+        "sourceFile": "src/lib/bson-mock.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "mockTimezones",
+        "type": "const",
+        "signature": "const mockTimezones: unknown",
+        "sourceFile": "src/lib/react-mocks.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "mockGetInitialTimezone",
+        "type": "const",
+        "signature": "const mockGetInitialTimezone: unknown",
+        "sourceFile": "src/lib/react-mocks.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "mockRegisterFormProps",
+        "type": "const",
+        "signature": "const mockRegisterFormProps: unknown",
+        "sourceFile": "src/lib/react-mocks.ts",
+        "isDocumented": false,
+        "hasExample": false
+      },
+      {
+        "name": "connectMemoryDB",
+        "type": "function",
+        "signature": "function connectMemoryDB(): Promise<{ connection: Connection; uri: string }>",
+        "sourceFile": "src/lib/mongoose-memory.ts",
+        "isDocumented": true,
+        "hasExample": true
+      },
+      {
+        "name": "disconnectMemoryDB",
+        "type": "function",
+        "signature": "function disconnectMemoryDB(): Promise<void>",
+        "sourceFile": "src/lib/mongoose-memory.ts",
+        "isDocumented": true,
+        "hasExample": true
+      },
+      {
+        "name": "clearMemoryDB",
+        "type": "function",
+        "signature": "function clearMemoryDB(): Promise<void>",
+        "sourceFile": "src/lib/mongoose-memory.ts",
+        "isDocumented": true,
+        "hasExample": true
+      }
+    ],
+    "documentedSymbols": [
+      {
+        "name": "beforeAll",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 21,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "setupTestEnv",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 21,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "Importing",
+        "description": "Test helpers and mocks are available via separate `/testing` entry points: **Note:** All `/testing` entry points require `@faker-js/faker` as a peer dependency:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 48,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Test",
+        "description": "Test helpers and mocks are available via separate `/testing` entry points: **Note:** All `/testing` entry points require `@faker-js/faker` as a peer dependency:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 48,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Utilities",
+        "description": "Test helpers and mocks are available via separate `/testing` entry points: **Note:** All `/testing` entry points require `@faker-js/faker` as a peer dependency:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 48,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Express",
+        "description": "Test helpers and mocks are available via separate `/testing` entry points: **Note:** All `/testing` entry points require `@faker-js/faker` as a peer dependency:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 48,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Suite",
+        "description": "Test helpers and mocks are available via separate `/testing` entry points: **Note:** All `/testing` entry points require `@faker-js/faker` as a peer dependency:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 48,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Packages",
+        "description": "Test helpers and mocks are available via separate `/testing` entry points: **Note:** All `/testing` entry points require `@faker-js/faker` as a peer dependency:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 48,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "expect",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 52,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "toThrowType",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 52,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "toBe",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 52,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "Matcher",
+        "description": "Custom Jest matcher for testing error types with optional validation:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 74,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "it",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 88,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "withConsoleMocks",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 88,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "log",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 88,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "expect",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 88,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "toHaveBeenCalledWith",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 88,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "spyContains",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 88,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "toBe",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 88,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "Console",
+        "description": "Mock console methods in tests:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 100,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Mocks",
+        "description": "Mock console methods in tests:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 100,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "mock",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "requireActual",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "fn",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "it",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "withDirectLogMocks",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "writeSync",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "expect",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "directLogContains",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "toBe",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "getDirectLogMessages",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "toEqual",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "Direct",
+        "description": "Mock `fs.writeSync` for testing direct console output:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 125,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Log",
+        "description": "Mock `fs.writeSync` for testing direct console output:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 125,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Mocks",
+        "description": "Mock `fs.writeSync` for testing direct console output:",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 125,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "describe",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "beforeAll",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "connectMemoryDB",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "afterAll",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "disconnectMemoryDB",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "afterEach",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "clearMemoryDB",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "it",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "validate",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "expect",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "toThrow",
+        "description": "Used in code example",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "hasUsageExample": true
+      },
+      {
+        "name": "mongoose",
+        "description": "**Note:** Requires `mongoose` as a peer dependency and `mongodb-memory-server` as a dependency (already included).",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 158,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Mongoose",
+        "description": "In-memory MongoDB testing utilities using mongodb-memory-server: **Note:** Requires `mongoose` as a peer dependency and `mongodb-memory-server` as a dependency (already included).",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 160,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Memory",
+        "description": "In-memory MongoDB testing utilities using mongodb-memory-server: **Note:** Requires `mongoose` as a peer dependency and `mongodb-memory-server` as a dependency (already included).",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 160,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "Database",
+        "description": "In-memory MongoDB testing utilities using mongodb-memory-server: **Note:** Requires `mongoose` as a peer dependency and `mongodb-memory-server` as a dependency (already included).",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 160,
+          "column": 1
+        },
+        "hasUsageExample": false
+      },
+      {
+        "name": "License",
+        "description": "MIT",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 164,
+          "column": 1
+        },
+        "hasUsageExample": false
+      }
+    ],
+    "examples": [
+      {
+        "code": "npm install @digitaldefiance/express-suite-test-utils\n# or\nyarn add @digitaldefiance/express-suite-test-utils",
+        "language": "bash",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 9,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "// node-express-suite test helpers\nimport { \n  createApplicationMock,\n  setupTestEnv\n} from '@digitaldefiance/node-express-suite/testing';\n\n// node-ecies-lib test mocks\nimport { mockBackendMember } from '@digitaldefiance/node-ecies-lib/testing';\n\n// ecies-lib test mocks\nimport { mockFrontendMember } from '@digitaldefiance/ecies-lib/testing';\n\n// Use in your tests\nbeforeAll(async () => {\n  await setupTestEnv();\n});",
+        "language": "typescript",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 21,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "createApplicationMock",
+          "setupTestEnv",
+          "mockBackendMember",
+          "mockFrontendMember",
+          "beforeAll"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "npm install -D @faker-js/faker\n# or\nyarn add -D @faker-js/faker",
+        "language": "bash",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 42,
+          "column": 1
+        },
+        "referencedSymbols": [],
+        "hasTest": false
+      },
+      {
+        "code": "import '@digitaldefiance/express-suite-test-utils';\n\nclass CustomError extends Error {\n  constructor(public code: number) {\n    super('Custom error');\n  }\n}\n\n// Basic usage\nexpect(() => {\n  throw new CustomError(404);\n}).toThrowType(CustomError);\n\n// With validator\nexpect(() => {\n  throw new CustomError(404);\n}).toThrowType(CustomError, (error) => {\n  expect(error.code).toBe(404);\n});",
+        "language": "typescript",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 52,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "expect",
+          "toThrowType",
+          "toBe",
+          "CustomError",
+          "error"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "import { ErrorClass } from '@digitaldefiance/express-suite-test-utils';\n\nfunction testError<E extends Error>(ErrorType: ErrorClass<E>) {\n  // Use ErrorType constructor\n}",
+        "language": "typescript",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 76,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "ErrorClass",
+          "E"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "import { withConsoleMocks, spyContains } from '@digitaldefiance/express-suite-test-utils';\n\nit('should log message', async () => {\n  await withConsoleMocks({ mute: true }, async (spies) => {\n    console.log('test message');\n    expect(spies.log).toHaveBeenCalledWith('test message');\n    expect(spyContains(spies.log, 'test', 'message')).toBe(true);\n  });\n});",
+        "language": "typescript",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 88,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "withConsoleMocks",
+          "spyContains",
+          "it",
+          "expect",
+          "toHaveBeenCalledWith",
+          "toBe",
+          "console",
+          "spies"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "import { withDirectLogMocks, directLogContains, getDirectLogMessages } from '@digitaldefiance/express-suite-test-utils';\nimport * as fs from 'fs';\n\n// Important: Mock fs module at module level before importing\njest.mock('fs', () => ({\n  ...jest.requireActual('fs'),\n  writeSync: jest.fn(),\n}));\n\nit('should capture direct writes to stdout', async () => {\n  await withDirectLogMocks({ mute: true }, async (spies) => {\n    const buffer = Buffer.from('hello world\\n', 'utf8');\n    fs.writeSync(1, buffer); // stdout\n    \n    expect(directLogContains(spies.writeSync, 1, 'hello', 'world')).toBe(true);\n    expect(getDirectLogMessages(spies.writeSync, 1)).toEqual(['hello world\\n']);\n  });\n});",
+        "language": "typescript",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 104,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "withDirectLogMocks",
+          "directLogContains",
+          "getDirectLogMessages",
+          "fs",
+          "mock",
+          "requireActual",
+          "fn",
+          "it",
+          "writeSync",
+          "expect",
+          "toBe",
+          "toEqual",
+          "Mock",
+          "jest",
+          "Buffer",
+          "spies"
+        ],
+        "hasTest": false
+      },
+      {
+        "code": "import { connectMemoryDB, disconnectMemoryDB, clearMemoryDB } from '@digitaldefiance/express-suite-test-utils';\nimport { User } from './models/user';\n\ndescribe('User model', () => {\n  beforeAll(async () => {\n    await connectMemoryDB();\n  });\n\n  afterAll(async () => {\n    await disconnectMemoryDB();\n  });\n\n  afterEach(async () => {\n    await clearMemoryDB();\n  });\n\n  it('should validate user schema', async () => {\n    const user = new User({ username: 'test', email: 'test@example.com' });\n    await user.validate(); // Real Mongoose validation!\n    \n    await expect(async () => {\n      const invalid = new User({ username: 'ab' }); // too short\n      await invalid.validate();\n    }).rejects.toThrow();\n  });\n});",
+        "language": "typescript",
+        "location": {
+          "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+          "line": 129,
+          "column": 1
+        },
+        "referencedSymbols": [
+          "connectMemoryDB",
+          "disconnectMemoryDB",
+          "clearMemoryDB",
+          "User",
+          "describe",
+          "beforeAll",
+          "afterAll",
+          "afterEach",
+          "it",
+          "validate",
+          "expect",
+          "toThrow",
+          "example",
+          "user",
+          "invalid",
+          "rejects"
+        ],
+        "hasTest": false
+      }
+    ],
+    "crossReferences": [],
+    "configOptions": [
+      {
+        "name": "WithConsoleOptions",
+        "type": "interface",
+        "description": "Configuration interface: WithConsoleOptions",
+        "isDocumented": false
+      },
+      {
+        "name": "WithDirectLogOptions",
+        "type": "interface",
+        "description": "Configuration interface: WithDirectLogOptions",
+        "isDocumented": false
+      }
+    ]
+  },
+  "coverage": {
+    "packageName": "@digitaldefiance/express-suite-test-utils",
+    "statements": {
+      "total": 0,
+      "covered": 0,
+      "percentage": 0,
+      "meetsThreshold": false
+    },
+    "branches": {
+      "total": 0,
+      "covered": 0,
+      "percentage": 0,
+      "meetsThreshold": false
+    },
+    "functions": {
+      "total": 0,
+      "covered": 0,
+      "percentage": 0,
+      "meetsThreshold": false
+    },
+    "lines": {
+      "total": 0,
+      "covered": 0,
+      "percentage": 0,
+      "meetsThreshold": false
+    },
+    "files": [],
+    "untestedExports": [
+      {
+        "symbol": {
+          "name": "ConsoleSpies",
+          "type": "type",
+          "signature": "type ConsoleSpies = {\n  log: jest.SpyInstance;\n  info: jest.SpyInstance;\n  warn: jest.SpyInstance;\n  error: jest.SpyInstance;\n  debug: jest.SpyInstance;\n}",
+          "sourceFile": "src/lib/console.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "WithConsoleOptions",
+          "type": "interface",
+          "signature": "interface WithConsoleOptions",
+          "sourceFile": "src/lib/console.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "DirectLogSpies",
+          "type": "interface",
+          "signature": "interface DirectLogSpies",
+          "sourceFile": "src/lib/direct-log.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      },
+      {
+        "symbol": {
+          "name": "WithDirectLogOptions",
+          "type": "interface",
+          "signature": "interface WithDirectLogOptions",
+          "sourceFile": "src/lib/direct-log.ts",
+          "isDocumented": false,
+          "hasExample": false
+        },
+        "reason": "No test file imports or tests this export"
+      }
+    ]
+  },
+  "quality": {
+    "totalTests": 95,
+    "testsWithErrorHandling": 12,
+    "testsWithEdgeCases": 9,
+    "integrationTests": 0,
+    "exampleTests": 0
+  },
+  "issues": [
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ErrorClass' (type) is not documented in README",
+      "location": "src/lib/to-throw-type.ts",
+      "recommendation": "Add documentation for 'ErrorClass' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ConsoleSpies' (type) is not documented in README",
+      "location": "src/lib/console.ts",
+      "recommendation": "Add documentation for 'ConsoleSpies' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'WithConsoleOptions' (interface) is not documented in README",
+      "location": "src/lib/console.ts",
+      "recommendation": "Add documentation for 'WithConsoleOptions' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'DirectLogSpies' (interface) is not documented in README",
+      "location": "src/lib/direct-log.ts",
+      "recommendation": "Add documentation for 'DirectLogSpies' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'WithDirectLogOptions' (interface) is not documented in README",
+      "location": "src/lib/direct-log.ts",
+      "recommendation": "Add documentation for 'WithDirectLogOptions' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'LocalStorageMock' (class) is not documented in README",
+      "location": "src/lib/localStorage-mock.ts",
+      "recommendation": "Add documentation for 'LocalStorageMock' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'ObjectId' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'ObjectId' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'Binary' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'Binary' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'Code' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'Code' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'DBRef' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'DBRef' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'Decimal128' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'Decimal128' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'Double' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'Double' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'Int32' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'Int32' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'Long' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'Long' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'MaxKey' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'MaxKey' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'MinKey' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'MinKey' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'Timestamp' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'Timestamp' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'UUID' (class) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'UUID' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'secp256k1' (const) is not documented in README",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add documentation for 'secp256k1' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'mockTimezones' (const) is not documented in README",
+      "location": "src/lib/react-mocks.ts",
+      "recommendation": "Add documentation for 'mockTimezones' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'mockGetInitialTimezone' (const) is not documented in README",
+      "location": "src/lib/react-mocks.ts",
+      "recommendation": "Add documentation for 'mockGetInitialTimezone' to the package README file."
+    },
+    {
+      "type": "UndocumentedExportError",
+      "severity": "critical",
+      "message": "Export 'mockRegisterFormProps' (const) is not documented in README",
+      "location": "src/lib/react-mocks.ts",
+      "recommendation": "Add documentation for 'mockRegisterFormProps' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'LocalStorageMock' (class) lacks usage example",
+      "location": "src/lib/localStorage-mock.ts",
+      "recommendation": "Add a usage example for 'LocalStorageMock' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'ObjectId' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'ObjectId' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'Binary' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'Binary' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'Code' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'Code' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'DBRef' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'DBRef' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'Decimal128' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'Decimal128' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'Double' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'Double' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'Int32' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'Int32' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'Long' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'Long' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'MaxKey' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'MaxKey' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'MinKey' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'MinKey' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'Timestamp' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'Timestamp' to the package README file."
+    },
+    {
+      "type": "MissingExampleError",
+      "severity": "warning",
+      "message": "Major feature 'UUID' (class) lacks usage example",
+      "location": "src/lib/bson-mock.ts",
+      "recommendation": "Add a usage example for 'UUID' to the package README file."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'WithConsoleOptions' is not documented",
+      "recommendation": "Document the 'WithConsoleOptions' configuration option in the README."
+    },
+    {
+      "type": "UndocumentedConfigError",
+      "severity": "warning",
+      "message": "Configuration option 'WithDirectLogOptions' is not documented",
+      "recommendation": "Document the 'WithDirectLogOptions' configuration option in the README."
+    },
+    {
+      "type": "UntestedExample",
+      "severity": "warning",
+      "message": "Code example references symbols (createApplicationMock, setupTestEnv, mockBackendMember, mockFrontendMember, beforeAll) that are not tested",
+      "location": {
+        "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+        "line": 21,
+        "column": 1
+      },
+      "recommendation": "Add tests that validate this example works correctly, or ensure the referenced symbols are tested"
+    },
+    {
+      "type": "InvalidExampleSyntax",
+      "severity": "warning",
+      "message": "Code example has syntax errors: Incomplete import statement",
+      "location": {
+        "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+        "line": 52,
+        "column": 1
+      },
+      "recommendation": "Fix the syntax errors in the code example or mark it as pseudo-code"
+    },
+    {
+      "type": "UntestedExample",
+      "severity": "warning",
+      "message": "Code example references symbols (expect, toThrowType, toBe, CustomError, error) that are not tested",
+      "location": {
+        "file": "/home/jessica/source/repos/DigitalBurnbag/express-suite/packages/digitaldefiance-express-suite-test-utils/README.md",
+        "line": 52,
+        "column": 1
+      },
+      "recommendation": "Add tests that validate this example works correctly, or ensure the referenced symbols are tested"
+    },
+    {
+      "type": "InsufficientCoverageError",
+      "severity": "warning",
+      "message": "Statement coverage (0.0%) is below threshold (90%)",
+      "recommendation": "Add more tests to increase statement coverage."
+    },
+    {
+      "type": "InsufficientCoverageError",
+      "severity": "warning",
+      "message": "Branch coverage (0.0%) is below threshold (85%)",
+      "recommendation": "Add tests for untested branches and edge cases."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'ConsoleSpies' has no tests",
+      "location": "src/lib/console.ts",
+      "recommendation": "Add tests for 'ConsoleSpies'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'WithConsoleOptions' has no tests",
+      "location": "src/lib/console.ts",
+      "recommendation": "Add tests for 'WithConsoleOptions'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'DirectLogSpies' has no tests",
+      "location": "src/lib/direct-log.ts",
+      "recommendation": "Add tests for 'DirectLogSpies'."
+    },
+    {
+      "type": "UntestedExportError",
+      "severity": "warning",
+      "message": "Export 'WithDirectLogOptions' has no tests",
+      "location": "src/lib/direct-log.ts",
+      "recommendation": "Add tests for 'WithDirectLogOptions'."
+    }
+  ]
+}

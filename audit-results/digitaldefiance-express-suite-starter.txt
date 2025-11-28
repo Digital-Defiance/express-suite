@@ -1,0 +1,45 @@
+
+🔍 Auditing package: digitaldefiance-express-suite-starter
+
+
+============================================================
+Package: @digitaldefiance/express-suite-starter
+============================================================
+
+Documentation:
+  Completeness: 1.0%
+  Undocumented Exports: 71
+  Missing Examples: 23
+
+Test Coverage:
+  Statements: 0.0%
+  Branches: 0.0%
+  Functions: 0.0%
+  Lines: 0.0%
+
+Issues (104):
+  ❌ Export 'Logger' (class) is not documented in README
+     Location: src/cli/logger.ts
+  ❌ Export 'enUsTranslations' (const) is not documented in README
+     Location: src/i18n/strings/en-us.ts
+  ❌ Export 'enGbTranslations' (const) is not documented in README
+     Location: src/i18n/strings/en-gb.ts
+  ❌ Export 'esTranslations' (const) is not documented in README
+     Location: src/i18n/strings/es.ts
+  ❌ Export 'frTranslations' (const) is not documented in README
+     Location: src/i18n/strings/fr.ts
+  ❌ Export 'deTranslations' (const) is not documented in README
+     Location: src/i18n/strings/de.ts
+  ❌ Export 'zhCnTranslations' (const) is not documented in README
+     Location: src/i18n/strings/zh-cn.ts
+  ❌ Export 'jaTranslations' (const) is not documented in README
+     Location: src/i18n/strings/ja.ts
+  ❌ Export 'ukTranslations' (const) is not documented in README
+     Location: src/i18n/strings/uk.ts
+  ❌ Export 'allTranslations' (const) is not documented in README
+     Location: src/i18n/translations-all.ts
+  ... and 94 more issues
+
+
+
+❌ Audit failed with 71 critical issue(s)

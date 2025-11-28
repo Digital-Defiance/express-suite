@@ -1,0 +1,45 @@
+
+🔍 Auditing package: digitaldefiance-suite-core-lib
+
+
+============================================================
+Package: @digitaldefiance/suite-core-lib
+============================================================
+
+Documentation:
+  Completeness: 15.0%
+  Undocumented Exports: 141
+  Missing Examples: 56
+
+Test Coverage:
+  Statements: 0.0%
+  Branches: 0.0%
+  Functions: 0.0%
+  Lines: 0.0%
+
+Issues (199):
+  ❌ Export 'IBackupCode' (interface) is not documented in README
+     Location: src/interfaces/backup-code.ts
+  ❌ Export 'IBackupCodeConstants' (interface) is not documented in README
+     Location: src/interfaces/backup-code-consts.ts
+  ❌ Export 'IHasId' (interface) is not documented in README
+     Location: src/interfaces/has-id.ts
+  ❌ Export 'IHasCreation' (interface) is not documented in README
+     Location: src/interfaces/has-creation.ts
+  ❌ Export 'IHasTimestamps' (interface) is not documented in README
+     Location: src/interfaces/has-timestamps.ts
+  ❌ Export 'IEmailTokenBase' (interface) is not documented in README
+     Location: src/interfaces/bases/email-token.ts
+  ❌ Export 'IMnemonicBase' (interface) is not documented in README
+     Location: src/interfaces/bases/mnemonic.ts
+  ❌ Export 'IHasSoftDelete' (interface) is not documented in README
+     Location: src/interfaces/has-soft-delete.ts
+  ❌ Export 'IHasSoftDeleter' (interface) is not documented in README
+     Location: src/interfaces/has-soft-deleter.ts
+  ❌ Export 'IHasCreator' (interface) is not documented in README
+     Location: src/interfaces/has-creator.ts
+  ... and 189 more issues
+
+
+
+❌ Audit failed with 141 critical issue(s)

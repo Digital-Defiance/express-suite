@@ -6,7 +6,55 @@ Formerly known as Project Albatross, the suite draws inspiration from the great 
 
 ## Overview of Packages
 
-Express Suite is composed of multiple interrelated packages, each serving a specific domain:
+Express Suite is composed of multiple interrelated packages, each serving a specific domain. The packages are designed to work together seamlessly, with clear dependency relationships and integration points.
+
+### Package Dependency Graph
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Application Layer                         │
+│  express-suite-starter (Generator)                          │
+│  express-suite-example (Reference Implementation)           │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    Presentation Layer                        │
+│  express-suite-react-components                             │
+│  (Auth forms, hooks, providers, UI components)              │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    Application Layer                         │
+│  node-express-suite                                         │
+│  (Express framework, auth, RBAC, MongoDB)                   │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    Business Logic Layer                      │
+│  suite-core-lib                                             │
+│  (User management, RBAC, crypto operations)                 │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                    ┌─────────┴─────────┐
+                    ▼                   ▼
+┌──────────────────────────┐  ┌──────────────────────────┐
+│   Cryptography Layer     │  │  Internationalization    │
+│  ecies-lib (Browser)     │  │  i18n-lib                │
+│  node-ecies-lib (Node)   │  │                          │
+└──────────────────────────┘  └──────────────────────────┘
+                    │
+                    ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    Testing Layer                             │
+│  express-suite-test-utils                                   │
+│  (Test helpers, mocks, utilities)                           │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Package Descriptions
 
 ### [@digitaldefiance/i18n-lib [NPM]](https://www.npmjs.com/package/@digitaldefiance/i18n-lib) [[GitHub]](https://github.com/Digital-Defiance/i18n-lib)
 
@@ -91,6 +139,320 @@ A complete reference implementation demonstrating how to integrate Express Suite
 - **🏗️ Modern Architecture**: Utilizes service containers, builders, fluent APIs, and plugin systems for extensibility.
 - **⚡ Developer Experience**: Interactive CLI tools, DevContainer support, and automated monorepo scaffolding.
 - **🔄 Seamless Integration**: Cross-platform cryptography libraries compatible between browser and Node.js environments.
+
+## Cross-Package Integration
+
+### Binary Compatibility: ecies-lib ↔ node-ecies-lib
+
+The browser-based `ecies-lib` and Node.js `node-ecies-lib` maintain **binary compatibility**, enabling seamless encryption/decryption across platforms:
+
+```typescript
+// Browser (ecies-lib)
+import { ECIESService } from '@digitaldefiance/ecies-lib';
+const browserEcies = new ECIESService();
+const encrypted = await browserEcies.encryptSimpleOrSingle(false, publicKey, data);
+
+// Node.js (node-ecies-lib) - can decrypt the same data
+import { ECIESService } from '@digitaldefiance/node-ecies-lib';
+const nodeEcies = new ECIESService();
+const decrypted = await nodeEcies.decryptSimpleOrSingleWithHeader(false, privateKey, encrypted);
+```
+
+**Key Compatibility Features:**
+- Identical ECIES v4.0 protocol implementation
+- Same message format and header structure
+- Compatible ID provider systems (ObjectId, GUID, UUID, Custom)
+- Shared encryption modes (Simple, Single, Multiple)
+
+### suite-core-lib Integration
+
+`suite-core-lib` builds on the ECIES libraries to provide higher-level user management primitives:
+
+```typescript
+import { UserBuilder, RoleBuilder } from '@digitaldefiance/suite-core-lib';
+import { ECIESService } from '@digitaldefiance/node-ecies-lib';
+
+// Create user with encrypted data
+const ecies = new ECIESService();
+const user = new UserBuilder()
+  .withUsername('alice')
+  .withEmail('alice@example.com')
+  .withEncryptionService(ecies)
+  .build();
+
+// User operations automatically use ECIES for sensitive data
+await user.encryptSensitiveData(data);
+```
+
+### node-express-suite Integration
+
+`node-express-suite` integrates all backend packages into a complete Express.js framework:
+
+```typescript
+import { ExpressSuiteApp } from '@digitaldefiance/node-express-suite';
+import { ECIESService } from '@digitaldefiance/node-ecies-lib';
+import { I18nEngine } from '@digitaldefiance/i18n-lib';
+
+// Initialize with all services
+const app = new ExpressSuiteApp({
+  ecies: new ECIESService(),
+  i18n: I18nEngine.createInstance('app', languages),
+  mongodb: { uri: process.env.MONGODB_URI },
+  jwt: { secret: process.env.JWT_SECRET }
+});
+
+// Framework automatically handles:
+// - JWT authentication with encrypted tokens
+// - RBAC with encrypted permissions
+// - i18n middleware for all responses
+// - MongoDB with encrypted sensitive fields
+```
+
+### express-suite-react-components Integration
+
+React components integrate with backend APIs using shared types and interfaces:
+
+```typescript
+import { AuthProvider, useAuth } from '@digitaldefiance/express-suite-react-components';
+import { LoginForm, RegisterForm } from '@digitaldefiance/express-suite-react-components';
+
+function App() {
+  return (
+    <AuthProvider apiUrl="https://api.example.com">
+      <LoginForm 
+        onSuccess={(user) => console.log('Logged in:', user)}
+        i18nLanguage="en-US"
+      />
+    </AuthProvider>
+  );
+}
+
+// Components automatically:
+// - Use suite-core-lib types for type safety
+// - Handle i18n with i18n-lib integration
+// - Encrypt sensitive data with ecies-lib
+// - Communicate with node-express-suite APIs
+```
+
+### Testing Integration
+
+`express-suite-test-utils` provides helpers for testing across all packages:
+
+```typescript
+import { 
+  withConsoleMocks,
+  connectMemoryDB,
+  mockBackendMember 
+} from '@digitaldefiance/express-suite-test-utils';
+import { mockFrontendMember } from '@digitaldefiance/ecies-lib/testing';
+
+describe('Cross-package integration', () => {
+  beforeAll(async () => {
+    await connectMemoryDB(); // In-memory MongoDB
+  });
+
+  it('should encrypt data cross-platform', async () => {
+    const browserMember = mockFrontendMember();
+    const nodeMember = mockBackendMember();
+    
+    // Encrypt in browser
+    const encrypted = await browserMember.encryptData('secret');
+    
+    // Decrypt in Node.js
+    const decrypted = await nodeMember.decryptData(encrypted);
+    expect(decrypted).toBe('secret');
+  });
+});
+```
+
+## API Quick Reference
+
+### Core Exports by Package
+
+#### @digitaldefiance/i18n-lib
+
+**Main Classes:**
+- `PluginI18nEngine` - Main i18n engine with component-based architecture
+- `I18nBuilder` - Fluent builder for engine configuration
+- `GlobalActiveContext` - Global context for currency, timezone, language
+
+**Functions:**
+- `formatICUMessage(message, variables, locale)` - Format ICU MessageFormat strings
+- `getCoreI18nEngine()` - Get core engine with system strings
+- `createPluralString(forms)` - Create type-safe plural strings
+- `createGenderedString(forms)` - Create type-safe gendered strings
+
+**Types & Enums:**
+- `LanguageCodes` - BCP 47 language codes (EN_US, FR, ES, DE, ZH_CN, JA, UK)
+- `ComponentRegistration` - Type-safe component registration
+- `LanguageDefinition` - Language configuration interface
+
+#### @digitaldefiance/ecies-lib
+
+**Main Classes:**
+- `ECIESService` - Main encryption/decryption service
+- `Member` - High-level user abstraction with crypto operations
+- `SecureString` / `SecureBuffer` - Memory-safe sensitive data storage
+- `ObjectIdProvider` / `GuidV4Provider` / `UuidProvider` - ID provider implementations
+
+**Functions:**
+- `createRuntimeConfiguration(overrides)` - Create custom configuration
+- `getEciesI18nEngine()` - Get ECIES i18n engine
+
+**Constants:**
+- `Constants` - Default immutable configuration
+- `ECIES` - ECIES-specific constants
+- `PBKDF2_PROFILES` - Password hashing profiles
+
+#### @digitaldefiance/node-ecies-lib
+
+**Main Classes:**
+- `ECIESService` - Node.js ECIES implementation (binary compatible with ecies-lib)
+- `Member` - Backend member implementation
+- `PasswordLoginService` - Secure authentication service
+
+**Functions:**
+- `createRuntimeConfiguration(overrides)` - Create custom Node.js configuration
+
+#### @digitaldefiance/suite-core-lib
+
+**Main Classes:**
+- `UserBuilder` - Fluent builder for user creation
+- `RoleBuilder` - Fluent builder for role creation
+- `PermissionManager` - RBAC permission management
+
+**Functions:**
+- `generateBackupCodes(count)` - Generate cryptographically secure backup codes
+- `validateBackupCode(code, hash)` - Validate backup code against hash
+
+**Types:**
+- `IUser` - User interface (shared between frontend/backend)
+- `IRole` - Role interface with permissions
+- `IPermission` - Permission interface
+
+#### @digitaldefiance/node-express-suite
+
+**Main Classes:**
+- `ExpressSuiteApp` - Main application class integrating all services
+- `AuthMiddleware` - JWT authentication middleware
+- `RBACMiddleware` - Role-based access control middleware
+- `I18nMiddleware` - Internationalization middleware
+- `ModelRegistry` - Dynamic Mongoose model registration
+
+**Functions:**
+- `createExpressApp(config)` - Create configured Express application
+- `setupAuth(app, config)` - Setup authentication routes
+- `setupRBAC(app, config)` - Setup RBAC middleware
+
+#### @digitaldefiance/express-suite-react-components
+
+**Components:**
+- `<AuthProvider>` - Authentication context provider
+- `<LoginForm>` - Pre-built login form with validation
+- `<RegisterForm>` - Pre-built registration form
+- `<PrivateRoute>` - Protected route component
+- `<TopMenu>` - Navigation menu with auth state
+
+**Hooks:**
+- `useAuth()` - Access authentication state and methods
+- `useI18n()` - Access i18n translation functions
+- `usePermissions()` - Check user permissions
+
+#### @digitaldefiance/express-suite-test-utils
+
+**Functions:**
+- `withConsoleMocks(options, callback)` - Mock console methods
+- `connectMemoryDB()` - Connect to in-memory MongoDB
+- `disconnectMemoryDB()` - Disconnect from in-memory MongoDB
+- `clearMemoryDB()` - Clear all data from in-memory MongoDB
+
+**Matchers:**
+- `expect().toThrowType(ErrorClass, validator?)` - Custom Jest matcher for error types
+
+### Common Usage Patterns
+
+#### Setting up i18n
+
+```typescript
+import { PluginI18nEngine, LanguageCodes } from '@digitaldefiance/i18n-lib';
+
+const engine = PluginI18nEngine.createInstance('app', [
+  { id: LanguageCodes.EN_US, name: 'English', code: 'en-US', isDefault: true },
+  { id: LanguageCodes.FR, name: 'Français', code: 'fr' }
+]);
+
+engine.registerComponent({
+  component: { id: 'app', name: 'App', stringKeys: ['welcome'] },
+  strings: {
+    [LanguageCodes.EN_US]: { welcome: 'Welcome!' },
+    [LanguageCodes.FR]: { welcome: 'Bienvenue!' }
+  }
+});
+```
+
+#### Encrypting Data (Browser)
+
+```typescript
+import { ECIESService } from '@digitaldefiance/ecies-lib';
+
+const ecies = new ECIESService();
+const mnemonic = ecies.generateNewMnemonic();
+const { privateKey, publicKey } = ecies.mnemonicToSimpleKeyPair(mnemonic);
+
+const data = new TextEncoder().encode('Secret message');
+const encrypted = await ecies.encryptSimpleOrSingle(false, publicKey, data);
+const decrypted = await ecies.decryptSimpleOrSingleWithHeader(false, privateKey, encrypted);
+```
+
+#### Creating Users with RBAC
+
+```typescript
+import { UserBuilder, RoleBuilder } from '@digitaldefiance/suite-core-lib';
+
+const adminRole = new RoleBuilder()
+  .withName('admin')
+  .withPermissions(['users:read', 'users:write', 'users:delete'])
+  .build();
+
+const user = new UserBuilder()
+  .withUsername('alice')
+  .withEmail('alice@example.com')
+  .withRoles([adminRole])
+  .build();
+```
+
+#### Setting up Express Backend
+
+```typescript
+import { ExpressSuiteApp } from '@digitaldefiance/node-express-suite';
+
+const app = new ExpressSuiteApp({
+  mongodb: { uri: process.env.MONGODB_URI },
+  jwt: { secret: process.env.JWT_SECRET },
+  i18n: { defaultLanguage: 'en-US' }
+});
+
+await app.start(3000);
+```
+
+#### React Authentication
+
+```typescript
+import { AuthProvider, LoginForm, useAuth } from '@digitaldefiance/express-suite-react-components';
+
+function App() {
+  return (
+    <AuthProvider apiUrl="https://api.example.com">
+      <LoginForm onSuccess={(user) => console.log('Logged in:', user)} />
+    </AuthProvider>
+  );
+}
+
+function Dashboard() {
+  const { user, logout } = useAuth();
+  return <div>Welcome {user.username}! <button onClick={logout}>Logout</button></div>;
+}
+```
 
 ## Development and Contribution
 
