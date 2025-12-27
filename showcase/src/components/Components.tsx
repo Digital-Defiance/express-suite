@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { FaGithub, FaStar, FaCode } from "react-icons/fa";
-import { SiNpm } from "react-icons/si";
-import "./Components.css";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { FaGithub, FaStar, FaCode, FaExternalLinkAlt } from 'react-icons/fa';
+import { SiNpm } from 'react-icons/si';
+import './Components.css';
 
 interface Component {
   title: string;
@@ -10,181 +10,197 @@ interface Component {
   icon: string;
   tech: string[];
   github: string;
+  projectUrl?: string;
   npm?: string;
   stats?: {
     tests?: string;
     coverage?: string;
   };
   highlights: string[];
-  category: "Core" | "Crypto" | "UI" | "Tools" | "Testing";
+  category: 'Core' | 'Crypto' | 'UI' | 'Tools' | 'Testing';
 }
 
 const components: Component[] = [
   {
-    title: "i18n-lib",
-    icon: "🌍",
+    title: 'i18n-lib',
+    icon: '🌍',
     description:
-      "Production-ready internationalization library with component-based architecture, type-safe translations, ICU MessageFormat support, and comprehensive security features including XSS protection and ReDoS mitigation.",
-    tech: ["TypeScript", "ICU MessageFormat", "CLDR", "Security"],
-    github: "https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-i18n-lib",
-    npm: "https://www.npmjs.com/package/@digitaldefiance/i18n-lib",
-    category: "Core",
+      'Production-ready internationalization library with component-based architecture, type-safe translations, ICU MessageFormat support, and comprehensive security features including XSS protection and ReDoS mitigation.',
+    tech: ['TypeScript', 'ICU MessageFormat', 'CLDR', 'Security'],
+    github:
+      'https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-i18n-lib',
+    projectUrl: 'https://digital-defiance.github.io/i18n-lib/',
+    npm: 'https://www.npmjs.com/package/@digitaldefiance/i18n-lib',
+    category: 'Core',
     stats: {
-      tests: "1,738 tests",
-      coverage: "93.22%",
+      tests: '1,738 tests',
+      coverage: '93.22%',
     },
     highlights: [
-      "37 language support with CLDR-compliant plural rules",
-      "ICU MessageFormat: plural, select, date/time/number formatting",
-      "Production-grade security: XSS, ReDoS, prototype pollution protection",
-      "Component registration with aliases and full type safety",
-      "Multiple isolated engine instances for different contexts",
+      '37 language support with CLDR-compliant plural rules',
+      'ICU MessageFormat: plural, select, date/time/number formatting',
+      'Production-grade security: XSS, ReDoS, prototype pollution protection',
+      'Component registration with aliases and full type safety',
+      'Multiple isolated engine instances for different contexts',
     ],
   },
   {
-    title: "ecies-lib",
-    icon: "🔐",
+    title: 'ecies-lib',
+    icon: '🔐',
     description:
-      "Browser-compatible ECIES v4.0 encryption library built on Web Crypto API and @noble/curves. Features HKDF key derivation, AAD binding, multi-recipient optimization, BIP39 mnemonics, and HD wallets.",
-    tech: ["TypeScript", "Web Crypto API", "@noble/curves", "secp256k1"],
-    github: "https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-ecies-lib",
-    npm: "https://www.npmjs.com/package/@digitaldefiance/ecies-lib",
-    category: "Crypto",
+      'Browser-compatible ECIES v4.0 encryption library built on Web Crypto API and @noble/curves. Features HKDF key derivation, AAD binding, multi-recipient optimization, BIP39 mnemonics, and HD wallets.',
+    tech: ['TypeScript', 'Web Crypto API', '@noble/curves', 'secp256k1'],
+    github:
+      'https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-ecies-lib',
+    projectUrl: 'https://digital-defiance.github.io/ecies-lib/',
+    npm: 'https://www.npmjs.com/package/@digitaldefiance/ecies-lib',
+    category: 'Crypto',
     stats: {
-      tests: "1,200+ tests",
+      tests: '1,200+ tests',
     },
     highlights: [
-      "ECIES v4.0: HKDF-SHA256 key derivation & AAD binding",
-      "AES-256-GCM with secp256k1 ECDH & ECDSA",
-      "Pluggable ID providers (ObjectId, GUID, UUID, custom)",
-      "BIP39 mnemonics & BIP32/BIP44 HD wallet derivation",
-      "Memory-efficient streaming for large files (<10MB RAM)",
+      'ECIES v4.0: HKDF-SHA256 key derivation & AAD binding',
+      'AES-256-GCM with secp256k1 ECDH & ECDSA',
+      'Pluggable ID providers (ObjectId, GUID, UUID, custom)',
+      'BIP39 mnemonics & BIP32/BIP44 HD wallet derivation',
+      'Memory-efficient streaming for large files (<10MB RAM)',
     ],
   },
   {
-    title: "node-ecies-lib",
-    icon: "🔑",
+    title: 'node-ecies-lib',
+    icon: '🔑',
     description:
-      "Node.js ECIES implementation with strict binary compatibility to ecies-lib. Enables seamless cross-platform encryption between browser and Node.js using native crypto primitives.",
-    tech: ["TypeScript", "Node.js Crypto", "HKDF", "PBKDF2"],
-    github: "https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-node-ecies-lib",
-    npm: "https://www.npmjs.com/package/@digitaldefiance/node-ecies-lib",
-    category: "Crypto",
+      'Node.js ECIES implementation with strict binary compatibility to ecies-lib. Enables seamless cross-platform encryption between browser and Node.js using native crypto primitives.',
+    tech: ['TypeScript', 'Node.js Crypto', 'HKDF', 'PBKDF2'],
+    github:
+      'https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-node-ecies-lib',
+    projectUrl: 'https://digital-defiance.github.io/node-ecies-lib/',
+    npm: 'https://www.npmjs.com/package/@digitaldefiance/node-ecies-lib',
+    category: 'Crypto',
     stats: {
-      tests: "220+ tests",
+      tests: '220+ tests',
     },
     highlights: [
-      "Binary compatible with browser ecies-lib (same version)",
-      "ECIES v4.0 protocol with Node.js crypto",
-      "Multi-recipient encryption with shared ephemeral key",
-      "Member system with integrated cryptographic operations",
-      "Streaming encryption for gigabyte-sized files",
+      'Binary compatible with browser ecies-lib (same version)',
+      'ECIES v4.0 protocol with Node.js crypto',
+      'Multi-recipient encryption with shared ephemeral key',
+      'Member system with integrated cryptographic operations',
+      'Streaming encryption for gigabyte-sized files',
     ],
   },
   {
-    title: "suite-core-lib",
-    icon: "🏗️",
+    title: 'suite-core-lib',
+    icon: '🏗️',
     description:
-      "Foundation library providing cryptographically-secure user management, RBAC with fine-grained permissions, zero-knowledge authentication flows, and localized error handling in multiple languages.",
-    tech: ["TypeScript", "RBAC", "Zero-Knowledge Proofs", "i18n"],
-    github: "https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-suite-core-lib",
-    npm: "https://www.npmjs.com/package/@digitaldefiance/suite-core-lib",
-    category: "Core",
+      'Foundation library providing cryptographically-secure user management, RBAC with fine-grained permissions, zero-knowledge authentication flows, and localized error handling in multiple languages.',
+    tech: ['TypeScript', 'RBAC', 'Zero-Knowledge Proofs', 'i18n'],
+    github:
+      'https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-suite-core-lib',
+    projectUrl: 'https://digital-defiance.github.io/suite-core-lib/',
+    npm: 'https://www.npmjs.com/package/@digitaldefiance/suite-core-lib',
+    category: 'Core',
     highlights: [
-      "Type-safe interfaces for frontend & backend user models",
-      "Role-based access control with permission management",
-      "Cryptographically secure backup code generation",
-      "Fluent builder APIs for users and roles",
-      "Localized errors in English, French, Spanish, Chinese, Ukrainian",
+      'Type-safe interfaces for frontend & backend user models',
+      'Role-based access control with permission management',
+      'Cryptographically secure backup code generation',
+      'Fluent builder APIs for users and roles',
+      'Localized errors in English, French, Spanish, Chinese, Ukrainian',
     ],
   },
   {
-    title: "node-express-suite",
-    icon: "⚡",
+    title: 'node-express-suite',
+    icon: '⚡',
     description:
-      "Complete Express 5 framework with JWT authentication, RBAC middleware, MongoDB/Mongoose integration, email token workflows, dynamic model registry, and i18n support. Out-of-the-box MERN solution.",
-    tech: ["Express 5", "JWT", "MongoDB", "Mongoose", "EJS"],
-    github: "https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-node-express-suite",
-    npm: "https://www.npmjs.com/package/@digitaldefiance/node-express-suite",
-    category: "Core",
+      'Complete Express 5 framework with JWT authentication, RBAC middleware, MongoDB/Mongoose integration, email token workflows, dynamic model registry, and i18n support. Out-of-the-box MERN solution.',
+    tech: ['Express 5', 'JWT', 'MongoDB', 'Mongoose', 'EJS'],
+    github:
+      'https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-node-express-suite',
+    projectUrl: 'https://digital-defiance.github.io/node-express-suite/',
+    npm: 'https://www.npmjs.com/package/@digitaldefiance/node-express-suite',
+    category: 'Core',
     stats: {
-      tests: "604 tests",
-      coverage: "57.86%",
+      tests: '604 tests',
+      coverage: '57.86%',
     },
     highlights: [
-      "JWT authentication with encrypted tokens",
-      "Email verification, password reset, and recovery workflows",
-      "Dynamic model registry for extensible schemas",
-      "ECIES encryption & PBKDF2 key derivation integration",
-      "Built-in user, role, and token models",
+      'JWT authentication with encrypted tokens',
+      'Email verification, password reset, and recovery workflows',
+      'Dynamic model registry for extensible schemas',
+      'ECIES encryption & PBKDF2 key derivation integration',
+      'Built-in user, role, and token models',
     ],
   },
   {
-    title: "express-suite-react-components",
-    icon: "⚛️",
+    title: 'express-suite-react-components',
+    icon: '⚛️',
     description:
-      "Production-ready React 19 + Material-UI component library. Includes authentication forms, route guards, hooks, context providers, theme management, and pre-configured wrappers for rapid integration.",
-    tech: ["React 19", "Material-UI", "TypeScript", "Hooks"],
-    github: "https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-express-suite-react-components",
-    npm: "https://www.npmjs.com/package/@digitaldefiance/express-suite-react-components",
-    category: "UI",
+      'Production-ready React 19 + Material-UI component library. Includes authentication forms, route guards, hooks, context providers, theme management, and pre-configured wrappers for rapid integration.',
+    tech: ['React 19', 'Material-UI', 'TypeScript', 'Hooks'],
+    github:
+      'https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-express-suite-react-components',
+    projectUrl: 'https://digital-defiance.github.io/react-components/',
+    npm: 'https://www.npmjs.com/package/@digitaldefiance/express-suite-react-components',
+    category: 'UI',
     highlights: [
-      "Auth components: login, register, password reset, backup codes",
-      "Route guards: PrivateRoute, UnAuthRoute, conditional rendering",
-      "Hooks: useAuth, useI18n, useUserSettings, useBackupCodes",
-      "Providers: AuthProvider, I18nProvider, AppThemeProvider",
-      "Pre-configured wrappers for seamless context integration",
+      'Auth components: login, register, password reset, backup codes',
+      'Route guards: PrivateRoute, UnAuthRoute, conditional rendering',
+      'Hooks: useAuth, useI18n, useUserSettings, useBackupCodes',
+      'Providers: AuthProvider, I18nProvider, AppThemeProvider',
+      'Pre-configured wrappers for seamless context integration',
     ],
   },
   {
-    title: "mongoose-types",
-    icon: "📊",
+    title: 'mongoose-types',
+    icon: '📊',
     description:
-      "Custom TypeScript type definitions for Mongoose 8.x enabling flexible _id types beyond ObjectId. Supports strings, UUIDs, GUIDs, and custom ID formats for cross-platform database migrations.",
-    tech: ["TypeScript", "Mongoose 8.x", "Type Definitions"],
-    github: "https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-mongoose-types",
-    npm: "https://www.npmjs.com/package/@digitaldefiance/mongoose-types",
-    category: "Tools",
+      'Custom TypeScript type definitions for Mongoose 8.x enabling flexible _id types beyond ObjectId. Supports strings, UUIDs, GUIDs, and custom ID formats for cross-platform database migrations.',
+    tech: ['TypeScript', 'Mongoose 8.x', 'Type Definitions'],
+    github:
+      'https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-mongoose-types',
+    npm: 'https://www.npmjs.com/package/@digitaldefiance/mongoose-types',
+    category: 'Tools',
     highlights: [
-      "Flexible Document<T> generic with any ID type",
-      "String-based IDs (UUID, GUID, custom formats)",
-      "Drop-in replacement via tsconfig.json paths",
-      "Full Mongoose 8.x API compatibility",
-      "Ideal for SQL → MongoDB migrations",
+      'Flexible Document<T> generic with any ID type',
+      'String-based IDs (UUID, GUID, custom formats)',
+      'Drop-in replacement via tsconfig.json paths',
+      'Full Mongoose 8.x API compatibility',
+      'Ideal for SQL → MongoDB migrations',
     ],
   },
   {
-    title: "express-suite-test-utils",
-    icon: "🧪",
+    title: 'express-suite-test-utils',
+    icon: '🧪',
     description:
-      "Comprehensive testing toolkit with custom Jest matchers, console/localStorage mocks, in-memory MongoDB, BSON mocks, React testing utilities, and package-specific /testing entry points.",
-    tech: ["Jest", "Testing Library", "MongoDB Memory Server", "Faker"],
-    github: "https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-express-suite-test-utils",
-    npm: "https://www.npmjs.com/package/@digitaldefiance/express-suite-test-utils",
-    category: "Testing",
+      'Comprehensive testing toolkit with custom Jest matchers, console/localStorage mocks, in-memory MongoDB, BSON mocks, React testing utilities, and package-specific /testing entry points.',
+    tech: ['Jest', 'Testing Library', 'MongoDB Memory Server', 'Faker'],
+    github:
+      'https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-express-suite-test-utils',
+    npm: 'https://www.npmjs.com/package/@digitaldefiance/express-suite-test-utils',
+    category: 'Testing',
     highlights: [
-      "toThrowType matcher for type-safe error testing",
-      "Console mocks with spyContains helper",
-      "In-memory MongoDB for isolated integration tests",
-      "Package-specific helpers via /testing entry points",
-      "Requires @faker-js/faker for data generation",
+      'toThrowType matcher for type-safe error testing',
+      'Console mocks with spyContains helper',
+      'In-memory MongoDB for isolated integration tests',
+      'Package-specific helpers via /testing entry points',
+      'Requires @faker-js/faker for data generation',
     ],
   },
   {
-    title: "express-suite-starter",
-    icon: "🚀",
+    title: 'express-suite-starter',
+    icon: '🚀',
     description:
-      "Automated MERN monorepo generator with interactive CLI. Creates Nx-powered workspaces with React 19, Express 5, MongoDB, Material-UI, DevContainer support, Mustache templates, and comprehensive project scaffolding.",
-    tech: ["Nx", "Mustache", "Chalk", "Inquirer", "Plugins"],
-    github: "https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-express-suite-starter",
-    npm: "https://www.npmjs.com/package/@digitaldefiance/express-suite-starter",
-    category: "Tools",
+      'Automated MERN monorepo generator with interactive CLI. Creates Nx-powered workspaces with React 19, Express 5, MongoDB, Material-UI, DevContainer support, Mustache templates, and comprehensive project scaffolding.',
+    tech: ['Nx', 'Mustache', 'Chalk', 'Inquirer', 'Plugins'],
+    github:
+      'https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-express-suite-starter',
+    npm: 'https://www.npmjs.com/package/@digitaldefiance/express-suite-starter',
+    category: 'Tools',
     highlights: [
-      "Interactive CLI with 19-step generation process",
-      "Package groups: authentication, validation, documentation",
-      "DevContainer options: None, Simple, MongoDB, Replica Set",
-      "Auto-generates JWT secrets and encryption keys",
-      "Rollback support with checkpoint/restore",
+      'Interactive CLI with 19-step generation process',
+      'Package groups: authentication, validation, documentation',
+      'DevContainer options: None, Simple, MongoDB, Replica Set',
+      'Auto-generates JWT secrets and encryption keys',
+      'Rollback support with checkpoint/restore',
     ],
   },
 ];
@@ -218,18 +234,18 @@ const Components = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h3>
-            What if you could build <em>secure</em>, <em>internationalized</em>,{" "}
+            What if you could build <em>secure</em>, <em>internationalized</em>,{' '}
             and <em>production-ready</em> applications in record time?
           </h3>
           <p>
             <strong>
               Express Suite is the most comprehensive TypeScript monorepo for
               building modern MERN applications.
-            </strong>{" "}
+            </strong>{' '}
             This isn't just another boilerplate—it's a complete ecosystem that
-            transforms full-stack development with{" "}
-            <strong>enterprise-grade encryption</strong>,{" "}
-            <strong>multi-language support</strong>, and{" "}
+            transforms full-stack development with{' '}
+            <strong>enterprise-grade encryption</strong>,{' '}
+            <strong>multi-language support</strong>, and{' '}
             <strong>battle-tested authentication</strong>.
           </p>
           <div className="problem-solution">
@@ -250,21 +266,21 @@ const Components = () => {
             <div className="solution">
               <h4>✅ The Solution: Complete Integrated Development Platform</h4>
               <p>
-                <strong>Express Suite</strong> provides{" "}
+                <strong>Express Suite</strong> provides{' '}
                 <strong>9 production-ready packages</strong> that work together
                 seamlessly: cryptography libraries (ecies-lib, node-ecies-lib),
                 core infrastructure (suite-core-lib, node-express-suite), UI
-                components (express-suite-react-components), internationalization
-                (i18n-lib), testing utilities, project generator, and flexible
-                Mongoose types.
+                components (express-suite-react-components),
+                internationalization (i18n-lib), testing utilities, project
+                generator, and flexible Mongoose types.
               </p>
               <p>
                 Built with TypeScript and exhaustively tested (
                 <strong>over 2,000 tests across all packages</strong>), these
                 libraries are production-ready and used in real-world
-                applications. They provide{" "}
+                applications. They provide{' '}
                 <strong>binary-compatible encryption</strong> between browser
-                and Node.js, <strong>37-language support</strong>, and{" "}
+                and Node.js, <strong>37-language support</strong>, and{' '}
                 <strong>zero-knowledge authentication</strong>.
               </p>
             </div>
@@ -363,6 +379,17 @@ const Components = () => {
                   <FaGithub />
                   GitHub
                 </a>
+                {component.projectUrl && (
+                  <a
+                    href={component.projectUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="component-link"
+                  >
+                    <FaExternalLinkAlt />
+                    Project Site
+                  </a>
+                )}
                 {component.npm && (
                   <a
                     href={component.npm}
