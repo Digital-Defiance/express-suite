@@ -11,6 +11,7 @@
     "type-check": "tsc --noEmit",
     "test": "npx nx run-many --target=test --all --exclude=@express-suite/audit-tool",
     "test:all": "npx nx run-many --target=test --all",
+    "test:all:j16": "npx nx run-many --target=test --all --parallel=16",
     "test:audit": "FAST_TESTS=true npx nx run @express-suite/audit-tool:test",
     "test:audit:full": "npx nx run @express-suite/audit-tool:test",
     "test:stream": "npx nx run-many --outputStyle=stream --target=test --all --exclude=@express-suite/audit-tool",
