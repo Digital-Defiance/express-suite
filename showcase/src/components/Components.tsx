@@ -203,6 +203,29 @@ const components: Component[] = [
       'Rollback support with checkpoint/restore',
     ],
   },
+  {
+    title: 'EECP - Ephemeral Encrypted Collaboration Protocol',
+    icon: '🔐',
+    description:
+      'A zero-knowledge, self-destructing collaborative workspace system that enables real-time document collaboration with cryptographic guarantees of content unreadability after expiration. Built with TypeScript, EECP provides temporal encryption, zero-knowledge servers, and provable key deletion.',
+    tech: ['TypeScript', 'React 19', 'Yjs CRDT', 'WebSocket', 'AES-256-GCM', 'ECIES', 'HKDF', 'Nx Monorepo'],
+    github: 'https://github.com/Digital-Defiance/digitaldefiance-eecp',
+    projectUrl: 'https://digital-defiance.github.io/digitaldefiance-eecp',
+    category: 'Crypto',
+    stats: {
+      tests: '500+ tests',
+      coverage: 'Property-based testing',
+    },
+    highlights: [
+      'Zero-knowledge server that routes encrypted operations without seeing plaintext',
+      'Temporal key derivation with automatic rotation and provable deletion',
+      'Encrypted CRDT for conflict-free real-time collaboration using Yjs',
+      'Multi-recipient encryption with ECIES for secure key distribution',
+      'Complete TypeScript monorepo with 7 packages: protocol, crypto, CRDT, server, client, CLI, and browser components',
+      'Browser-compatible demo with real-time visualization of message flow and encryption',
+      'Prometheus metrics, audit logging, and rate limiting for production use',
+    ],
+  }
 ];
 
 const Components = () => {
