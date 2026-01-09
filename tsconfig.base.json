@@ -5,11 +5,7 @@
     "emitDeclarationOnly": true,
     "importHelpers": true,
     "isolatedModules": true,
-    "lib": [
-      "es2022",
-      "dom",
-      "dom.iterable"
-    ],
+    "lib": ["es2022", "dom", "dom.iterable"],
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "noEmitOnError": true,
@@ -19,19 +15,11 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "skipLibCheck": true,
-    "types": [
-      "node",
-      "iterator-dispose-shim"
-    ],
-    "typeRoots": [
-      "./types",
-      "./node_modules/@types"
-    ],
+    "types": ["node", "iterator-dispose-shim"],
+    "typeRoots": ["./types", "./node_modules/@types"],
     "strict": true,
     "target": "es2022",
-    "customConditions": [
-      "@express-suite/source"
-    ],
+    "customConditions": ["@express-suite/source"],
     "baseUrl": ".",
     "paths": {
       "@digitaldefiance/mongoose-types": [

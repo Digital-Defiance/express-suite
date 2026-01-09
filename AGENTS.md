@@ -11,3 +11,7 @@
 - If the user needs help with an Nx configuration or project graph error, use the `nx_workspace` tool to get any errors
 
 <!-- nx configuration end-->
+
+- Avoid jest's --testPathPattern, it is unpredictable and ends up running the full suite more often than not
+- Avoid "as any", and "as unknown" casts wherever possible.
+- Avoid "any" and "unknown" types wherever possible
