@@ -246,6 +246,7 @@ const components: Component[] = [
       'Configurable Galois field (3-20 bits) supporting up to 1,048,575 shares',
     ],
     npm: 'https://www.npmjs.com/package/@digitaldefiance/secrets',
+    projectUrl: 'https://digital-defiance.github.io/secrets-ts',
   },
 ];
 
