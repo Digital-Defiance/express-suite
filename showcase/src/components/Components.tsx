@@ -225,7 +225,28 @@ const components: Component[] = [
       'Browser-compatible demo with real-time visualization of message flow and encryption',
       'Prometheus metrics, audit logging, and rate limiting for production use',
     ],
-  }
+  },
+  {
+    title: 'Secrets.js (fork)',
+    icon: '🔑',
+    description:
+      "Enhanced implementation of Shamir's Secret Sharing for secure data splitting and reconstruction. Pure TypeScript with native browser support, cryptographically audited, and optimized for splitting any secret (passwords, keys, files) into threshold-recoverable shares.",
+    tech: ["Shamir's Secret Sharing", 'Data Security', 'TypeScript', 'CSPRNG'],
+    github: 'https://github.com/Digital-Defiance/secrets-ts',
+    category: 'Crypto',
+    highlights: [
+      'Divide secrets into n shares with configurable t-of-n threshold recovery',
+      'Information-theoretically secure - shares below threshold reveal no information',
+      'Cure53 security audit (July 2019) with zero issues found',
+      'Native browser support without polyfills (crypto.getRandomValues)',
+      'Cross-platform deterministic operations (Node.js and browser)',
+      'Full TypeScript support with comprehensive type definitions',
+      'Convert passwords, files, and keys to/from hex with automatic padding',
+      'Generate new shares dynamically from existing shares',
+      'Configurable Galois field (3-20 bits) supporting up to 1,048,575 shares',
+    ],
+    npm: 'https://www.npmjs.com/package/@digitaldefiance/secrets',
+  },
 ];
 
 const Components = () => {
