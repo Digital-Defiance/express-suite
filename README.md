@@ -150,19 +150,19 @@ The browser-based `ecies-lib` and Node.js `node-ecies-lib` maintain **binary com
 // Browser (ecies-lib)
 import { ECIESService } from '@digitaldefiance/ecies-lib';
 const browserEcies = new ECIESService();
-const encrypted = await browserEcies.encryptSimpleOrSingle(false, publicKey, data);
+const encrypted = await browserEcies.encryptWithLength(publicKey, data);
 
 // Node.js (node-ecies-lib) - can decrypt the same data
 import { ECIESService } from '@digitaldefiance/node-ecies-lib';
 const nodeEcies = new ECIESService();
-const decrypted = await nodeEcies.decryptSimpleOrSingleWithHeader(false, privateKey, encrypted);
+const decrypted = await nodeEcies.decryptWithLengthAndHeader(privateKey, encrypted);
 ```
 
 **Key Compatibility Features:**
 - Identical ECIES v4.0 protocol implementation
 - Same message format and header structure
 - Compatible ID provider systems (ObjectId, GUID, UUID, Custom)
-- Shared encryption modes (Simple, Single, Multiple)
+- Shared encryption modes (Basic, WithLength, Multiple)
 
 ### suite-core-lib Integration
 
@@ -400,8 +400,8 @@ const mnemonic = ecies.generateNewMnemonic();
 const { privateKey, publicKey } = ecies.mnemonicToSimpleKeyPair(mnemonic);
 
 const data = new TextEncoder().encode('Secret message');
-const encrypted = await ecies.encryptSimpleOrSingle(false, publicKey, data);
-const decrypted = await ecies.decryptSimpleOrSingleWithHeader(false, privateKey, encrypted);
+const encrypted = await ecies.encryptWithLength(publicKey, data);
+const decrypted = await ecies.decryptWithLengthAndHeader(privateKey, encrypted);
 ```
 
 #### Creating Users with RBAC
