@@ -2360,14 +2360,14 @@ __metadata:
     "@aws-sdk/client-ses": "npm:^3.985.0"
     "@babel/core": "npm:^7.14.5"
     "@babel/preset-react": "npm:^7.14.5"
-    "@digitaldefiance/ecies-lib": "npm:^4.16.27"
-    "@digitaldefiance/express-suite-react-components": "npm:^2.12.27"
+    "@digitaldefiance/ecies-lib": "npm:^4.16.30"
+    "@digitaldefiance/express-suite-react-components": "npm:^2.12.30"
     "@digitaldefiance/express-suite-test-utils": "npm:^1.1.0"
     "@digitaldefiance/i18n-lib": "npm:^4.3.0"
     "@digitaldefiance/mongoose-types": "npm:^8.20.9"
-    "@digitaldefiance/node-ecies-lib": "npm:^4.16.27"
-    "@digitaldefiance/node-express-suite": "npm:^3.11.27"
-    "@digitaldefiance/suite-core-lib": "npm:^3.10.26"
+    "@digitaldefiance/node-ecies-lib": "npm:^4.16.30"
+    "@digitaldefiance/node-express-suite": "npm:^3.11.30"
+    "@digitaldefiance/suite-core-lib": "npm:^3.10.30"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/js": "npm:^9.8.0"
@@ -2472,7 +2472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@digitaldefiance/ecies-lib@npm:4.16.30, @digitaldefiance/ecies-lib@npm:^4.16.27, @digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib":
+"@digitaldefiance/ecies-lib@npm:4.16.30, @digitaldefiance/ecies-lib@npm:^4.16.30, @digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib"
   dependencies:
@@ -2498,13 +2498,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@digitaldefiance/express-suite-react-components@npm:^2.12.27, @digitaldefiance/express-suite-react-components@workspace:packages/digitaldefiance-express-suite-react-components":
+"@digitaldefiance/express-suite-react-components@npm:^2.12.30, @digitaldefiance/express-suite-react-components@workspace:packages/digitaldefiance-express-suite-react-components":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/express-suite-react-components@workspace:packages/digitaldefiance-express-suite-react-components"
   dependencies:
     "@digitaldefiance/express-suite-test-utils": "npm:1.1.0"
     "@digitaldefiance/i18n-lib": "npm:4.3.0"
-    "@digitaldefiance/suite-core-lib": "npm:3.10.30"
+    "@digitaldefiance/suite-core-lib": "npm:3.10.31"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.0"
     "@mui/icons-material": "npm:^7.0.2"
@@ -2645,7 +2645,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@digitaldefiance/node-ecies-lib@npm:4.16.30, @digitaldefiance/node-ecies-lib@npm:^4.16.27, @digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib":
+"@digitaldefiance/node-ecies-lib@npm:4.16.30, @digitaldefiance/node-ecies-lib@npm:^4.16.30, @digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib"
   dependencies:
@@ -2672,7 +2672,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@digitaldefiance/node-express-suite@npm:^3.11.27, @digitaldefiance/node-express-suite@workspace:packages/digitaldefiance-node-express-suite":
+"@digitaldefiance/node-express-suite@npm:^3.11.30, @digitaldefiance/node-express-suite@workspace:packages/digitaldefiance-node-express-suite":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/node-express-suite@workspace:packages/digitaldefiance-node-express-suite"
   dependencies:
@@ -2682,7 +2682,7 @@ __metadata:
     "@digitaldefiance/mongoose-types": "npm:8.20.9"
     "@digitaldefiance/node-ecies-lib": "npm:4.16.30"
     "@digitaldefiance/reed-solomon-erasure.wasm": "npm:^1.0.1"
-    "@digitaldefiance/suite-core-lib": "npm:3.10.30"
+    "@digitaldefiance/suite-core-lib": "npm:3.10.31"
     "@noble/curves": "npm:^1.9.0"
     "@noble/hashes": "npm:^1.8.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.53.1"
@@ -2713,7 +2713,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@digitaldefiance/suite-core-lib@npm:3.10.30, @digitaldefiance/suite-core-lib@npm:^3.10.26, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
+"@digitaldefiance/suite-core-lib@npm:3.10.31, @digitaldefiance/suite-core-lib@npm:^3.10.30, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib"
   dependencies:
