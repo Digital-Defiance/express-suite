@@ -42,28 +42,28 @@ Express Suite consists of 10 interrelated packages, each serving a specific doma
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Application Layer                         │
+│                    Application Layer                        │
 │  express-suite-starter (Generator)                          │
 │  express-suite-example (Reference Implementation)           │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    Presentation Layer                        │
+│                    Presentation Layer                       │
 │  express-suite-react-components                             │
 │  (Auth forms, hooks, providers, UI components)              │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    Application Layer                         │
+│                    Application Layer                        │
 │  node-express-suite                                         │
 │  (Express framework, auth, RBAC, MongoDB)                   │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    Business Logic Layer                      │
+│                    Business Logic Layer                     │
 │  suite-core-lib                                             │
 │  (User management, RBAC, crypto operations)                 │
 └─────────────────────────────────────────────────────────────┘
@@ -78,7 +78,7 @@ Express Suite consists of 10 interrelated packages, each serving a specific doma
                     │
                     ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    Testing Layer                             │
+│                    Testing Layer                            │
 │  express-suite-test-utils                                   │
 │  (Test helpers, mocks, MongoDB memory server)               │
 └─────────────────────────────────────────────────────────────┘
