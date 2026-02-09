@@ -11,7 +11,7 @@ Formerly known as **Project Albatross**, the suite draws inspiration from the gr
 ## Key Highlights
 
 - **🔐 End-to-End Encryption**: ECIES with secp256k1 and AES-256-GCM, binary-compatible across browser and Node.js
-- **🗳️ Cryptographic Voting**: 17 voting methods with homomorphic encryption and government-grade audit trails
+- **🗳️ Cryptographic Voting**: 17 voting methods with homomorphic encryption, threshold decryption, and government-grade audit trails
 - **🌍 37-Language i18n**: ICU MessageFormat with CLDR-compliant plural rules and component-based architecture
 - **👥 Complete User Management**: RBAC, JWT authentication, backup codes, and zero-knowledge auth flows
 - **📊 MongoDB Integration**: Dynamic model registry with Mongoose and flexible ID providers
@@ -176,6 +176,7 @@ const engine = I18nBuilder.create()
   .build();
 ```
 
+For a comprehensive guide on writing an `i18n-setup.ts` file that registers multiple components and branded enums across Express Suite packages, see the [Monorepo i18n-setup Guide](packages/digitaldefiance-i18n-lib/README.md#monorepo-i18n-setup-guide) in the i18n-lib README.
 
 ---
 
@@ -188,7 +189,7 @@ const engine = I18nBuilder.create()
 ### Features at a Glance
 
 - **ECIES v4.0 Protocol**: HKDF-SHA256 key derivation, AAD binding, multi-recipient optimization
-- **Cryptographic Voting**: 17 methods including IRV, STAR, STV with homomorphic encryption
+- **Cryptographic Voting**: 17 methods including IRV, STAR, STV with homomorphic encryption and threshold decryption
 - **Pluggable ID Providers**: ObjectId, GUID, UUID, or custom formats (1-255 bytes)
 - **Streaming Encryption**: Process gigabytes with <10MB memory footprint
 - **BIP39/BIP32**: Mnemonic phrases and HD wallet derivation
@@ -251,6 +252,7 @@ console.log('Winner:', results.choices[results.winner!]);
 **Supported Voting Methods:**
 - **Single-Round**: Plurality, Approval, Weighted, Borda Count, Score, Yes/No, Supermajority
 - **Multi-Round**: Ranked Choice (IRV), Two-Round, STAR, STV
+- **Threshold Decryption**: Real-time interval tallies with k-of-n Guardian cooperation
 - **Special**: Quadratic, Consensus, Consent-Based
 
 ### ID Provider System
@@ -278,7 +280,7 @@ const id = config.idProvider.generate();  // 16-byte Uint8Array
 
 - **Binary Compatible**: Data encrypted in browser can be decrypted in Node.js and vice versa
 - **Node.js Optimized**: Uses Buffer instead of Uint8Array for better performance
-- **Complete Voting System**: All 17 voting methods with Node.js optimizations
+- **Complete Voting System**: All 17 voting methods with Node.js optimizations and threshold decryption
 - **Streaming Encryption**: Node.js Transform streams for large file processing
 - **Strong Typing**: Enhanced ID provider system with compile-time type safety
 - **1,953 Tests**: Comprehensive coverage
