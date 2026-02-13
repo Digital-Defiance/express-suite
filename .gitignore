@@ -48,3 +48,7 @@ Thumbs.db
 
 #Ignore vscode AI rules
 .github/instructions/codacy.instructions.md
+
+# Greenlock / Let's Encrypt
+.greenlockrc
+greenlock.d/
