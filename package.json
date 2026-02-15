@@ -116,7 +116,15 @@
     "verdaccio": "^6.0.5"
   },
   "workspaces": [
-    "packages/*",
+    "packages/digitaldefiance-ecies-lib",
+    "packages/digitaldefiance-express-suite-react-components",
+    "packages/digitaldefiance-express-suite-starter",
+    "packages/digitaldefiance-express-suite-test-utils",
+    "packages/digitaldefiance-i18n-lib",
+    "packages/digitaldefiance-mongoose-types",
+    "packages/digitaldefiance-node-ecies-lib",
+    "packages/digitaldefiance-node-express-suite",
+    "packages/digitaldefiance-suite-core-lib",
     "tools/*"
   ],
   "resolutions": {
