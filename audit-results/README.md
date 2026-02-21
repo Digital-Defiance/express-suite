@@ -33,6 +33,10 @@ See `../audit-results-summary.md` for a comprehensive markdown report with:
 - Priority recommendations
 - Next steps
 
+## Stale References
+
+> **Note:** These audit results were generated before the plugin migration cleanup and contain stale references to deleted/renamed classes and files (`ApplicationConcrete`, `MongoApplicationBase`, `application-base.ts`, `application-concrete.ts`). These are now `MongoApplicationConcrete`, `BaseApplication`, `base-application.ts`, and `mongo-application-concrete.ts` respectively. Re-run the audit to update these references.
+
 ## Re-running the Audit
 
 To re-run the audit on all packages:

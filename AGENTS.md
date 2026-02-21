@@ -17,3 +17,5 @@
 <!-- nx configuration end-->
 
 - In general, whether an error is viewed as 'pre-existing' or not, unless otherwise specified, we generally want to fix it. If it is a large task, prompt the user.
+
+- Prefer creating .ts or .js files over executing node statements raw on the console.

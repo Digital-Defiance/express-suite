@@ -1481,19 +1481,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@digitaldefiance/branded-interface@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "@digitaldefiance/branded-interface@npm:0.0.4"
-  checksum: 10c0/11f9a27e3ff4c483f0cb2cb9bab6036c709245fdfc1c72dc75a9f3d4e9732ac87a4e183f7c438c8f584303e13313373821ae493fa0c77af3fbd92adc4dd4da0b
+"@digitaldefiance/branded-interface@npm:^0.0.5":
+  version: 0.0.5
+  resolution: "@digitaldefiance/branded-interface@npm:0.0.5"
+  dependencies:
+    "@swc/helpers": "npm:~0.5.11"
+  checksum: 10c0/800915035b9d84f4237716f6f94ecc666f608a71c84ac9eb6d58615580d9dcf0881690583c9eccebb1add2455b9437bad9dda8cc36579e5a0da1deb3b44676b5
   languageName: node
   linkType: hard
 
-"@digitaldefiance/ecies-lib@npm:4.19.4, @digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib":
+"@digitaldefiance/ecies-lib@npm:4.19.5, @digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib"
   dependencies:
     "@digitaldefiance/express-suite-test-utils": "npm:1.1.1"
-    "@digitaldefiance/i18n-lib": "npm:4.6.3"
+    "@digitaldefiance/i18n-lib": "npm:4.6.4"
     "@ethereumjs/wallet": "npm:^2.0.4"
     "@noble/curves": "npm:^1.4.2"
     "@noble/hashes": "npm:^1.4.0"
@@ -1519,8 +1521,8 @@ __metadata:
   resolution: "@digitaldefiance/express-suite-react-components@workspace:packages/digitaldefiance-express-suite-react-components"
   dependencies:
     "@digitaldefiance/express-suite-test-utils": "npm:1.1.1"
-    "@digitaldefiance/i18n-lib": "npm:4.6.3"
-    "@digitaldefiance/suite-core-lib": "npm:3.13.4"
+    "@digitaldefiance/i18n-lib": "npm:4.6.4"
+    "@digitaldefiance/suite-core-lib": "npm:3.13.5"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.0"
     "@mui/icons-material": "npm:^7.0.2"
@@ -1556,10 +1558,11 @@ __metadata:
   resolution: "@digitaldefiance/express-suite-starter@workspace:packages/digitaldefiance-express-suite-starter"
   dependencies:
     "@digitaldefiance/express-suite-test-utils": "npm:@digitaldefiance/express-suite-test-utils@1.1.1"
-    "@digitaldefiance/i18n-lib": "npm:^4.5.0"
+    "@digitaldefiance/i18n-lib": "npm:^4.6.4"
     "@inquirer/prompts": "npm:^7.5.0"
     "@nx/js": "npm:22.0.2"
     "@nx/workspace": "npm:22.0.2"
+    "@playwright/test": "npm:^1.52.0"
     "@types/jest": "npm:^29.5.0"
     "@types/mustache": "npm:^4.2.5"
     "@types/node": "npm:^20.0.0"
@@ -1602,12 +1605,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@digitaldefiance/i18n-lib@npm:4.6.3, @digitaldefiance/i18n-lib@npm:^4.5.0, @digitaldefiance/i18n-lib@workspace:packages/digitaldefiance-i18n-lib":
+"@digitaldefiance/i18n-lib@npm:4.6.4, @digitaldefiance/i18n-lib@npm:^4.6.4, @digitaldefiance/i18n-lib@workspace:packages/digitaldefiance-i18n-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/i18n-lib@workspace:packages/digitaldefiance-i18n-lib"
   dependencies:
     "@digitaldefiance/branded-enum": "npm:0.0.7"
-    "@digitaldefiance/branded-interface": "npm:^0.0.4"
+    "@digitaldefiance/branded-interface": "npm:^0.0.5"
     "@typescript-eslint/eslint-plugin": "npm:^8.53.1"
     "@typescript-eslint/parser": "npm:^8.53.1"
     currency-codes: "npm:^2.2.0"
@@ -1619,7 +1622,7 @@ __metadata:
     moment-timezone: "npm:^0.6.0"
     tslib: "npm:^2.3.0"
   peerDependencies:
-    "@digitaldefiance/branded-interface": ^0.0.4
+    "@digitaldefiance/branded-interface": ^0.0.5
   languageName: unknown
   linkType: soft
 
@@ -1636,13 +1639,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@digitaldefiance/node-ecies-lib@npm:4.19.4, @digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib":
+"@digitaldefiance/node-ecies-lib@npm:4.19.5, @digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib"
   dependencies:
-    "@digitaldefiance/ecies-lib": "npm:4.19.4"
+    "@digitaldefiance/ecies-lib": "npm:4.19.5"
     "@digitaldefiance/express-suite-test-utils": "npm:1.1.1"
-    "@digitaldefiance/i18n-lib": "npm:4.6.3"
+    "@digitaldefiance/i18n-lib": "npm:4.6.4"
     "@ethereumjs/wallet": "npm:^2.0.4"
     "@noble/curves": "npm:^1.4.2"
     "@noble/hashes": "npm:^1.4.0"
@@ -1667,14 +1670,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/node-express-suite@workspace:packages/digitaldefiance-node-express-suite"
   dependencies:
-    "@digitaldefiance/branded-interface": "npm:^0.0.4"
-    "@digitaldefiance/ecies-lib": "npm:4.19.4"
+    "@digitaldefiance/branded-interface": "npm:^0.0.5"
+    "@digitaldefiance/ecies-lib": "npm:4.19.5"
     "@digitaldefiance/express-suite-test-utils": "npm:1.1.1"
-    "@digitaldefiance/i18n-lib": "npm:4.6.3"
+    "@digitaldefiance/i18n-lib": "npm:4.6.4"
     "@digitaldefiance/mongoose-types": "npm:8.20.9"
-    "@digitaldefiance/node-ecies-lib": "npm:4.19.4"
+    "@digitaldefiance/node-ecies-lib": "npm:4.19.5"
     "@digitaldefiance/reed-solomon-erasure.wasm": "npm:^1.0.2"
-    "@digitaldefiance/suite-core-lib": "npm:3.13.4"
+    "@digitaldefiance/suite-core-lib": "npm:3.13.5"
     "@noble/curves": "npm:^1.9.0"
     "@noble/hashes": "npm:^1.8.0"
     "@types/nat-upnp": "npm:^1.1.5"
@@ -1709,13 +1712,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@digitaldefiance/suite-core-lib@npm:3.13.4, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
+"@digitaldefiance/suite-core-lib@npm:3.13.5, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib"
   dependencies:
-    "@digitaldefiance/branded-interface": "npm:^0.0.4"
-    "@digitaldefiance/ecies-lib": "npm:4.19.4"
-    "@digitaldefiance/i18n-lib": "npm:4.6.3"
+    "@digitaldefiance/branded-interface": "npm:^0.0.5"
+    "@digitaldefiance/ecies-lib": "npm:4.19.5"
+    "@digitaldefiance/i18n-lib": "npm:4.6.4"
     "@typescript-eslint/eslint-plugin": "npm:^8.53.1"
     "@typescript-eslint/parser": "npm:^8.53.1"
     eslint-plugin-import: "npm:^2.32.0"
@@ -2059,7 +2062,7 @@ __metadata:
     "@babel/preset-env": "npm:^7.28.3"
     "@babel/preset-typescript": "npm:^7.27.1"
     "@digitaldefiance/branded-enum": "npm:0.0.7"
-    "@digitaldefiance/branded-interface": "npm:^0.0.4"
+    "@digitaldefiance/branded-interface": "npm:^0.0.5"
     "@ethereumjs/wallet": "npm:^2.0.4"
     "@faker-js/faker": "npm:^10.1.0"
     "@noble/curves": "npm:^1.4.2"
@@ -2084,6 +2087,7 @@ __metadata:
     "@types/jest": "npm:^29.0.0"
     "@types/jsonwebtoken": "npm:^9.0.7"
     "@types/node": "npm:20.19.9"
+    "@types/supertest": "npm:^6.0.3"
     "@types/validator": "npm:^13.15.4"
     "@typescript-eslint/eslint-plugin": "npm:^8.53.1"
     "@typescript-eslint/parser": "npm:^8.53.1"
@@ -3793,6 +3797,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@playwright/test@npm:^1.52.0":
+  version: 1.58.2
+  resolution: "@playwright/test@npm:1.58.2"
+  dependencies:
+    playwright: "npm:1.58.2"
+  bin:
+    playwright: cli.js
+  checksum: 10c0/2164c03ad97c3653ff02e8818a71f3b2bbc344ac07924c9d8e31cd57505d6d37596015a41f51396b3ed8de6840f59143eaa9c21bf65515963da20740119811da
+  languageName: node
+  linkType: hard
+
 "@popperjs/core@npm:^2.11.8":
   version: 2.11.8
   resolution: "@popperjs/core@npm:2.11.8"
@@ -4472,6 +4487,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/cookiejar@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@types/cookiejar@npm:2.1.5"
+  checksum: 10c0/af38c3d84aebb3ccc6e46fb6afeeaac80fb26e63a487dd4db5a8b87e6ad3d4b845ba1116b2ae90d6f886290a36200fa433d8b1f6fe19c47da6b81872ce9a2764
+  languageName: node
+  linkType: hard
+
 "@types/cors@npm:^2.8.17":
   version: 2.8.19
   resolution: "@types/cors@npm:2.8.19"
@@ -4707,6 +4729,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/methods@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "@types/methods@npm:1.1.4"
+  checksum: 10c0/a78534d79c300718298bfff92facd07bf38429c66191f640c1db4c9cff1e36f819304298a96f7536b6512bfc398e5c3e6b831405e138cd774b88ad7be78d682a
+  languageName: node
+  linkType: hard
+
 "@types/minimist@npm:^1.2.0":
   version: 1.2.5
   resolution: "@types/minimist@npm:1.2.5"
@@ -4899,6 +4928,28 @@ __metadata:
   version: 2.0.3
   resolution: "@types/stack-utils@npm:2.0.3"
   checksum: 10c0/1f4658385ae936330581bcb8aa3a066df03867d90281cdf89cc356d404bd6579be0f11902304e1f775d92df22c6dd761d4451c804b0a4fba973e06211e9bd77c
+  languageName: node
+  linkType: hard
+
+"@types/superagent@npm:^8.1.0":
+  version: 8.1.9
+  resolution: "@types/superagent@npm:8.1.9"
+  dependencies:
+    "@types/cookiejar": "npm:^2.1.5"
+    "@types/methods": "npm:^1.1.4"
+    "@types/node": "npm:*"
+    form-data: "npm:^4.0.0"
+  checksum: 10c0/12631f1d8b3a62e1f435bc885f6d64d1a2d1ae82b80f0c6d63d4d6372c40b6f1fee6b3da59ac18bb86250b1eb73583bf2d4b1f7882048c32468791c560c69b7c
+  languageName: node
+  linkType: hard
+
+"@types/supertest@npm:^6.0.3":
+  version: 6.0.3
+  resolution: "@types/supertest@npm:6.0.3"
+  dependencies:
+    "@types/methods": "npm:^1.1.4"
+    "@types/superagent": "npm:^8.1.0"
+  checksum: 10c0/a2080f870154b09db123864a484fb633bc9e2a0f7294a194388df4c7effe5af9de36d5a5ebf819f72b404fa47b5e813c47d5a3a51354251fd2fa8589bfb64f2c
   languageName: node
   linkType: hard
 
@@ -8926,7 +8977,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"form-data@npm:^4.0.4, form-data@npm:^4.0.5, form-data@npm:~4.0.4":
+"form-data@npm:^4.0.0, form-data@npm:^4.0.4, form-data@npm:^4.0.5, form-data@npm:~4.0.4":
   version: 4.0.5
   resolution: "form-data@npm:4.0.5"
   dependencies:
@@ -9032,12 +9083,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fsevents@npm:2.3.2":
+  version: 2.3.2
+  resolution: "fsevents@npm:2.3.2"
+  dependencies:
+    node-gyp: "npm:latest"
+  checksum: 10c0/be78a3efa3e181cda3cf7a4637cb527bcebb0bd0ea0440105a3bb45b86f9245b307dc10a2507e8f4498a7d4ec349d1910f4d73e4d4495b16103106e07eee735b
+  conditions: os=darwin
+  languageName: node
+  linkType: hard
+
 "fsevents@npm:^2.3.2, fsevents@npm:^2.3.3":
   version: 2.3.3
   resolution: "fsevents@npm:2.3.3"
   dependencies:
     node-gyp: "npm:latest"
   checksum: 10c0/a1f0c44595123ed717febbc478aa952e47adfc28e2092be66b8ab1635147254ca6cfe1df792a8997f22716d4cbafc73309899ff7bfac2ac3ad8cf2e4ecc3ec60
+  conditions: os=darwin
+  languageName: node
+  linkType: hard
+
+"fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>":
+  version: 2.3.2
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  dependencies:
+    node-gyp: "npm:latest"
   conditions: os=darwin
   languageName: node
   linkType: hard
@@ -13941,6 +14011,30 @@ __metadata:
   dependencies:
     find-up: "npm:^4.0.0"
   checksum: 10c0/c56bda7769e04907a88423feb320babaed0711af8c436ce3e56763ab1021ba107c7b0cafb11cde7529f669cfc22bffcaebffb573645cbd63842ea9fb17cd7728
+  languageName: node
+  linkType: hard
+
+"playwright-core@npm:1.58.2":
+  version: 1.58.2
+  resolution: "playwright-core@npm:1.58.2"
+  bin:
+    playwright-core: cli.js
+  checksum: 10c0/5aa15b2b764e6ffe738293a09081a6f7023847a0dbf4cd05fe10eed2e25450d321baf7482f938f2d2eb330291e197fa23e57b29a5b552b89927ceb791266225b
+  languageName: node
+  linkType: hard
+
+"playwright@npm:1.58.2":
+  version: 1.58.2
+  resolution: "playwright@npm:1.58.2"
+  dependencies:
+    fsevents: "npm:2.3.2"
+    playwright-core: "npm:1.58.2"
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    playwright: cli.js
+  checksum: 10c0/d060d9b7cc124bd8b5dffebaab5e84f6b34654a553758fe7b19cc598dfbee93f6ecfbdc1832b40a6380ae04eade86ef3285ba03aa0b136799e83402246dc0727
   languageName: node
   linkType: hard
 

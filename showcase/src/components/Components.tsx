@@ -189,7 +189,7 @@ const components: Component[] = [
     title: 'express-suite-starter',
     icon: '🚀',
     description:
-      'Automated MERN monorepo generator with interactive CLI. Creates Nx-powered workspaces with React 19, Express 5, MongoDB, Material-UI, DevContainer support, Mustache templates, and comprehensive project scaffolding.',
+      'Automated Express Suite MERN monorepo generator with interactive CLI. Creates Express Suite Nx-powered workspaces with React 19, Express 5, MongoDB, Material-UI, DevContainer support, Mustache templates, and comprehensive project scaffolding.',
     tech: ['Nx', 'Mustache', 'Chalk', 'Inquirer', 'Plugins'],
     github:
       'https://github.com/Digital-Defiance/express-suite/tree/main/packages/digitaldefiance-express-suite-starter',
