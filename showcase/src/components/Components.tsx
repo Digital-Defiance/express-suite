@@ -362,6 +362,22 @@ const Components = () => {
           </div>
         </motion.div>
 
+        <motion.div style={{ display: 'flex', justifyContent: 'center' }}>
+          <img width="1071" height="1051" alt="Screenshot 2026-02-22 at 11 39 01 AM" src="https://github.com/user-attachments/assets/5cc74425-aa8a-4a10-94f1-5a1e2979b646" />
+        </motion.div>
+
+        <motion.div style={{ display: 'flex', justifyContent: 'center' }}>
+          <img width="1071" height="1051" alt="Screenshot 2026-02-22 at 11 40 09 AM" src="https://github.com/user-attachments/assets/4b6c9c13-9452-4fa2-9356-5cdd1f26f42d" />
+        </motion.div>
+
+        <motion.div style={{ display: 'flex', justifyContent: 'center' }}>
+          <img width="1071" height="1051" alt="Screenshot 2026-02-22 at 11 40 19 AM" src="https://github.com/user-attachments/assets/2ef7614f-fa96-4af5-843b-663a5322bc38" />
+        </motion.div>
+
+        <motion.div style={{ display: 'flex', justifyContent: 'center' }}>
+          <img width="1071" height="1051" alt="Screenshot 2026-02-22 at 11 39 50 AM" src="https://github.com/user-attachments/assets/92dda51f-204e-4e1a-84bb-367b6bd0a44a" />
+        </motion.div>
+
         <div className="components-grid">
           {components.map((component, index) => (
             <motion.div
