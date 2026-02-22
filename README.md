@@ -4,7 +4,7 @@
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
 [![Tests](https://img.shields.io/badge/tests-9%2C700%2B%20passing-brightgreen)](https://github.com/Digital-Defiance/express-suite)
 
-**Express Suite** is a comprehensive TypeScript monorepo providing a complete foundation for building secure, scalable, and internationalized web applications. It integrates enterprise-grade cryptography, multi-language internationalization, and a full-stack MERN framework—all structured as modular packages for modern development workflows.
+**Express Suite** is a comprehensive TypeScript framework providing a complete foundation for building secure, scalable, and internationalized web applications. It integrates enterprise-grade cryptography, multi-language internationalization, and a full-stack MERN framework—all structured as modular packages for modern development workflows.
 
 Formerly known as **Project Albatross**, the suite draws inspiration from the great albatross bird, symbolizing endurance and the ability to traverse vast distances—qualities reflected in the suite's goal to deliver far-reaching, reliable solutions.
 
@@ -17,6 +17,18 @@ Formerly known as **Project Albatross**, the suite draws inspiration from the gr
 - **📊 MongoDB Integration**: Dynamic model registry with Mongoose and flexible ID providers
 - **🧪 9,700+ Tests**: Comprehensive coverage ensuring reliability across all packages
 - **⚡ Modern DX**: Interactive CLI generators, DevContainer support, and fluent builder APIs
+
+  
+Express Suite Starter is a scaffolding generator which can produce fully functional application boilerplate using all of Express Suite's features (internationalization, mnemonic login, backup codes, etc):
+
+<img width="1071" height="1051" alt="Screenshot 2026-02-22 at 11 39 01 AM" src="https://github.com/user-attachments/assets/5cc74425-aa8a-4a10-94f1-5a1e2979b646" />
+
+<img width="1071" height="1051" alt="Screenshot 2026-02-22 at 11 40 09 AM" src="https://github.com/user-attachments/assets/4b6c9c13-9452-4fa2-9356-5cdd1f26f42d" />
+
+<img width="1071" height="1051" alt="Screenshot 2026-02-22 at 11 40 19 AM" src="https://github.com/user-attachments/assets/2ef7614f-fa96-4af5-843b-663a5322bc38" />
+
+<img width="1071" height="1051" alt="Screenshot 2026-02-22 at 11 39 50 AM" src="https://github.com/user-attachments/assets/92dda51f-204e-4e1a-84bb-367b6bd0a44a" />
+
 
 ---
 
