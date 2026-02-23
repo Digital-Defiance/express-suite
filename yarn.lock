@@ -1522,7 +1522,7 @@ __metadata:
   dependencies:
     "@digitaldefiance/express-suite-test-utils": "npm:1.1.1"
     "@digitaldefiance/i18n-lib": "npm:4.6.4"
-    "@digitaldefiance/suite-core-lib": "npm:3.13.5"
+    "@digitaldefiance/suite-core-lib": "npm:3.13.6"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.0"
     "@mui/icons-material": "npm:^7.0.2"
@@ -1712,7 +1712,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@digitaldefiance/suite-core-lib@npm:3.13.5, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
+"@digitaldefiance/suite-core-lib@npm:3.13.5":
+  version: 3.13.5
+  resolution: "@digitaldefiance/suite-core-lib@npm:3.13.5"
+  dependencies:
+    "@digitaldefiance/branded-interface": "npm:^0.0.5"
+    "@digitaldefiance/ecies-lib": "npm:4.19.5"
+    "@digitaldefiance/i18n-lib": "npm:4.6.4"
+  checksum: 10c0/7461aae42acf1d7a6941c2a066d03b793e16321b152b7b7684aecf65f857808d1804f0959536a8f078a590cb0c762dddd4c09ae8982d0b6d1fa5fa21b2182dd6
+  languageName: node
+  linkType: hard
+
+"@digitaldefiance/suite-core-lib@npm:3.13.6, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib"
   dependencies:
