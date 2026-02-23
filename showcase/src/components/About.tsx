@@ -124,6 +124,28 @@ const About = () => {
             Contribute to our projects, report issues, or just star us on GitHub
             to show your support.
           </p>
+          <p>
+            Need something tailored to your project? Contact{" "}
+            <a
+              href="https://digitaldefiance.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Digital Defiance
+            </a>{" "}
+            about custom maintenance contracts — we'll design something
+            tailor-made for your needs, support it, and ensure it works and
+            stays working. You can also{" "}
+            <a
+              href="https://digitaldefiance.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              donate
+            </a>{" "}
+            to support the ongoing development of Express Suite and help keep it
+            free and open source for everyone.
+          </p>
           <div className="cta-buttons">
             <a
               href="https://digitaldefiance.org"
