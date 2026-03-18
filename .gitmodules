@@ -40,3 +40,6 @@
 [submodule "digitaldefiance-eecp"]
 	path = digitaldefiance-eecp
 	url = https://github.com/Digital-Defiance/digitaldefiance-eecp.git
+[submodule "digitaldefiance-eecp-burnbag"]
+	path = digitaldefiance-eecp-burnbag
+	url = https://github.com/Digital-Defiance/digitaldefiance-eecp-burnbag.git

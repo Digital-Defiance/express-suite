@@ -1,3 +1,4 @@
 # Ignore nested Nx workspaces
 packages/digitaldefiance-express-suite-example
 digitaldefiance-eecp
+digitaldefiance-eecp-burnbag
