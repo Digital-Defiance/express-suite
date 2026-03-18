@@ -36,6 +36,7 @@
     "publish:node-ecies-lib": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-node-ecies-lib --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-node-ecies-lib --access public",
     "publish:suite-core-lib": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-suite-core-lib --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-suite-core-lib --access public",
     "publish:node-express-suite": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-node-express-suite --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-node-express-suite --access public",
+    "publish:node-express-suite-mongo": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-node-express-suite-mongo --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-node-express-suite-mongo --access public",
     "publish:express-suite-test-utils": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-express-suite-test-utils --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-express-suite-test-utils --access public",
     "publish:express-suite-react-components": "NODE_OPTIONS='--max-old-space-size=16384' npx nx build digitaldefiance-express-suite-react-components --skip-nx-cache && npm publish --registry https://registry.npmjs.org/ dist/packages/digitaldefiance-express-suite-react-components --access public",
     "publish:express-suite-starter": "cd packages/digitaldefiance-express-suite-starter && NODE_OPTIONS='--max-old-space-size=16384' yarn build && npm publish --access public --registry https://registry.npmjs.org/",
@@ -52,7 +53,6 @@
     "bip39": "^3.1.0",
     "bson": "^6.10.4",
     "currency-codes": "^2.1.0",
-    "ejs": "^3.1.10",
     "elliptic": "^6.6.1",
     "ethereum-cryptography": "^2.2.1",
     "express": "^5.1.0",
@@ -126,6 +126,7 @@
     "packages/digitaldefiance-mongoose-types",
     "packages/digitaldefiance-node-ecies-lib",
     "packages/digitaldefiance-node-express-suite",
+    "packages/digitaldefiance-node-express-suite-mongo",
     "packages/digitaldefiance-suite-core-lib",
     "tools/*"
   ],

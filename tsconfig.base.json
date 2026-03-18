@@ -39,6 +39,9 @@
       ],
       "@digitaldefiance/node-express-suite": [
         "packages/digitaldefiance-node-express-suite/src/index.ts"
+      ],
+      "@digitaldefiance/node-express-suite-mongo": [
+        "packages/digitaldefiance-node-express-suite-mongo/src/index.ts"
       ]
     }
   }
