@@ -31,3 +31,12 @@
 [submodule "tools"]
 	path = tools
 	url = https://github.com/Digital-Defiance/express-suite-tools.git
+[submodule "packages/digitaldefiance-express-suite-example-brightstack"]
+	path = packages/digitaldefiance-express-suite-example-brightstack
+	url = https://github.com/Digital-Defiance/express-suite-example-brightstack.git
+[submodule "packages/digitaldefiance-node-express-suite-mongo"]
+	path = packages/digitaldefiance-node-express-suite-mongo
+	url = https://github.com/Digital-Defiance/node-express-suite-mongo.git
+[submodule "digitaldefiance-eecp"]
+	path = digitaldefiance-eecp
+	url = https://github.com/Digital-Defiance/digitaldefiance-eecp.git
