@@ -26,6 +26,11 @@ interface IAppConfig {
   server: string;
 
   /**
+   * Whether TOTP two-factor authentication is available on this deployment
+   */
+  totpAvailable?: boolean;
+
+  /**
    * Additional configuration properties
    */
   [key: string]: unknown;
