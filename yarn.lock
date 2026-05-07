@@ -2006,7 +2006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@digitaldefiance/ecies-lib@npm:5.1.6, @digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib":
+"@digitaldefiance/ecies-lib@npm:5.2.1, @digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/ecies-lib@workspace:packages/digitaldefiance-ecies-lib"
   dependencies:
@@ -2039,7 +2039,7 @@ __metadata:
   dependencies:
     "@digitaldefiance/express-suite-test-utils": "npm:1.1.2"
     "@digitaldefiance/i18n-lib": "npm:4.7.4"
-    "@digitaldefiance/suite-core-lib": "npm:4.27.4"
+    "@digitaldefiance/suite-core-lib": "npm:4.28.2"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.0"
     "@mui/icons-material": "npm:^7.0.2"
@@ -2055,6 +2055,7 @@ __metadata:
     "@types/react": "npm:19.0.0"
     "@types/react-dom": "npm:19.0.0"
     axios: "npm:^1.9.0"
+    bip39: "npm:^3.1.0"
     currency-codes: "npm:^2.2.0"
     formik: "npm:^2.4.6"
     jest: "npm:^30.2.0"
@@ -2180,11 +2181,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@digitaldefiance/node-ecies-lib@npm:5.1.6, @digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib":
+"@digitaldefiance/node-ecies-lib@npm:5.2.1, @digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/node-ecies-lib@workspace:packages/digitaldefiance-node-ecies-lib"
   dependencies:
-    "@digitaldefiance/ecies-lib": "npm:5.1.6"
+    "@digitaldefiance/ecies-lib": "npm:5.2.1"
     "@digitaldefiance/express-suite-test-utils": "npm:1.1.1"
     "@digitaldefiance/i18n-lib": "npm:4.7.4"
     "@ethereumjs/wallet": "npm:^2.0.4"
@@ -2217,11 +2218,11 @@ __metadata:
     mongoose: "npm:^8.18.2"
   peerDependencies:
     "@digitaldefiance/branded-interface": ^0.0.5
-    "@digitaldefiance/ecies-lib": ^5.1.6
+    "@digitaldefiance/ecies-lib": ^5.2.1
     "@digitaldefiance/i18n-lib": ^4.7.4
-    "@digitaldefiance/node-ecies-lib": ^5.1.6
-    "@digitaldefiance/node-express-suite": ^4.27.2
-    "@digitaldefiance/suite-core-lib": ^4.27.4
+    "@digitaldefiance/node-ecies-lib": ^5.2.1
+    "@digitaldefiance/node-express-suite": ^4.28.2
+    "@digitaldefiance/suite-core-lib": ^4.28.2
   languageName: unknown
   linkType: soft
 
@@ -2230,12 +2231,12 @@ __metadata:
   resolution: "@digitaldefiance/node-express-suite@workspace:packages/digitaldefiance-node-express-suite"
   dependencies:
     "@digitaldefiance/branded-interface": "npm:^0.0.5"
-    "@digitaldefiance/ecies-lib": "npm:5.1.6"
+    "@digitaldefiance/ecies-lib": "npm:5.2.1"
     "@digitaldefiance/express-suite-test-utils": "npm:1.1.1"
     "@digitaldefiance/i18n-lib": "npm:4.7.4"
-    "@digitaldefiance/node-ecies-lib": "npm:5.1.6"
+    "@digitaldefiance/node-ecies-lib": "npm:5.2.1"
     "@digitaldefiance/reed-solomon-erasure.wasm": "npm:^1.0.2"
-    "@digitaldefiance/suite-core-lib": "npm:4.27.4"
+    "@digitaldefiance/suite-core-lib": "npm:4.28.2"
     "@noble/curves": "npm:^1.9.0"
     "@noble/hashes": "npm:^1.8.0"
     "@types/nat-upnp": "npm:^1.1.5"
@@ -2269,12 +2270,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@digitaldefiance/suite-core-lib@npm:4.27.4, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
+"@digitaldefiance/suite-core-lib@npm:4.28.2, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib"
   dependencies:
     "@digitaldefiance/branded-interface": "npm:^0.0.5"
-    "@digitaldefiance/ecies-lib": "npm:5.1.6"
+    "@digitaldefiance/ecies-lib": "npm:5.2.1"
     "@digitaldefiance/i18n-lib": "npm:4.7.4"
     "@typescript-eslint/eslint-plugin": "npm:^8.53.1"
     "@typescript-eslint/parser": "npm:^8.53.1"
