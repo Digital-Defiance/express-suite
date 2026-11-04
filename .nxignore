@@ -3,3 +3,6 @@ packages/digitaldefiance-express-suite-example
 packages/digitaldefiance-express-suite-example-brightstack
 digitaldefiance-eecp
 digitaldefiance-eecp-burnbag
+
+# Ignore git worktrees nested inside the repo (avoids duplicate project names)
+.worktrees
