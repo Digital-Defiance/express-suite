@@ -3103,7 +3103,7 @@ __metadata:
     "@babel/preset-env": "npm:^7.28.0"
     "@digitaldefiance/express-suite-test-utils": "npm:1.1.2"
     "@digitaldefiance/i18n-lib": "npm:4.7.5"
-    "@digitaldefiance/suite-core-lib": "npm:4.28.3"
+    "@digitaldefiance/suite-core-lib": "npm:5.0.0"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.0"
     "@mui/icons-material": "npm:^7.0.2"
@@ -3285,8 +3285,8 @@ __metadata:
     "@digitaldefiance/ecies-lib": ^5.2.2
     "@digitaldefiance/i18n-lib": ^4.7.5
     "@digitaldefiance/node-ecies-lib": ^5.2.2
-    "@digitaldefiance/node-express-suite": ^4.28.3
-    "@digitaldefiance/suite-core-lib": ^4.28.3
+    "@digitaldefiance/node-express-suite": ^5.0.0
+    "@digitaldefiance/suite-core-lib": ^5.0.0
   languageName: unknown
   linkType: soft
 
@@ -3300,7 +3300,7 @@ __metadata:
     "@digitaldefiance/i18n-lib": "npm:4.7.5"
     "@digitaldefiance/node-ecies-lib": "npm:5.2.2"
     "@digitaldefiance/reed-solomon-erasure.wasm": "npm:^1.0.2"
-    "@digitaldefiance/suite-core-lib": "npm:4.28.3"
+    "@digitaldefiance/suite-core-lib": "npm:5.0.0"
     "@noble/curves": "npm:^1.9.0"
     "@noble/hashes": "npm:^1.8.0"
     "@types/nat-upnp": "npm:^1.1.5"
@@ -3334,7 +3334,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@digitaldefiance/suite-core-lib@npm:4.28.3, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
+"@digitaldefiance/suite-core-lib@npm:5.0.0, @digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib":
   version: 0.0.0-use.local
   resolution: "@digitaldefiance/suite-core-lib@workspace:packages/digitaldefiance-suite-core-lib"
   dependencies:
