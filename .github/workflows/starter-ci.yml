@@ -1,0 +1,47 @@
+name: Express Suite Starter CI
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'packages/digitaldefiance-express-suite-starter/**'
+      - '.github/workflows/starter-ci.yml'
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - 'packages/digitaldefiance-express-suite-starter/**'
+      - '.github/workflows/starter-ci.yml'
+# Fast gates only. The generate-build-serve harness (`yarn test:e2e`) and the
+# live translation tests (`yarn test:network`) are not run here.
+jobs:
+  starter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The starter is a submodule; a pointer change triggers this job.
+          submodules: recursive
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Enable Corepack
+        run: corepack enable
+      - name: Install dependencies
+        run: yarn install --immutable
+      # The starter's jest config maps these libraries to their dist output.
+      - name: Build libraries the starter tests depend on
+        run: >-
+          npx nx run-many -t build
+          -p digitaldefiance-i18n-lib,digitaldefiance-suite-core-lib,digitaldefiance-ecies-lib
+      - name: Build
+        run: yarn build
+        working-directory: packages/digitaldefiance-express-suite-starter
+      - name: Lint
+        run: yarn lint
+        working-directory: packages/digitaldefiance-express-suite-starter
+      - name: Typecheck
+        run: yarn typecheck
+        working-directory: packages/digitaldefiance-express-suite-starter
+      - name: Test
+        run: yarn test
+        working-directory: packages/digitaldefiance-express-suite-starter
